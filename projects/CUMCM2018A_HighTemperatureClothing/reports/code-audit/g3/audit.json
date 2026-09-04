@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "stage": "g3",
+  "generated_unix": 1785124052.976995,
+  "project_root": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing",
+  "status": "VERIFIED",
+  "checks": [
+    {
+      "check": "python-runtime",
+      "status": "VERIFIED",
+      "source": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.codex\\runtime.local.json",
+      "requested": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Scripts\\python.exe",
+      "executable": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Scripts\\python.exe",
+      "version": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "check": "python-files",
+      "status": "VERIFIED",
+      "files": [
+        {
+          "path": "code\\g3.py",
+          "status": "VERIFIED",
+          "sha256": "17a2870d83f00efde71ede8707c43fdaf393d8134fabbdd852ec69b0030346a4"
+        },
+        {
+          "path": "code\\main.py",
+          "status": "VERIFIED",
+          "sha256": "3be6ca41ec5e0dee94ef88050c4c769d2dc039713b4fb666a9d2fa8ac22372df"
+        }
+      ]
+    },
+    {
+      "check": "imports",
+      "status": "VERIFIED",
+      "modules": [
+        {
+          "module": "__future__",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "argparse",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "concurrent",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "dataclasses",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "hashlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "importlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "json",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "logging",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "main",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "math",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "matplotlib",
+          "status": "VERIFIED",
+          "origin": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Lib\\site-packages\\matplotlib\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "numpy",
+          "status": "VERIFIED",
+          "origin": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Lib\\site-packages\\numpy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "os",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "pandas",
+          "status": "VERIFIED",
+          "origin": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Lib\\site-packages\\pandas\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "pathlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "platform",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "pymoo",
+          "status": "VERIFIED",
+          "origin": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Lib\\site-packages\\pymoo\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "scipy",
+          "status": "VERIFIED",
+          "origin": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Lib\\site-packages\\scipy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "sys",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "time",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "typing",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        }
+      ]
+    },
+    {
+      "check": "static-risks",
+      "status": "VERIFIED",
+      "findings": []
+    },
+    {
+      "check": "code-quality",
+      "status": "VERIFIED",
+      "tools": [
+        {
+          "tool": "ruff",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Scripts\\python.exe",
+            "-m",
+            "ruff",
+            "check",
+            "code",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 0.124,
+          "stdout": "All checks passed!\n",
+          "stderr": ""
+        },
+        {
+          "tool": "pytest",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Scripts\\python.exe",
+            "-m",
+            "pytest",
+            "-q",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 2.135,
+          "stdout": "............                                                             [100%]\n12 passed in 1.52s\n",
+          "stderr": ""
+        },
+        {
+          "tool": "boundary-test-evidence",
+          "status": "VERIFIED",
+          "test_files": [
+            "tests\\test_main.py"
+          ],
+          "detected_categories": {
+            "normal": [
+              "valid",
+              "正常"
+            ],
+            "boundary": [
+              "negative",
+              "duplicate",
+              "边界"
+            ],
+            "failure": [
+              "error",
+              "raises"
+            ]
+          },
+          "reason": "keyword scan is supporting evidence; review assertions and independence manually"
+        }
+      ]
+    },
+    {
+      "check": "runtime-entries",
+      "status": "VERIFIED",
+      "runs": [
+        {
+          "name": "g3-replay",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Scripts\\python.exe",
+            "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\code\\g3.py",
+            "--replay"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 1.811,
+          "artifacts": [
+            {
+              "path": "results/g3_replay.json",
+              "status": "VERIFIED",
+              "size_bytes": 215,
+              "modified_unix": 1785124057.5283983,
+              "sha256": "a3bd33cefb768b5d3b3d4b2d79704128cf3add797587a33de75aecd4441950fd"
+            },
+            {
+              "path": "logs/g3_validation.log",
+              "status": "VERIFIED",
+              "size_bytes": 0,
+              "modified_unix": 1785121087.8843496,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ]
+        },
+        {
+          "name": "g3-artifact-check",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Scripts\\python.exe",
+            "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\code\\g3.py",
+            "--verify-artifacts"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 1.498,
+          "artifacts": [
+            {
+              "path": "results/formal_results.json",
+              "status": "VERIFIED",
+              "size_bytes": 122145,
+              "modified_unix": 1785123961.7642903,
+              "sha256": "20fd422dc5339eee1e6bde86198a296bd5f1485fd6047191c93cacc78639b9c3"
+            },
+            {
+              "path": "results/key_numbers.json",
+              "status": "VERIFIED",
+              "size_bytes": 287,
+              "modified_unix": 1785123961.7681127,
+              "sha256": "043a847e27245df4c6b9ab7b391942c9b3b12a4cd267d0bd7670fab57de97206"
+            },
+            {
+              "path": "results/problem1.xlsx",
+              "status": "VERIFIED",
+              "size_bytes": 9368373,
+              "modified_unix": 1785123102.8067756,
+              "sha256": "7405804fee609513fb7085484d588f3b8fa87fd3eb66c0977402fd2d94d80524"
+            },
+            {
+              "path": "results/g3_run_manifest.json",
+              "status": "VERIFIED",
+              "size_bytes": 2523,
+              "modified_unix": 1785123966.4120905,
+              "sha256": "7698a907f2dec974495f97b22b02481e0e519e60d8704a6cb5dede71dbb920e1"
+            },
+            {
+              "path": "results/g3_artifact_check.json",
+              "status": "VERIFIED",
+              "size_bytes": 1731,
+              "modified_unix": 1785124059.099935,
+              "sha256": "77fa623397280021774950ce1bb5ca15e0a008108ab9125960797f2fad53c0f0"
+            },
+            {
+              "path": "figures/q1_model_fit.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 27073,
+              "modified_unix": 1785122694.6514535,
+              "sha256": "b30af6fe6304b08bf73413d0309930bf85ade5fc9172b7379b79437a10f3267c"
+            },
+            {
+              "path": "figures/q2_enumeration.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 26851,
+              "modified_unix": 1785123962.530012,
+              "sha256": "231dc9d960fc2ad5038613c58ac45d1f4bf6ae3aa2b4d1eeba49064d00ef6e14"
+            },
+            {
+              "path": "figures/q3_feasible_region.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 600187,
+              "modified_unix": 1785123964.2614346,
+              "sha256": "89f06c5379acc676dcd70e11ba20a8d97b41ae5cece580b322db0cee222d98fc"
+            },
+            {
+              "path": "figures/q3_pareto_cross_validation.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 33960,
+              "modified_unix": 1785122803.6585915,
+              "sha256": "a13156cbc988b381be059c0cc487f807a7263194199f4cfbe88fd06b589cd0d4"
+            },
+            {
+              "path": "logs/g3_formal.log",
+              "status": "VERIFIED",
+              "size_bytes": 2278,
+              "modified_unix": 1785122765.9784374,
+              "sha256": "1b160f54ebbb10088486587f66f46b9c11dacda1b2c9405fe443f31904aafa3d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check": "external-interfaces",
+      "status": "VERIFIED",
+      "interfaces": [
+        {
+          "name": "numpy-scipy-pandas",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "results/g2_baseline.json runtime.packages；g2-smoke 实际读取 XLSX、调用 least_squares 与 NumPy 数值内核"
+        },
+        {
+          "name": "pymoo-nsga2",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "results/formal_results.json nsga2_cross_validation；pymoo 0.6.2 对本题 20 个种子各运行 80 代，和枚举 Pareto 前沿最大距离为 0"
+        },
+        {
+          "name": "artifact-tool-workbook",
+          "kind": "external-runtime",
+          "status": "VERIFIED",
+          "evidence": "results/problem1.xlsx；四张工作表已导出后重导入，关键区域与末行检查通过，公式错误 0，四表均完成渲染预览"
+        }
+      ]
+    }
+  ]
+}

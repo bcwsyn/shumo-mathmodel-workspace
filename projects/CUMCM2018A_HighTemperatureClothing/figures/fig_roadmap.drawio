@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" modified="2026-07-27T00:00:00.000Z" agent="Codex" version="24.7.17">
+  <diagram id="roadmap" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="phase1" value="输入" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#2563EB;fontColor=#1E3A8A;fontStyle=1;fontSize=14;arcSize=12;" vertex="1" parent="1"><mxGeometry x="55" y="25" width="150" height="38" as="geometry"/></mxCell>
+        <mxCell id="phase2" value="机理建模" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFBF1;strokeColor=#0F766E;fontColor=#134E4A;fontStyle=1;fontSize=14;arcSize=12;" vertex="1" parent="1"><mxGeometry x="480" y="25" width="170" height="38" as="geometry"/></mxCell>
+        <mxCell id="phase3" value="数值求解与标定" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE9FE;strokeColor=#7C3AED;fontColor=#4C1D95;fontStyle=1;fontSize=14;arcSize=12;" vertex="1" parent="1"><mxGeometry x="770" y="25" width="300" height="38" as="geometry"/></mxCell>
+        <mxCell id="phase4" value="求解器验证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#16A34A;fontColor=#14532D;fontStyle=1;fontSize=14;arcSize=12;" vertex="1" parent="1"><mxGeometry x="1215" y="25" width="190" height="38" as="geometry"/></mxCell>
+
+        <mxCell id="input" value="题面与附件&lt;br&gt;材料参数 + 实验曲线" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF6FF;strokeColor=#2563EB;fontColor=#1E3A8A;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="30" y="95" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="check" value="结构与口径核验&lt;br&gt;单位 · 范围 · 时间序列&lt;br&gt;37°C 为人体热库" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF6FF;strokeColor=#2563EB;fontColor=#1E3A8A;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="270" y="95" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="model" value="四层一维非稳态导热&lt;br&gt;双 Robin 边界&lt;br&gt;层间温度 / 热流连续" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDFA;strokeColor=#0F766E;fontColor=#134E4A;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="510" y="95" width="210" height="90" as="geometry"/></mxCell>
+        <mxCell id="numerical" value="界面对齐有限体积网格&lt;br&gt;全隐式时间推进&lt;br&gt;Thomas 追赶法 O(N)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F3FF;strokeColor=#7C3AED;fontColor=#4C1D95;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="760" y="95" width="210" height="90" as="geometry"/></mxCell>
+        <mxCell id="calibration" value="问题一参数标定&lt;br&gt;多起点最小二乘&lt;br&gt;估计 hₒ、h&lt;sub&gt;b&lt;/sub&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F3FF;strokeColor=#7C3AED;fontColor=#4C1D95;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="1010" y="95" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="validation" value="是否通过？&lt;br&gt;收敛 · 能量守恒&lt;br&gt;稳态闭式解 · 残差" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F0FDF4;strokeColor=#16A34A;fontColor=#14532D;fontSize=13;" vertex="1" parent="1"><mxGeometry x="1260" y="80" width="180" height="120" as="geometry"/></mxCell>
+
+        <mxCell id="q1" value="问题一&lt;br&gt;正式网格温度场&lt;br&gt;实验曲线拟合" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#EA580C;fontColor=#7C2D12;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="230" y="335" width="250" height="92" as="geometry"/></mxCell>
+        <mxCell id="q2" value="问题二&lt;br&gt;245 个厚度完整枚举&lt;br&gt;前一档不可行性检查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#EA580C;fontColor=#7C2D12;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="625" y="335" width="250" height="92" as="geometry"/></mxCell>
+        <mxCell id="q3" value="问题三&lt;br&gt;14,455 个组合双重枚举&lt;br&gt;NSGA-II 交叉验证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#EA580C;fontColor=#7C2D12;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="1020" y="335" width="250" height="92" as="geometry"/></mxCell>
+
+        <mxCell id="q1out" value="问题一证据&lt;br&gt;完整温度场 · 误差诊断&lt;br&gt;problem1.xlsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;fontColor=#78350F;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="230" y="515" width="250" height="92" as="geometry"/></mxCell>
+        <mxCell id="designcheck" value="设计约束回代与细网格复核&lt;br&gt;max Tₛ ≤ 47°C&lt;br&gt;duration(Tₛ &gt; 44°C) ≤ 300 s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDF4;strokeColor=#16A34A;fontColor=#14532D;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="625" y="515" width="300" height="100" as="geometry"/></mxCell>
+        <mxCell id="robust" value="名义与稳健设计&lt;br&gt;换热 · 物性 · 初温&lt;br&gt;环境 · 制造公差" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDF4;strokeColor=#16A34A;fontColor=#14532D;fontSize=14;arcSize=10;" vertex="1" parent="1"><mxGeometry x="1020" y="515" width="250" height="100" as="geometry"/></mxCell>
+
+        <mxCell id="delivery" value="可复现学习版证据链&lt;br&gt;代码 + 测试 + 数据图 + 工作簿 + 审计报告" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#16A34A;fontColor=#14532D;fontStyle=1;fontSize=16;arcSize=10;" vertex="1" parent="1"><mxGeometry x="500" y="720" width="500" height="75" as="geometry"/></mxCell>
+
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#2563EB;strokeWidth=2;" edge="1" parent="1" source="input" target="check"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#0F766E;strokeWidth=2;" edge="1" parent="1" source="check" target="model"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#7C3AED;strokeWidth=2;" edge="1" parent="1" source="model" target="numerical"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#7C3AED;strokeWidth=2;" edge="1" parent="1" source="numerical" target="calibration"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#16A34A;strokeWidth=2;" edge="1" parent="1" source="calibration" target="validation"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="branchStem" value="通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#EA580C;strokeWidth=2;fontColor=#7C2D12;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1350" y="200" as="sourcePoint"/><mxPoint x="1350" y="275" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="branchBar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#EA580C;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="355" y="275" as="sourcePoint"/><mxPoint x="1350" y="275" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="q1branch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="355" y="275" as="sourcePoint"/><mxPoint x="355" y="335" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="q2branch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="750" y="275" as="sourcePoint"/><mxPoint x="750" y="335" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="q3branch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1145" y="275" as="sourcePoint"/><mxPoint x="1145" y="335" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#D97706;strokeWidth=2;" edge="1" parent="1" source="q1" target="q1out"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#16A34A;strokeWidth=2;" edge="1" parent="1" source="q2" target="designcheck"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#16A34A;strokeWidth=2;" edge="1" parent="1" source="q3" target="robust"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#16A34A;strokeWidth=2;" edge="1" parent="1" source="designcheck" target="robust"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="outLeft" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#16A34A;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="355" y="607" as="sourcePoint"/><mxPoint x="355" y="675" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="outRight" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#16A34A;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1145" y="615" as="sourcePoint"/><mxPoint x="1145" y="675" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="outBar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#16A34A;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="355" y="675" as="sourcePoint"/><mxPoint x="1145" y="675" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="outFinal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#16A34A;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="750" y="675" as="sourcePoint"/><mxPoint x="750" y="720" as="targetPoint"/></mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

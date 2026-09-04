@@ -1,0 +1,76 @@
+{
+  "status": "FORMAL_RUN_AND_POSTPROCESSING_RECORDED",
+  "command": [
+    "code\\g3.py",
+    "--formal",
+    "--workers",
+    "4"
+  ],
+  "executable": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Scripts\\python.exe",
+  "elapsed_seconds": 482.9763852999895,
+  "artifacts": [
+    {
+      "path": "results/formal_results.json",
+      "size_bytes": 122145,
+      "sha256": "20FD422DC5339EEE1E6BDE86198A296BD5F1485FD6047191C93CACC78639B9C3"
+    },
+    {
+      "path": "results/key_numbers.json",
+      "size_bytes": 287,
+      "sha256": "043A847E27245DF4C6B9AB7B391942C9B3B12A4CD267D0BD7670FAB57DE97206"
+    },
+    {
+      "path": "results/q1_skin_temperature.csv",
+      "size_bytes": 290640,
+      "sha256": "34F6EB356484334C9496933680BF1004C7F694594C9502E99EEF80DCD4F0BE28"
+    },
+    {
+      "path": "results/q1_temperature_field.csv",
+      "size_bytes": 14800757,
+      "sha256": "E884317341F4B2182FEB720CFD80D1D143FB3BBF40651358CD8340159522C216"
+    },
+    {
+      "path": "results/q2_enumeration_fast.csv",
+      "size_bytes": 18504,
+      "sha256": "EC193257C6428768447B1B35E1414820D31A67FD4C65F5224A4639B970C817E0"
+    },
+    {
+      "path": "results/q3_enumeration_fast.csv",
+      "size_bytes": 1136793,
+      "sha256": "726F45E720F291D97CA8B7A00DFD0142C6955316B0945283FD751AF67FDAE85C"
+    },
+    {
+      "path": "results/sensitivity.csv",
+      "size_bytes": 3071,
+      "sha256": "DF4FEDD111D230A4DDD6EB4C490C990E684738A1B3ECD72AC5660B7442C448D2"
+    },
+    {
+      "path": "figures/q1_model_fit.pdf",
+      "size_bytes": 27073,
+      "sha256": "B30AF6FE6304B08BF73413D0309930BF85ADE5FC9172B7379B79437A10F3267C"
+    },
+    {
+      "path": "figures/q3_feasible_region.pdf",
+      "size_bytes": 600187,
+      "sha256": "89F06C5379ACC676DCD70E11BA20A8D97B41AE5CECE580B322DB0CEE222D98FC"
+    },
+    {
+      "path": "figures/q3_pareto_cross_validation.pdf",
+      "size_bytes": 33960,
+      "sha256": "A13156CBC988B381BE059C0CC487F807A7263194199F4CFBE88FD06B589CD0D4"
+    },
+    {
+      "path": "logs/g3_formal.log",
+      "size_bytes": 2278,
+      "sha256": "1B160F54EBBB10088486587F66F46B9C11DACDA1B2C9405FE443F31904AAFA3D"
+    }
+  ],
+  "postprocessed_artifacts": [
+    {
+      "path": "results/problem1.xlsx",
+      "size_bytes": 9368373,
+      "sha256": "7405804FEE609513FB7085484D588F3B8FA87FD3EB66C0977402FD2D94D80524",
+      "verification": "artifact-tool formulas inspected and all sheets rendered"
+    }
+  ]
+}

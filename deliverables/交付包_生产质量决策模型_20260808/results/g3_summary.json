@@ -1,0 +1,566 @@
+{
+  "sprt": [
+    {
+      "true_rate": 0.05,
+      "accept_rate": 1.0,
+      "reject_rate": 0.0,
+      "undecided_rate": 0.0,
+      "mean_samples": 103.5122
+    },
+    {
+      "true_rate": 0.08,
+      "accept_rate": 0.9469,
+      "reject_rate": 0.0466,
+      "undecided_rate": 0.0065,
+      "mean_samples": 241.0304
+    },
+    {
+      "true_rate": 0.1,
+      "accept_rate": 0.5093,
+      "reject_rate": 0.4389,
+      "undecided_rate": 0.0518,
+      "mean_samples": 365.9101
+    },
+    {
+      "true_rate": 0.12,
+      "accept_rate": 0.094,
+      "reject_rate": 0.898,
+      "undecided_rate": 0.008,
+      "mean_samples": 261.1182
+    },
+    {
+      "true_rate": 0.15,
+      "accept_rate": 0.006,
+      "reject_rate": 0.994,
+      "undecided_rate": 0.0,
+      "mean_samples": 130.5975
+    }
+  ],
+  "problem2_nominal": [
+    {
+      "scenario": 1,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 18.111111111111107,
+      "condition_number": 4.048917339522306,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "scenario": 2,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 12.00000000000001,
+      "condition_number": 4.048917339522305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "scenario": 3,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 15.444444444444443,
+      "condition_number": 4.048917339522306,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "scenario": 4,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 14.750000000000005,
+      "condition_number": 4.048917339522305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "scenario": 5,
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 11.987654320987655,
+      "condition_number": 7.9290562453740385,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "scenario": 6,
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 21.678670360110793,
+      "condition_number": 10.706526755355378,
+      "feasible": true,
+      "reason": "ok"
+    }
+  ],
+  "problem2_sensitivity": [
+    {
+      "parameter": "次品率",
+      "factor": 0.8,
+      "profit": 19.173913043478255,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "次品率",
+      "factor": 1.0,
+      "profit": 18.111111111111107,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "次品率",
+      "factor": 1.2,
+      "profit": 17.0,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "检测成本",
+      "factor": 0.8,
+      "profit": 19.222222222222218,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "检测成本",
+      "factor": 1.0,
+      "profit": 18.111111111111107,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "检测成本",
+      "factor": 1.2,
+      "profit": 16.999999999999993,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "拆解费",
+      "factor": 0.8,
+      "profit": 18.22222222222222,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "拆解费",
+      "factor": 1.0,
+      "profit": 18.111111111111107,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "拆解费",
+      "factor": 1.2,
+      "profit": 18.000000000000004,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "调换损失",
+      "factor": 0.8,
+      "profit": 18.244444444444447,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "调换损失",
+      "factor": 1.0,
+      "profit": 18.111111111111107,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    },
+    {
+      "parameter": "调换损失",
+      "factor": 1.2,
+      "profit": 17.977777777777778,
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      }
+    }
+  ],
+  "problem3_all_inspected_candidates": [
+    {
+      "internal_disassembly": true,
+      "final_inspection": false,
+      "final_disassembly": true,
+      "profit": 60.22222222222223
+    },
+    {
+      "internal_disassembly": true,
+      "final_inspection": true,
+      "final_disassembly": true,
+      "profit": 58.0
+    },
+    {
+      "internal_disassembly": false,
+      "final_inspection": false,
+      "final_disassembly": true,
+      "profit": 52.96296296296296
+    },
+    {
+      "internal_disassembly": false,
+      "final_inspection": true,
+      "final_disassembly": true,
+      "profit": 50.74074074074076
+    },
+    {
+      "internal_disassembly": true,
+      "final_inspection": false,
+      "final_disassembly": false,
+      "profit": 47.40740740740742
+    },
+    {
+      "internal_disassembly": true,
+      "final_inspection": true,
+      "final_disassembly": false,
+      "profit": 45.18518518518522
+    },
+    {
+      "internal_disassembly": false,
+      "final_inspection": false,
+      "final_disassembly": false,
+      "profit": 39.34156378600824
+    },
+    {
+      "internal_disassembly": false,
+      "final_inspection": true,
+      "final_disassembly": false,
+      "profit": 37.11934156378604
+    }
+  ],
+  "problem4_posterior": {
+    "assumption": "nominal rates are rounded binomial counts under Jeffreys Beta(1/2,1/2) updating",
+    "problem2": [
+      {
+        "scenario": 1,
+        "sample_size": 100,
+        "draws": 500,
+        "nominal_defect_counts": [
+          10,
+          10,
+          10
+        ],
+        "recommended_policy": {
+          "inspect_part_1": true,
+          "inspect_part_2": true,
+          "inspect_product": false,
+          "disassemble_bad_product": true
+        },
+        "mean_profit": 17.890932176051038,
+        "p05_profit": 16.038704590145034,
+        "optimal_frequency": 0.928
+      },
+      {
+        "scenario": 2,
+        "sample_size": 100,
+        "draws": 500,
+        "nominal_defect_counts": [
+          20,
+          20,
+          20
+        ],
+        "recommended_policy": {
+          "inspect_part_1": true,
+          "inspect_part_2": true,
+          "inspect_product": false,
+          "disassemble_bad_product": true
+        },
+        "mean_profit": 11.655992267429134,
+        "p05_profit": 8.77914508172345,
+        "optimal_frequency": 1.0
+      },
+      {
+        "scenario": 3,
+        "sample_size": 100,
+        "draws": 500,
+        "nominal_defect_counts": [
+          10,
+          10,
+          10
+        ],
+        "recommended_policy": {
+          "inspect_part_1": true,
+          "inspect_part_2": true,
+          "inspect_product": true,
+          "disassemble_bad_product": true
+        },
+        "mean_profit": 15.137630372312813,
+        "p05_profit": 13.313989405416626,
+        "optimal_frequency": 0.54
+      },
+      {
+        "scenario": 4,
+        "sample_size": 100,
+        "draws": 500,
+        "nominal_defect_counts": [
+          20,
+          20,
+          20
+        ],
+        "recommended_policy": {
+          "inspect_part_1": true,
+          "inspect_part_2": true,
+          "inspect_product": true,
+          "disassemble_bad_product": true
+        },
+        "mean_profit": 14.492388514710344,
+        "p05_profit": 11.858025155567146,
+        "optimal_frequency": 1.0
+      },
+      {
+        "scenario": 5,
+        "sample_size": 100,
+        "draws": 500,
+        "nominal_defect_counts": [
+          10,
+          20,
+          10
+        ],
+        "recommended_policy": {
+          "inspect_part_1": false,
+          "inspect_part_2": true,
+          "inspect_product": false,
+          "disassemble_bad_product": false
+        },
+        "mean_profit": 11.30675350341708,
+        "p05_profit": 6.1517349585552745,
+        "optimal_frequency": 0.568
+      },
+      {
+        "scenario": 6,
+        "sample_size": 100,
+        "draws": 500,
+        "nominal_defect_counts": [
+          5,
+          5,
+          5
+        ],
+        "recommended_policy": {
+          "inspect_part_1": false,
+          "inspect_part_2": false,
+          "inspect_product": false,
+          "disassemble_bad_product": false
+        },
+        "mean_profit": 21.0508302473137,
+        "p05_profit": 17.854344422296226,
+        "optimal_frequency": 0.618
+      },
+      {
+        "scenario": 1,
+        "sample_size": 500,
+        "draws": 500,
+        "nominal_defect_counts": [
+          50,
+          50,
+          50
+        ],
+        "recommended_policy": {
+          "inspect_part_1": true,
+          "inspect_part_2": true,
+          "inspect_product": false,
+          "disassemble_bad_product": true
+        },
+        "mean_profit": 18.02975310222058,
+        "p05_profit": 17.238314815061344,
+        "optimal_frequency": 1.0
+      },
+      {
+        "scenario": 2,
+        "sample_size": 500,
+        "draws": 500,
+        "nominal_defect_counts": [
+          100,
+          100,
+          100
+        ],
+        "recommended_policy": {
+          "inspect_part_1": true,
+          "inspect_part_2": true,
+          "inspect_product": false,
+          "disassemble_bad_product": true
+        },
+        "mean_profit": 11.950907170234634,
+        "p05_profit": 10.616046233177508,
+        "optimal_frequency": 1.0
+      },
+      {
+        "scenario": 3,
+        "sample_size": 500,
+        "draws": 500,
+        "nominal_defect_counts": [
+          50,
+          50,
+          50
+        ],
+        "recommended_policy": {
+          "inspect_part_1": true,
+          "inspect_part_2": true,
+          "inspect_product": true,
+          "disassemble_bad_product": true
+        },
+        "mean_profit": 15.387928845804199,
+        "p05_profit": 14.612334690527327,
+        "optimal_frequency": 0.466
+      },
+      {
+        "scenario": 4,
+        "sample_size": 500,
+        "draws": 500,
+        "nominal_defect_counts": [
+          100,
+          100,
+          100
+        ],
+        "recommended_policy": {
+          "inspect_part_1": true,
+          "inspect_part_2": true,
+          "inspect_product": true,
+          "disassemble_bad_product": true
+        },
+        "mean_profit": 14.656503749986046,
+        "p05_profit": 13.483727358593562,
+        "optimal_frequency": 1.0
+      },
+      {
+        "scenario": 5,
+        "sample_size": 500,
+        "draws": 500,
+        "nominal_defect_counts": [
+          50,
+          100,
+          50
+        ],
+        "recommended_policy": {
+          "inspect_part_1": false,
+          "inspect_part_2": true,
+          "inspect_product": false,
+          "disassemble_bad_product": false
+        },
+        "mean_profit": 11.853892046300105,
+        "p05_profit": 9.654500884144932,
+        "optimal_frequency": 0.7
+      },
+      {
+        "scenario": 6,
+        "sample_size": 500,
+        "draws": 500,
+        "nominal_defect_counts": [
+          25,
+          25,
+          25
+        ],
+        "recommended_policy": {
+          "inspect_part_1": false,
+          "inspect_part_2": false,
+          "inspect_product": false,
+          "disassemble_bad_product": false
+        },
+        "mean_profit": 21.536743769555347,
+        "p05_profit": 20.228263292432423,
+        "optimal_frequency": 0.788
+      }
+    ],
+    "problem3": [
+      {
+        "sample_size": 100,
+        "draws": 1000,
+        "nominal_defect_count_per_node": 10,
+        "recommended_policy": {
+          "internal_disassembly": true,
+          "final_inspection": false,
+          "final_disassembly": true
+        },
+        "mean_profit": 59.0483571827784,
+        "p05_profit": 54.16380197733381,
+        "optimal_frequency": 0.929
+      },
+      {
+        "sample_size": 500,
+        "draws": 1000,
+        "nominal_defect_count_per_node": 50,
+        "recommended_policy": {
+          "internal_disassembly": true,
+          "final_inspection": false,
+          "final_disassembly": true
+        },
+        "mean_profit": 59.97385667658836,
+        "p05_profit": 57.834260048775604,
+        "optimal_frequency": 1.0
+      }
+    ]
+  },
+  "seed": 42,
+  "elapsed_seconds": 8.659988500003237
+}

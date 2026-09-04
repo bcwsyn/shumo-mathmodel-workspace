@@ -1,0 +1,6 @@
+{
+  "python": "<absolute-path-to-python-executable>",
+  "typst": "<absolute-path-to-typst-executable>",
+  "drawio": "<absolute-path-to-drawio-executable>",
+  "source": "user-selected interpreter"
+}

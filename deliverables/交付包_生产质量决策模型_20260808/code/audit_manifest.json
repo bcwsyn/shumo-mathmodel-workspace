@@ -1,0 +1,43 @@
+{
+  "entries": [
+    {
+      "name": "g2-smoke",
+      "stages": ["g2", "g3", "final"],
+      "script": "code/main.py",
+      "args": ["--smoke"],
+      "timeout_seconds": 120,
+      "expected_artifacts": [
+        "results/problem1_baseline.json",
+        "results/problem2_g2.json"
+      ]
+    },
+    {
+      "name": "g3-full",
+      "stages": ["g3", "final"],
+      "script": "code/main.py",
+      "args": ["--full"],
+      "timeout_seconds": 180,
+      "expected_artifacts": [
+        "results/g3_summary.json",
+        "figures/sprt_operating_characteristics.pdf",
+        "figures/problem2_sensitivity.pdf",
+        "figures/problem3_policy_comparison.pdf",
+        "figures/problem4_policy_stability.pdf"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "numpy",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "G2 preflight import and smoke-run evidence"
+    },
+    {
+      "name": "scipy",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "G2 preflight import and smoke-run evidence"
+    }
+  ]
+}

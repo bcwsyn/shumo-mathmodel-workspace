@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "stage": "preflight",
+  "generated_unix": 1784786057.039387,
+  "project_root": "C:\\hiyan-codex\\shumo",
+  "status": "VERIFIED",
+  "checks": [
+    {
+      "check": "python-runtime",
+      "status": "VERIFIED",
+      "source": "C:\\hiyan-codex\\shumo\\.codex\\runtime.local.json",
+      "requested": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "executable": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "version": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "check": "python-files",
+      "status": "VERIFIED",
+      "files": []
+    },
+    {
+      "check": "imports",
+      "status": "VERIFIED",
+      "modules": []
+    },
+    {
+      "check": "static-risks",
+      "status": "VERIFIED",
+      "findings": []
+    },
+    {
+      "check": "code-quality",
+      "status": "VERIFIED",
+      "tools": [
+        {
+          "tool": "quality-gate",
+          "status": "VERIFIED",
+          "reason": "preflight does not require project code"
+        }
+      ]
+    },
+    {
+      "check": "runtime-entries",
+      "status": "VERIFIED",
+      "runs": []
+    },
+    {
+      "check": "external-interfaces",
+      "status": "VERIFIED",
+      "interfaces": []
+    }
+  ]
+}

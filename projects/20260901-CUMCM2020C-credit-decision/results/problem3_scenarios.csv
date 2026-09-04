@@ -1,0 +1,4 @@
+﻿scenario,portfolio_benefit_yuan,portfolio_risk_yuan,mean_unit_benefit,mean_risk_weight,solver_message,solver_status,budget_error_yuan,max_risk_yuan,min_selected_loan_yuan,max_selected_loan_yuan,selected_count,robust_min_benefit_yuan
+mild,1324599.2841699373,1075147.7932883813,-0.07727936064024594,0.11744866458728745,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,0.0,1262239.3734752985,1000000.0,1000000.0,100,909876.1418043042
+moderate,1147521.8060987403,1161172.6464880917,-0.08547045183962011,0.12332158980716992,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,0.0,1262239.3734752985,1000000.0,1000000.0,100,909876.1418043042
+severe,909876.1418043035,1262239.3734752988,-0.08602799671622598,0.12040188571453814,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,0.0,1262239.3734752985,1000000.0,1000000.0,100,909876.1418043042

@@ -1,0 +1,95 @@
+{
+  "entries": [
+    {
+      "name": "g2-smoke",
+      "stages": ["g2", "g3", "final"],
+      "script": "code/g2_smoke.py",
+      "args": [
+        "--data-dir",
+        "data/raw",
+        "--output",
+        "results/g2_baseline.json",
+        "--figure",
+        "figures/g2_hardware_utilization.pdf"
+      ],
+      "timeout_seconds": 120,
+      "expected_artifacts": [
+        "results/g2_baseline.json",
+        "figures/g2_hardware_utilization.pdf"
+      ]
+    },
+    {
+      "name": "g3-formal",
+      "stages": ["g3", "final"],
+      "script": "code/g3_run.py",
+      "args": [
+        "--data-dir",
+        "data/raw",
+        "--output-dir",
+        "results",
+        "--figures-dir",
+        "figures"
+      ],
+      "timeout_seconds": 600,
+      "expected_artifacts": [
+        "results/formal_results.json",
+        "results/workbook_payload.json",
+        "results/problem2_nodes.csv",
+        "results/constraint_edges.csv",
+        "results/optimization_history.csv",
+        "results/raytrace_convergence.csv",
+        "results/raytrace_sensitivity.csv",
+        "results/receiver_landings.csv",
+        "figures/focal_model_comparison.pdf",
+        "figures/displacement_and_stroke.pdf",
+        "figures/constraint_usage.pdf",
+        "figures/receiver_results.pdf",
+        "figures/raytrace_sensitivity.pdf"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "numpy",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "项目解释器版本探测及 g2-smoke 实际运行"
+    },
+    {
+      "name": "scipy",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "项目解释器版本探测及 minimize_scalar 实际运行"
+    },
+    {
+      "name": "pandas",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "项目解释器版本探测及真实 GB18030 CSV 读取"
+    },
+    {
+      "name": "matplotlib",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "项目解释器版本探测及诊断 PDF 生成"
+    },
+    {
+      "name": "cvxpy",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "项目解释器 1.8.1，G3 正式约束优化实跑"
+    },
+    {
+      "name": "osqp",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "项目解释器 1.1.1，G3 顺序凸化二次子问题实跑"
+    },
+    {
+      "name": "clarabel",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "项目解释器已安装，G3 最大误差精修子问题实跑"
+    }
+  ]
+}

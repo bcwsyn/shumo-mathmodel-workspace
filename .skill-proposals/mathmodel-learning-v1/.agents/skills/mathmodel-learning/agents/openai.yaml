@@ -1,0 +1,7 @@
+interface:
+  display_name: "数学建模学习库"
+  short_description: "学习优秀数学建模论文与算法资料并沉淀可检索的建模经验知识库"
+  default_prompt: "Use $mathmodel-learning to study the supplied modeling papers and prepare reviewable knowledge cards."
+
+policy:
+  allow_implicit_invocation: true

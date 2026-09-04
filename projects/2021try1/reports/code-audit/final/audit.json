@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "stage": "final",
+  "generated_unix": 1784795185.7942429,
+  "project_root": "C:\\hiyan-codex\\shumo",
+  "status": "VERIFIED",
+  "checks": [
+    {
+      "check": "python-runtime",
+      "status": "VERIFIED",
+      "source": "C:\\hiyan-codex\\shumo\\.codex\\runtime.local.json",
+      "requested": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "executable": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "version": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "check": "python-files",
+      "status": "VERIFIED",
+      "files": [
+        {
+          "path": "code\\fast_geometry.py",
+          "status": "VERIFIED",
+          "sha256": "45d334c2e8978588fc618735846275508f5be0a8da5a3f3ddcb0ce5366a252d4"
+        },
+        {
+          "path": "code\\g2_plot.py",
+          "status": "VERIFIED",
+          "sha256": "e63f890840ef8013d150af5e2e86762e927dcdf0e1713c6cb1a97201f03bbc84"
+        },
+        {
+          "path": "code\\g2_smoke.py",
+          "status": "VERIFIED",
+          "sha256": "a3175f47cc3e681f4bf251ce3cf5ae3bc012ccd17ce14ed1bd84597e00df4c5f"
+        },
+        {
+          "path": "code\\g3_plot.py",
+          "status": "VERIFIED",
+          "sha256": "dc4425aa4460aed330a0e92323b8c0d0ff669f7ed065ff04e6970491a7b8e04e"
+        },
+        {
+          "path": "code\\g3_run.py",
+          "status": "VERIFIED",
+          "sha256": "4ffff05fb42cf9b0a184708ba95275c2b66047f7d7edb500e581ad1f8a923a58"
+        },
+        {
+          "path": "code\\optimization.py",
+          "status": "VERIFIED",
+          "sha256": "8935b855b19874d05307d61cf0138cb8f742caecd5085e166278a8365f85f1fd"
+        },
+        {
+          "path": "code\\problem1.py",
+          "status": "VERIFIED",
+          "sha256": "f19c727c5e7d30dc03700e12926c2b79229cf9ad92fe8b732082f889693d19a8"
+        },
+        {
+          "path": "code\\problem2.py",
+          "status": "VERIFIED",
+          "sha256": "7706e73a9d9e3d78cc2d2058ef40aa69657a76ed7eb118540bcd3c07aa121c39"
+        },
+        {
+          "path": "code\\problem3.py",
+          "status": "VERIFIED",
+          "sha256": "a48330b50581e87538290963d65e262b341e10aaad260c847178cc635604df3d"
+        },
+        {
+          "path": "code\\raytrace.py",
+          "status": "VERIFIED",
+          "sha256": "296c613032a212e6a52986e83f482662b20dcc0bc69aecfd1ba2c21eb502f673"
+        }
+      ]
+    },
+    {
+      "check": "imports",
+      "status": "VERIFIED",
+      "modules": [
+        {
+          "module": "__future__",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "argparse",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "cvxpy",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\cvxpy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "dataclasses",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "fast_geometry",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "g2_plot",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "g3_plot",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "importlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "json",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "matplotlib",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\matplotlib\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "numpy",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\numpy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "optimization",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "pandas",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "pathlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "problem1",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "problem2",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "problem3",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "raytrace",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "scipy",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\scipy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "sys",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "time",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "typing",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        }
+      ]
+    },
+    {
+      "check": "static-risks",
+      "status": "VERIFIED",
+      "findings": []
+    },
+    {
+      "check": "code-quality",
+      "status": "VERIFIED",
+      "tools": [
+        {
+          "tool": "ruff",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+            "-m",
+            "ruff",
+            "check",
+            "code",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 0.1,
+          "stdout": "All checks passed!\n",
+          "stderr": ""
+        },
+        {
+          "tool": "pytest",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+            "-m",
+            "pytest",
+            "-q",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 2.448,
+          "stdout": ".........                                                                [100%]\n9 passed in 1.90s\n",
+          "stderr": ""
+        },
+        {
+          "tool": "boundary-test-evidence",
+          "status": "VERIFIED",
+          "test_files": [
+            "tests\\test_fast_geometry.py",
+            "tests\\test_formal_models.py"
+          ],
+          "detected_categories": {
+            "normal": [
+              "baseline",
+              "valid",
+              "normal",
+              "正常"
+            ],
+            "boundary": [
+              "missing",
+              "zero",
+              "boundary",
+              "shape",
+              "duplicate",
+              "缺失",
+              "零",
+              "边界",
+              "重复"
+            ],
+            "failure": [
+              "invalid",
+              "error",
+              "raises",
+              "fail",
+              "错误"
+            ]
+          },
+          "reason": "keyword scan is supporting evidence; review assertions and independence manually"
+        }
+      ]
+    },
+    {
+      "check": "runtime-entries",
+      "status": "VERIFIED",
+      "runs": [
+        {
+          "name": "g2-smoke",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+            "C:\\hiyan-codex\\shumo\\code\\g2_smoke.py",
+            "--data-dir",
+            "data/raw",
+            "--output",
+            "results/g2_baseline.json",
+            "--figure",
+            "figures/g2_hardware_utilization.pdf"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 2.29,
+          "artifacts": [
+            {
+              "path": "results/g2_baseline.json",
+              "status": "VERIFIED",
+              "size_bytes": 9871,
+              "modified_unix": 1784795190.3153439,
+              "sha256": "ca19d50ad77ce0c801721d54267a6ff7635ac5f905d1a3bfecc05f7782ddddf3"
+            },
+            {
+              "path": "figures/g2_hardware_utilization.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 25193,
+              "modified_unix": 1784795190.9194615,
+              "sha256": "42e476b1331dfd1a3580594097245ad02385ad56fb61faadfbea9a8e8d707bfa"
+            }
+          ]
+        },
+        {
+          "name": "g3-formal",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+            "C:\\hiyan-codex\\shumo\\code\\g3_run.py",
+            "--data-dir",
+            "data/raw",
+            "--output-dir",
+            "results",
+            "--figures-dir",
+            "figures"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 349.008,
+          "artifacts": [
+            {
+              "path": "results/formal_results.json",
+              "status": "VERIFIED",
+              "size_bytes": 21111,
+              "modified_unix": 1784795539.8557954,
+              "sha256": "d263d78ecc17b65d2c9973dc78170c6bd04a670a829fe99ec68f2a9ca166778a"
+            },
+            {
+              "path": "results/workbook_payload.json",
+              "status": "VERIFIED",
+              "size_bytes": 114819,
+              "modified_unix": 1784795528.1325395,
+              "sha256": "93852f7fdd3c9ee2d8862cf65c15259305d58e40d6d0d454e228c347d8caf333"
+            },
+            {
+              "path": "results/problem2_nodes.csv",
+              "status": "VERIFIED",
+              "size_bytes": 97613,
+              "modified_unix": 1784795528.104359,
+              "sha256": "b34688f13ddde2c6e822ab4375a3acd058b6e1ffed5977a87880fe352213f0dc"
+            },
+            {
+              "path": "results/constraint_edges.csv",
+              "status": "VERIFIED",
+              "size_bytes": 199289,
+              "modified_unix": 1784795528.125139,
+              "sha256": "55de2f65a85ed38f7331fc70f8b4178bdcbd05e5873917067a2f8dbd4aaa825d"
+            },
+            {
+              "path": "results/optimization_history.csv",
+              "status": "VERIFIED",
+              "size_bytes": 5279,
+              "modified_unix": 1784795528.1292949,
+              "sha256": "0404d561c0cb8f480d13f522d85cee5d4d639943333c1c3c3008a1751c6caa33"
+            },
+            {
+              "path": "results/raytrace_convergence.csv",
+              "status": "VERIFIED",
+              "size_bytes": 970,
+              "modified_unix": 1784795534.8131244,
+              "sha256": "313d55da0f384bc17b1f35ebab697708515ac7264f2cc7031e641f7bf454c0df"
+            },
+            {
+              "path": "results/raytrace_sensitivity.csv",
+              "status": "VERIFIED",
+              "size_bytes": 605,
+              "modified_unix": 1784795536.7240124,
+              "sha256": "71e518f8b799fda7fc5a29c7d41d450e55daa360d0876415e66e75bcf783e001"
+            },
+            {
+              "path": "results/receiver_landings.csv",
+              "status": "VERIFIED",
+              "size_bytes": 397046,
+              "modified_unix": 1784795536.7605674,
+              "sha256": "b246a313f4626abe8e9ef8252bcb6ba2d1f6ab3e7bad96dc3f2f666340aa2417"
+            },
+            {
+              "path": "figures/focal_model_comparison.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 22802,
+              "modified_unix": 1784795537.8240302,
+              "sha256": "702bb30cd424817fb98c62562282bfd10e3a6c8131213f7707a84b99b2138b06"
+            },
+            {
+              "path": "figures/displacement_and_stroke.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 37969,
+              "modified_unix": 1784795538.3861294,
+              "sha256": "7fb9753b1680b5bbf0f9a41beb12575f56761b648621c4670d709f6720e0b207"
+            },
+            {
+              "path": "figures/constraint_usage.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 23252,
+              "modified_unix": 1784795538.8462298,
+              "sha256": "9afd272f2a5edcd0072786f4388bbc5142906c22b2ad87ef8a6f57ab2c789b57"
+            },
+            {
+              "path": "figures/receiver_results.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 59073,
+              "modified_unix": 1784795539.5409696,
+              "sha256": "f3e64725023cee8b172ca5d76d0ea8e7b04bfeb5d5ef2ddc3edcf436d7cacfc3"
+            },
+            {
+              "path": "figures/raytrace_sensitivity.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 16877,
+              "modified_unix": 1784795539.8433955,
+              "sha256": "d722502d7c05266164eabb82ee6d1eed641da30ad58bb2ce36820851eacf85d6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check": "external-interfaces",
+      "status": "VERIFIED",
+      "interfaces": [
+        {
+          "name": "numpy",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器版本探测及 g2-smoke 实际运行"
+        },
+        {
+          "name": "scipy",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器版本探测及 minimize_scalar 实际运行"
+        },
+        {
+          "name": "pandas",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器版本探测及真实 GB18030 CSV 读取"
+        },
+        {
+          "name": "matplotlib",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器版本探测及诊断 PDF 生成"
+        },
+        {
+          "name": "cvxpy",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器 1.8.1，G3 正式约束优化实跑"
+        },
+        {
+          "name": "osqp",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器 1.1.1，G3 顺序凸化二次子问题实跑"
+        },
+        {
+          "name": "clarabel",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器已安装，G3 最大误差精修子问题实跑"
+        }
+      ]
+    }
+  ]
+}

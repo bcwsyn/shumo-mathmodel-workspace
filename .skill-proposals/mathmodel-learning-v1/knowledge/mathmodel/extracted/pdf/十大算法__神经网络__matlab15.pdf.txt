@@ -1,0 +1,101 @@
+===== PAGE 1 =====
+
+MATLAB 神经网络工具箱函数 
+说明： 本文档中所列出的函数适用于 MATLAB5.3 以上版本， 为了简明起见， 只列出了函数名，
+若需要进一步的说明，请参阅 MATLAB 的帮助文档。 
+ 
+1. 网络创建函数 
+newp   创建感知器网络 
+newlind  设计一线性层 
+newlin  创建一线性层 
+newff  创建一前馈 BP 网络 
+newcf  创建一多层前馈 BP 网络 
+newfftd  创建一前馈输入延迟 BP 网络 
+newrb  设计一径向基网络 
+newrbe  设计一严格的径向基网络 
+newgrnn  设计一广义回归神经网络 
+newpnn  设计一概率神经网络 
+newc   创建一竞争层  
+newsom  创建一自组织特征映射 
+newhop  创建一 Hopfield 递归网络 
+newelm  创建一 Elman 递归网络 
+2. 网络应用函数 
+sim   仿真一个神经网络 
+init   初始化一个神经网络 
+adapt   神经网络的自适应化 
+train   训练一个神经网络 
+3. 权函数 
+dotprod  权函数的点积 
+ddotprod  权函数点积的导数 
+dist   Euclidean 距离权函数 
+normprod  规范点积权函数 
+negdist  Negative 距离权函数 
+mandist  Manhattan 距离权函数 
+linkdist  Link 距离权函数 
+4. 网络输入函数 
+netsum  网络输入函数的求和 
+dnetsum  网络输入函数求和的导数 
+5. 传递函数 
+hardlim  硬限幅传递函数 
+hardlims  对称硬限幅传递函数 
+purelin  线性传递函数 
+tansig  正切 S 型传递函数 
+logsig  对数 S 型传递函数 
+dpurelin  线性传递函数的导数 
+dtansig  正切 S 型传递函数的导数 
+
+===== PAGE 2 =====
+
+dlogsig  对数 S 型传递函数的导数 
+compet  竞争传递函数 
+radbas  径向基传递函数 
+satlins  对称饱和线性传递函数 
+6. 初始化函数 
+initlay  层与层之间的网络初始化函数 
+initwb  阈值与权值的初始化函数 
+initzero  零权/阈值的初始化函数 
+initnw  Nguyen_Widrow 层的初始化函数 
+initcon  Conscience 阈值的初始化函数 
+midpoint  中点权值初始化函数 
+7. 性能分析函数 
+mae   均值绝对误差性能分析函数 
+mse   均方差性能分析函数 
+msereg  均方差 w/reg 性能分析函数 
+dmse   均方差性能分析函数的导数 
+dmsereg  均方差 w/reg 性能分析函数的导数 
+8. 学习函数 
+learnp  感知器学习函数 
+learnpn  标准感知器学习函数 
+learnwh  Widrow_Hoff 学习规则 
+learngd  BP 学习规则 
+learngdm  带动量项的 BP 学习规则 
+learnk  Kohonen 权学习函数 
+learncon  Conscience 阈值学习函数 
+learnsom  自组织映射权学习函数 
+9. 自适应函数 
+adaptwb  网络权与阈值的自适应函数 
+10. 训练函数 
+trainwb  网络权与阈值的训练函数 
+traingd  梯度下降的 BP 算法训练函数 
+traingdm  梯度下降 w/动量的 BP 算法训练函数 
+traingda  梯度下降 w/自适应 lr 的 BP 算法训练函数 
+traingdx  梯度下降 w/动量和自适应 lr 的 BP 算法训练函数 
+trainlm  Levenberg_Marquardt 的 BP 算法训练函数 
+trainwbl  每个训练周期用一个权值矢量或偏差矢量的训练函数 
+11. 分析函数 
+maxlinlr  线性学习层的最大学习率 
+errsurf  误差曲面 
+12. 绘图函数 
+plotes  绘制误差曲面 
+plotep  绘制权和阈值在误差曲面上的位置 
+plotsom  绘制自组织映射图 
+13. 符号变换函数 
+
+===== PAGE 3 =====
+
+ind2vec  转换下标成为矢量 
+vec2ind  转换矢量成为下标矢量 
+14. 拓扑函数 
+gridtop  网络层拓扑函数 
+hextop  六角层拓扑函数 
+randtop  随机层拓扑函数 

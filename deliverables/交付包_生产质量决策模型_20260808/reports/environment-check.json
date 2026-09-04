@@ -1,0 +1,110 @@
+{
+  "status": "UNVERIFIED",
+  "policy": {
+    "paper_engine": "typst",
+    "latex_checked": false
+  },
+  "runtime_config": "C:\\hiyan-codex\\shumo\\交付包_生产质量决策模型_20260808\\.codex\\runtime.local.json",
+  "python": {
+    "status": "VERIFIED",
+    "executable": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "version": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "pip": {
+    "status": "VERIFIED",
+    "output": "pip 26.0.1 from C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\pip (python 3.12)"
+  },
+  "packages": [
+    {
+      "module": "numpy",
+      "distribution": "numpy",
+      "status": "VERIFIED",
+      "version": "2.3.5"
+    },
+    {
+      "module": "scipy",
+      "distribution": "scipy",
+      "status": "VERIFIED",
+      "version": "1.18.0"
+    },
+    {
+      "module": "pandas",
+      "distribution": "pandas",
+      "status": "VERIFIED",
+      "version": "3.0.1"
+    },
+    {
+      "module": "matplotlib",
+      "distribution": "matplotlib",
+      "status": "VERIFIED",
+      "version": "3.11.1"
+    },
+    {
+      "module": "sklearn",
+      "distribution": "scikit-learn",
+      "status": "UNVERIFIED",
+      "version": null
+    },
+    {
+      "module": "openpyxl",
+      "distribution": "openpyxl",
+      "status": "VERIFIED",
+      "version": "3.1.5"
+    },
+    {
+      "module": "yaml",
+      "distribution": "PyYAML",
+      "status": "UNVERIFIED",
+      "version": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "typst",
+      "path": "C:\\Users\\lw195\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc\\typst.exe",
+      "source": "runtime-config",
+      "status": "VERIFIED",
+      "version": "typst 0.15.1 (9dfd3a08)",
+      "probe": "minimal Typst compile and PDF signature",
+      "exit_code": 0,
+      "detail": ""
+    },
+    {
+      "name": "drawio",
+      "status": "UNVERIFIED",
+      "path": null,
+      "source": "not-found",
+      "probe": "not run"
+    },
+    {
+      "name": "pdftoppm",
+      "path": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+      "source": "PATH-wrapper-recovery",
+      "status": "VERIFIED",
+      "probe": "real PDF-to-PNG conversion and PNG signature",
+      "exit_code": 0,
+      "detail": ""
+    },
+    {
+      "name": "mutool",
+      "status": "UNVERIFIED",
+      "path": null,
+      "source": "not-found",
+      "probe": "not run"
+    },
+    {
+      "name": "magick",
+      "status": "UNVERIFIED",
+      "path": null,
+      "source": "not-found",
+      "probe": "not run"
+    }
+  ],
+  "capabilities": {
+    "python_baseline": "UNVERIFIED",
+    "paper_typst": "VERIFIED",
+    "drawio_export": "UNVERIFIED",
+    "pdf_raster": "VERIFIED"
+  }
+}

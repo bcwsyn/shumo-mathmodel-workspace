@@ -1,0 +1,36 @@
+<mxfile host="app.diagrams.net" modified="2026-07-23T00:00:00.000Z" agent="Codex" version="24.7.17">
+  <diagram id="optimization" name="Page-1">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="约束工作面顺序凸化求解流程" style="text;html=1;align=center;fontSize=22;fontStyle=1;fontColor=#17365D;" vertex="1" parent="1"><mxGeometry x="300" y="25" width="560" height="40" as="geometry"/></mxCell>
+        <mxCell id="input" value="输入&#xa;理想位移 y* · 节点/边拓扑&#xa;下拉索长度 · 促动器几何" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#5B9BD5;fontSize=14;" vertex="1" parent="1"><mxGeometry x="50" y="105" width="210" height="90" as="geometry"/></mxCell>
+        <mxCell id="starts" value="构造三个严格可行起点&#xa;零位移 / 半缩放目标 / 最大可行缩放目标" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2F0D9;strokeColor=#70AD47;fontSize=14;" vertex="1" parent="1"><mxGeometry x="330" y="105" width="250" height="90" as="geometry"/></mxCell>
+        <mxCell id="linear" value="当前点线性化&#xa;2165 条主索长度 + 692 个促动器映射" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#BF9000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="660" y="105" width="250" height="90" as="geometry"/></mxCell>
+        <mxCell id="qp" value="求解稀疏凸二次子问题&#xa;面积加权 L2 误差 + 信赖域" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#BF9000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="660" y="245" width="250" height="80" as="geometry"/></mxCell>
+        <mxCell id="backtrack" value="精确非线性回代&#xa;下拉索可达 · |σ|≤0.6 m&#xa;|Δl/l|≤0.0007" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#ED7D31;fontSize=14;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="330" y="240" width="250" height="95" as="geometry"/></mxCell>
+        <mxCell id="decision" value="严格可行且&#xa;L2 目标下降？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#ED7D31;fontSize=14;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="85" y="235" width="145" height="105" as="geometry"/></mxCell>
+        <mxCell id="trust" value="拒绝步长&#xa;缩小信赖域" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4CCCC;strokeColor=#C00000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="55" y="410" width="180" height="65" as="geometry"/></mxCell>
+        <mxCell id="accept" value="接受步长&#xa;更新当前可行解" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2F0D9;strokeColor=#70AD47;fontSize=14;" vertex="1" parent="1"><mxGeometry x="330" y="405" width="210" height="70" as="geometry"/></mxCell>
+        <mxCell id="stop" value="收敛？&#xa;步长与目标变化达阈值" style="rhombus;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#5B9BD5;fontSize=14;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="650" y="395" width="170" height="95" as="geometry"/></mxCell>
+        <mxCell id="select" value="比较多起点 L2 解&#xa;选取加权误差最小者" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDEBF7;strokeColor=#4472C4;fontSize=14;" vertex="1" parent="1"><mxGeometry x="650" y="555" width="220" height="75" as="geometry"/></mxCell>
+        <mxCell id="linf" value="L∞ 二阶段精修&#xa;L2 容差内降低最大节点误差" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4DFEC;strokeColor=#8064A2;fontSize=14;" vertex="1" parent="1"><mxGeometry x="360" y="555" width="220" height="75" as="geometry"/></mxCell>
+        <mxCell id="output" value="输出并逐条验收&#xa;节点坐标 · 促动器伸缩量 · 约束占用率" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9EAD3;strokeColor=#548235;fontSize=14;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="55" y="550" width="235" height="85" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#5B9BD5;" edge="1" parent="1" source="input" target="starts"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#70AD47;" edge="1" parent="1" source="starts" target="linear"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#BF9000;" edge="1" parent="1" source="linear" target="qp"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#BF9000;" edge="1" parent="1" source="qp" target="backtrack"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#ED7D31;" edge="1" parent="1" source="backtrack" target="decision"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="否" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#C00000;fontSize=12;" edge="1" parent="1" source="decision" target="trust"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" value="是" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#70AD47;fontSize=12;" edge="1" parent="1" source="decision" target="accept"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#C00000;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="trust" target="linear"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="20" y="442"/><mxPoint x="20" y="80"/><mxPoint x="785" y="80"/></Array></mxGeometry></mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#70AD47;" edge="1" parent="1" source="accept" target="stop"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" value="否" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#5B9BD5;fontSize=12;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="stop" target="linear"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1080" y="442"/><mxPoint x="1080" y="150"/></Array></mxGeometry></mxCell>
+        <mxCell id="e11" value="是" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#4472C4;fontSize=12;" edge="1" parent="1" source="stop" target="select"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#8064A2;" edge="1" parent="1" source="select" target="linf"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#548235;" edge="1" parent="1" source="linf" target="output"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

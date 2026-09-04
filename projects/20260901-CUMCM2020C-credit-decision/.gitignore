@@ -1,0 +1,17 @@
+# Local Python environments and generated caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.matplotlib/
+
+# Local scratch files, logs, and Office lock files
+tmp/
+logs/
+~$*
+*.tmp
+
+# This is a packaged duplicate of the project, not the working source.
+deliverables/

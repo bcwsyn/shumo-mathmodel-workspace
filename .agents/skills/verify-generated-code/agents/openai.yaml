@@ -1,0 +1,4 @@
+interface:
+  display_name: "生成代码证据审计"
+  short_description: "验证 AI 生成代码的环境、依赖、接口与实际运行证据"
+  default_prompt: "使用 $verify-generated-code 检查生成代码是否基于真实环境、依赖和可复现运行证据。"

@@ -1,0 +1,7 @@
+interface:
+  display_name: "数学建模学习库"
+  short_description: "学习优秀论文与算法资料，为 AI 建模团队沉淀可迁移、可追溯的经验"
+  default_prompt: "使用 $mathmodel-learning 学习提供的数学建模资料，生成可审批的知识卡，并为当前赛题提出有依据的迁移建议。"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,112 @@
+{
+  "status": "VERIFIED",
+  "policy": {
+    "paper_engine": "typst",
+    "latex_checked": false
+  },
+  "runtime_config": "C:\\hiyan-codex\\shumo\\.codex\\runtime.local.json",
+  "python": {
+    "status": "VERIFIED",
+    "executable": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "version": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "pip": {
+    "status": "VERIFIED",
+    "output": "pip 26.1.2 from C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pip (python 3.13)"
+  },
+  "packages": [
+    {
+      "module": "numpy",
+      "distribution": "numpy",
+      "status": "VERIFIED",
+      "version": "2.2.3"
+    },
+    {
+      "module": "scipy",
+      "distribution": "scipy",
+      "status": "VERIFIED",
+      "version": "1.17.1"
+    },
+    {
+      "module": "pandas",
+      "distribution": "pandas",
+      "status": "VERIFIED",
+      "version": "2.2.3"
+    },
+    {
+      "module": "matplotlib",
+      "distribution": "matplotlib",
+      "status": "VERIFIED",
+      "version": "3.10.1"
+    },
+    {
+      "module": "sklearn",
+      "distribution": "scikit-learn",
+      "status": "VERIFIED",
+      "version": "1.8.0"
+    },
+    {
+      "module": "openpyxl",
+      "distribution": "openpyxl",
+      "status": "VERIFIED",
+      "version": "3.1.5"
+    },
+    {
+      "module": "yaml",
+      "distribution": "PyYAML",
+      "status": "VERIFIED",
+      "version": "6.0.3"
+    }
+  ],
+  "tools": [
+    {
+      "name": "typst",
+      "path": "C:\\Users\\lw195\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc\\typst.exe",
+      "source": "runtime-config",
+      "status": "VERIFIED",
+      "version": "typst 0.15.1 (9dfd3a08)",
+      "probe": "minimal Typst compile and PDF signature",
+      "exit_code": 0,
+      "detail": ""
+    },
+    {
+      "name": "drawio",
+      "path": "C:\\Users\\lw195\\AppData\\Local\\Programs\\draw.io\\draw.io.exe",
+      "source": "runtime-config",
+      "status": "VERIFIED",
+      "probe": "minimal DrawIO export and PDF signature",
+      "exit_code": 0,
+      "detail": "C:\\Users\\lw195\\AppData\\Local\\Temp\\mathmodel-drawio-wgy5mhqe\\probe.drawio -> C:\\Users\\lw195\\AppData\\Local\\Temp\\mathmodel-drawio-wgy5mhqe\\probe.pdf"
+    },
+    {
+      "name": "pdftoppm",
+      "path": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+      "source": "PATH-wrapper-recovery",
+      "status": "VERIFIED",
+      "probe": "real PDF-to-PNG conversion and PNG signature",
+      "exit_code": 0,
+      "detail": ""
+    },
+    {
+      "name": "mutool",
+      "status": "UNVERIFIED",
+      "path": null,
+      "source": "not-found",
+      "probe": "not run"
+    },
+    {
+      "name": "magick",
+      "status": "UNVERIFIED",
+      "path": null,
+      "source": "not-found",
+      "probe": "not run"
+    }
+  ],
+  "capabilities": {
+    "python_baseline": "VERIFIED",
+    "paper_typst": "VERIFIED",
+    "drawio_export": "VERIFIED",
+    "pdf_raster": "VERIFIED"
+  }
+}

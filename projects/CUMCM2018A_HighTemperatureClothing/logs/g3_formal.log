@@ -1,0 +1,22 @@
+2026-07-27 10:59:02,451 INFO G3 正式数据读取完成：5401 条观测；中文字体=Microsoft YaHei
+2026-07-27 10:59:35,631 INFO 问题一完成：RMSE=0.002627 °C
+2026-07-27 11:00:15,821 INFO 问题二完成：最小第二层厚度=17.6 mm
+2026-07-27 11:04:21,379 ERROR G3 入口执行失败
+Traceback (most recent call last):
+  File "C:\hiyan-codex\shumo\CUMCM2018A_HighTemperatureClothing\code\g3.py", line 1296, in main
+    run_g3_formal(project_root, input_path, args.workers)
+  File "C:\hiyan-codex\shumo\CUMCM2018A_HighTemperatureClothing\code\g3.py", line 1042, in run_g3_formal
+    raise NumericalError(f"完整枚举单调性检查失败: {monotonicity}")
+main.NumericalError: 完整枚举单调性检查失败: {'max_temperature_violations': 0, 'duration_violations': 30, 'passed': False}
+2026-07-27 11:05:21,715 INFO G3 正式数据读取完成：5401 条观测；中文字体=Microsoft YaHei
+2026-07-27 11:05:51,318 INFO 问题一完成：RMSE=0.002627 °C
+2026-07-27 11:06:29,782 INFO 问题二完成：最小第二层厚度=17.6 mm
+2026-07-27 11:10:25,140 WARNING 阈值时长存在网格锯齿，保留完整枚举并细化边界: {'max_temperature_violations': 0, 'duration_violations': 30, 'largest_max_temperature_increase_c': 0.0, 'largest_duration_increase_s': 1.9265516504806328, 'strictly_monotone': False, 'screening_safe': True}
+2026-07-27 11:13:06,453 INFO 问题三完成：d2=19.4 mm，d4=6.3 mm，总厚度=25.7 mm
+2026-07-27 11:18:03,363 INFO G3 正式数据读取完成：5401 条观测；中文字体=Microsoft YaHei
+2026-07-27 11:18:32,719 INFO 问题一完成：RMSE=0.002627 °C
+2026-07-27 11:19:12,937 INFO 问题二完成：最小第二层厚度=17.6 mm
+2026-07-27 11:19:12,957 INFO 复用已完成且配置匹配的问题三完整枚举缓存
+2026-07-27 11:19:13,028 WARNING 阈值时长存在网格锯齿，保留完整枚举并细化边界: {'max_temperature_violations': 0, 'duration_violations': 30, 'largest_max_temperature_increase_c': 0.0, 'largest_duration_increase_s': 1.9265516504806328, 'strictly_monotone': False, 'screening_safe': True}
+2026-07-27 11:21:54,527 INFO 问题三完成：d2=19.4 mm，d4=6.3 mm，总厚度=25.7 mm
+2026-07-27 11:26:05,978 INFO G3 正式流水线完成，用时 482.87 s

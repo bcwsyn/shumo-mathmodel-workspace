@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "stage": "g2",
+  "generated_unix": 1784786791.7173457,
+  "project_root": "C:\\hiyan-codex\\shumo",
+  "status": "VERIFIED",
+  "checks": [
+    {
+      "check": "python-runtime",
+      "status": "VERIFIED",
+      "source": "C:\\hiyan-codex\\shumo\\.codex\\runtime.local.json",
+      "requested": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "executable": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "version": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "check": "python-files",
+      "status": "VERIFIED",
+      "files": [
+        {
+          "path": "code\\fast_geometry.py",
+          "status": "VERIFIED",
+          "sha256": "b4b7f3394d9bb495498d723ee758942748c8ff3ae71cd6c7a0e5e01ca0d2615c"
+        },
+        {
+          "path": "code\\g2_plot.py",
+          "status": "VERIFIED",
+          "sha256": "e63f890840ef8013d150af5e2e86762e927dcdf0e1713c6cb1a97201f03bbc84"
+        },
+        {
+          "path": "code\\g2_smoke.py",
+          "status": "VERIFIED",
+          "sha256": "a3175f47cc3e681f4bf251ce3cf5ae3bc012ccd17ce14ed1bd84597e00df4c5f"
+        },
+        {
+          "path": "code\\problem1.py",
+          "status": "VERIFIED",
+          "sha256": "af581738b3b3a1af503296f1e8dbe61ea41d49e36f6ec40b70d88378e5ddb72c"
+        },
+        {
+          "path": "code\\problem2.py",
+          "status": "VERIFIED",
+          "sha256": "7706e73a9d9e3d78cc2d2058ef40aa69657a76ed7eb118540bcd3c07aa121c39"
+        },
+        {
+          "path": "code\\problem3.py",
+          "status": "VERIFIED",
+          "sha256": "a48330b50581e87538290963d65e262b341e10aaad260c847178cc635604df3d"
+        }
+      ]
+    },
+    {
+      "check": "imports",
+      "status": "VERIFIED",
+      "modules": [
+        {
+          "module": "__future__",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "argparse",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "dataclasses",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "fast_geometry",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "g2_plot",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "importlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "json",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "matplotlib",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\matplotlib\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "numpy",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\numpy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "pandas",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "pathlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "problem1",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "problem2",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "problem3",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "scipy",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\scipy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "sys",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "time",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "typing",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        }
+      ]
+    },
+    {
+      "check": "static-risks",
+      "status": "VERIFIED",
+      "findings": []
+    },
+    {
+      "check": "code-quality",
+      "status": "VERIFIED",
+      "tools": [
+        {
+          "tool": "ruff",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+            "-m",
+            "ruff",
+            "check",
+            "code",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 0.115,
+          "stdout": "All checks passed!\n",
+          "stderr": ""
+        },
+        {
+          "tool": "pytest",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+            "-m",
+            "pytest",
+            "-q",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 0.856,
+          "stdout": ".....                                                                    [100%]\n5 passed in 0.51s\n",
+          "stderr": ""
+        },
+        {
+          "tool": "boundary-test-evidence",
+          "status": "VERIFIED",
+          "test_files": [
+            "tests\\test_fast_geometry.py"
+          ],
+          "detected_categories": {
+            "normal": [
+              "baseline",
+              "valid",
+              "normal",
+              "正常"
+            ],
+            "boundary": [
+              "missing",
+              "zero",
+              "boundary",
+              "duplicate",
+              "缺失",
+              "零",
+              "边界",
+              "重复"
+            ],
+            "failure": [
+              "invalid",
+              "error",
+              "raises",
+              "fail",
+              "错误"
+            ]
+          },
+          "reason": "keyword scan is supporting evidence; review assertions and independence manually"
+        }
+      ]
+    },
+    {
+      "check": "runtime-entries",
+      "status": "VERIFIED",
+      "runs": [
+        {
+          "name": "g2-smoke",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+            "C:\\hiyan-codex\\shumo\\code\\g2_smoke.py",
+            "--data-dir",
+            "data/raw",
+            "--output",
+            "results/g2_baseline.json",
+            "--figure",
+            "figures/g2_hardware_utilization.pdf"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 2.081,
+          "artifacts": [
+            {
+              "path": "results/g2_baseline.json",
+              "status": "VERIFIED",
+              "size_bytes": 9871,
+              "modified_unix": 1784786794.4585686,
+              "sha256": "5418943e82af2a0d076c7fbec85586ab35e29c4b3025fcc52d6ff93d26598bd3"
+            },
+            {
+              "path": "figures/g2_hardware_utilization.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 25193,
+              "modified_unix": 1784786794.9758513,
+              "sha256": "0f73d520538248b940d895fad2c5ec1c43a39d80017aecbc71e335e4962992fa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check": "external-interfaces",
+      "status": "VERIFIED",
+      "interfaces": [
+        {
+          "name": "numpy",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器版本探测及 g2-smoke 实际运行"
+        },
+        {
+          "name": "scipy",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器版本探测及 minimize_scalar 实际运行"
+        },
+        {
+          "name": "pandas",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器版本探测及真实 GB18030 CSV 读取"
+        },
+        {
+          "name": "matplotlib",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "项目解释器版本探测及诊断 PDF 生成"
+        }
+      ]
+    }
+  ]
+}

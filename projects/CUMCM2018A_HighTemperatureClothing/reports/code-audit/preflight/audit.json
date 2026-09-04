@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "stage": "preflight",
+  "generated_unix": 1785119478.322979,
+  "project_root": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing",
+  "status": "VERIFIED",
+  "checks": [
+    {
+      "check": "python-runtime",
+      "status": "VERIFIED",
+      "source": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.codex\\runtime.local.json",
+      "requested": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Scripts\\python.exe",
+      "executable": "C:\\hiyan-codex\\shumo\\CUMCM2018A_HighTemperatureClothing\\.venv\\Scripts\\python.exe",
+      "version": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "check": "python-files",
+      "status": "VERIFIED",
+      "files": []
+    },
+    {
+      "check": "imports",
+      "status": "VERIFIED",
+      "modules": []
+    },
+    {
+      "check": "static-risks",
+      "status": "VERIFIED",
+      "findings": []
+    },
+    {
+      "check": "code-quality",
+      "status": "VERIFIED",
+      "tools": [
+        {
+          "tool": "quality-gate",
+          "status": "VERIFIED",
+          "reason": "preflight does not require project code"
+        }
+      ]
+    },
+    {
+      "check": "runtime-entries",
+      "status": "VERIFIED",
+      "runs": []
+    },
+    {
+      "check": "external-interfaces",
+      "status": "VERIFIED",
+      "interfaces": []
+    }
+  ]
+}

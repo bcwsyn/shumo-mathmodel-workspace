@@ -1,0 +1,11 @@
+{
+  "h_out_w_m2k": 120.99168934364857,
+  "h_body_w_m2k": 8.364911979967745,
+  "q1_rmse_c": 0.0026274291374215244,
+  "q2_nominal_d2_mm": 17.6,
+  "q2_robust_d2_mm": null,
+  "q3_nominal_d2_mm": 19.3,
+  "q3_nominal_d4_mm": 6.4,
+  "q3_robust_d2_mm": 23.5,
+  "q3_robust_d4_mm": 6.4
+}

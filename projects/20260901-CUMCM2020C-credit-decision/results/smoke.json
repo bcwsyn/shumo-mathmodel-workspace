@@ -1,0 +1,13 @@
+{
+  "rates": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "selected_count": 1,
+  "budget_error_yuan": 0.0,
+  "loan_sum_yuan": 500000.0,
+  "status": "ok"
+}

@@ -1,0 +1,121 @@
+{
+  "seed": 42,
+  "python": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+  "python_version": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "input_hashes": {
+    "附件1：123家有信贷记录企业的相关数据.xlsx": "450df5f7184aa43b3b1cddaa4387cceb91d4881a666e667b7c84c480a8b2b600",
+    "附件2：302家无信贷记录企业的相关数据.xlsx": "1399075d2b39a05da6d7722af16cb96ed322cf13b96dd780d5d42a7686bc634b",
+    "附件3：银行贷款年利率与客户流失率关系的统计数据.xlsx": "abdbdf684b76d2ea2675233662d5e3db346314716ffd911d1389599410624056"
+  },
+  "feature_count": 32,
+  "source_enterprises": 123,
+  "target_enterprises": 302,
+  "rating_default_risk_coefficients": {
+    "A": 0.017857142857142856,
+    "B": 0.038461538461538464,
+    "C": 0.07142857142857142,
+    "D": 0.98
+  },
+  "portfolio_risk_cap_fraction": 0.013,
+  "model_metrics": {
+    "logistic": {
+      "accuracy": 0.5121951219512195,
+      "macro_f1": 0.5252570010634526,
+      "ordinal_mae": 0.6098659011605412,
+      "quadratic_kappa": 0.6182926141172488,
+      "log_loss": 1.0800706364981973
+    },
+    "xgboost": {
+      "accuracy": 0.5853658536585366,
+      "macro_f1": 0.5938938254727728,
+      "ordinal_mae": 0.6260623006363507,
+      "quadratic_kappa": 0.6592182135758597,
+      "log_loss": 1.0026035810640068
+    },
+    "ensemble": {
+      "accuracy": 0.6016260162601627,
+      "macro_f1": 0.6086181362497152,
+      "ordinal_mae": 0.6178346761948835,
+      "quadratic_kappa": 0.6666265132807324,
+      "log_loss": 0.995618439406813
+    },
+    "selected_xgboost_weight": 0.8,
+    "weight_log_loss": {
+      "0.0": 1.0800706364981973,
+      "0.05": 1.0654801660582416,
+      "0.1": 1.0540481538935071,
+      "0.15000000000000002": 1.0444442584844034,
+      "0.2": 1.0361605331668153,
+      "0.25": 1.0289326791764124,
+      "0.30000000000000004": 1.0226003551545682,
+      "0.35000000000000003": 1.0170574429155925,
+      "0.4": 1.0122301145320598,
+      "0.45": 1.0080657630388379,
+      "0.5": 1.0045269117928877,
+      "0.55": 1.0015877056879405,
+      "0.6000000000000001": 0.9992319014075439,
+      "0.65": 0.9974518455897445,
+      "0.7000000000000001": 0.996248220578462,
+      "0.75": 0.9956305256074519,
+      "0.8": 0.995618439406813,
+      "0.8500000000000001": 0.9962444647919214,
+      "0.9": 0.9975587400044343,
+      "0.9500000000000001": 0.9996380015188202,
+      "1.0": 1.0026035810640068
+    },
+    "oof_default_auc": 0.9066358024691358,
+    "oof_cri_default_mean_yes": 75.46215238927618,
+    "oof_cri_default_mean_no": 40.67483988314128
+  },
+  "problem1_main": {
+    "budget_yuan": 50000000.0,
+    "expected_benefit_yuan": 655495.7532806114,
+    "risk_loss_principal_yuan": 693839.5526656784,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "solver_status": 0,
+    "budget_error_yuan": 0.0,
+    "max_risk_yuan": 693839.5526656786,
+    "min_selected_loan_yuan": 1000000.0,
+    "max_selected_loan_yuan": 1000000.0,
+    "selected_count": 50,
+    "robust_min_benefit_yuan": null
+  },
+  "problem2_main": {
+    "risk_cap_fraction": 0.013,
+    "expected_benefit_yuan": 1428964.9554943051,
+    "risk_loss_principal_yuan": 1299999.9999999993,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "solver_status": 0,
+    "budget_error_yuan": 0.0,
+    "max_risk_yuan": 1299999.9999999993,
+    "min_selected_loan_yuan": 231852.544042364,
+    "max_selected_loan_yuan": 1000000.0,
+    "selected_count": 101,
+    "robust_min_benefit_yuan": null
+  },
+  "problem3_worst_benefit_yuan": 909876.1418043035,
+  "elapsed_seconds": 79.92070990000502,
+  "artifact_sha256": {
+    "figures\\interest_loss_isotonic.pdf": "1ea459259fbac51323b9e59cc2c2a5fa066594d130be949d0441fea8709d3e1a",
+    "figures\\problem1_budget_curve.pdf": "cd2c6e83e0020b3716a69d1aeb690177becdc61e18382889657e89611bda731b",
+    "figures\\problem2_risk_return_frontier.pdf": "09c7999edf26d493ca6c881adc5286900b236dff9ca195fbb04607e4ad55a7de",
+    "figures\\problem3_robust_scenarios.pdf": "6bb54e26ceb658728e60ef217feac68260c342e566c94d55101e97f98702925e",
+    "figures\\risk_index_distribution.pdf": "723c602311ea4220f9717a0fef9e75efb56f1ff841d3923a3f2c317d5e70cebc",
+    "figures\\sensitivity_analysis.pdf": "35e363c8152bbd3dca183b2ff86ec30ccdf10b493d71201436e46c74f0dbf026",
+    "figures\\shap_global_importance.pdf": "f12cf5141c623a98a17ffd898707e4e1f7aaf464150ca0ab05c0491ab3381dab",
+    "results\\input_audit.json": "56ae6a6b14f9d625e352b72afff5fe7b9515610b12dfe0d97be09e327e2387a4",
+    "results\\problem1_budget_curve.csv": "7fe1f77cb0309965ab87e6503a7a27a95192ad05eb90395bf17247e02def21df",
+    "results\\problem1_strategy.csv": "21a309122e40b71d9385144137948552311d3c0fb61222902e679ab574eea352",
+    "results\\problem2_lgd_sensitivity.csv": "d374f3b44e28b631e4c2a63170f1ff234031c33d02b83b6eb23c9abfd5fa7de3",
+    "results\\problem2_risk_return_curve.csv": "8823f2e022e4254278f662fcef50d52a9e030377bbb6a75c679996b2142eb187",
+    "results\\problem2_strategy.csv": "f49834618951c1f117db84f490ba5601ee2da826599ca559d887a19b9e4fa137",
+    "results\\problem3_robust_strategy.csv": "7f4a4bc2fbdcf134f4c900cbf6c9a808f035533ea188fd8ab0c7b6cccacdca37",
+    "results\\problem3_scenarios.csv": "55d2e20f171282a502ba5b255e87edbc6faddffcce1cb304826699b4256d8b4e",
+    "results\\problem3_stress_sensitivity.csv": "f77df15a4b0882d7cd838b4c1682bd48d8310f56bbd9635a8ce246636ba9301d",
+    "results\\shap_global.csv": "83baedcd061a72f94771e16af7c2cb4053f922ec79890a89244b19e6f3d4c040",
+    "results\\shap_local_high_risk.csv": "947dc5831b439795bc34f730e4b2331fbbafb20a7dc4d56ef1f1ea2e6737d14f",
+    "results\\smoke.json": "026b4aec5bb8f3aa889b4f99ed7e373ef10334591ade01c4cde0562b45fdf984",
+    "results\\transfer_feature_shift.csv": "aee5db5b0ea1fb9dfb2af88263f40f9eb52fa0890d5116066b23a27df312a95e"
+  }
+}

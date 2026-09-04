@@ -1,0 +1,2 @@
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\lw195\\.matplotlib\\fontlist-v3.11.0.json.matplotlib-lock'
+2026-08-08 21:13:21,749 INFO G2 smoke run completed for six problem-2 scenarios.

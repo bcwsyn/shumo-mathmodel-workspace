@@ -1,0 +1,1917 @@
+{
+  "source": "C:\\hiyan-codex\\shumo\\学习资料",
+  "generated_at": "2026-07-21T10:09:16.500298+00:00",
+  "counts": {
+    "indexed": 169,
+    "metadata-only": 3,
+    "needs-conversion": 20,
+    "listed-not-extracted": 2
+  },
+  "files": [
+    {
+      "path": "A023.pdf",
+      "extension": ".pdf",
+      "size": 1824961,
+      "sha256": "b30806bd03bb15db9ba3e4abd665a6153383ddc50a5ec69b1e00aa021a96a012",
+      "status": "indexed",
+      "pages": 45,
+      "text_pages": 45,
+      "extracted": "extracted/pdf/A023.pdf.txt"
+    },
+    {
+      "path": "A190.pdf",
+      "extension": ".pdf",
+      "size": 2720722,
+      "sha256": "69ee8e0c3aca043117aec3e01aa77beae564fb962a834380cc634192660bf011",
+      "status": "indexed",
+      "pages": 42,
+      "text_pages": 42,
+      "extracted": "extracted/pdf/A190.pdf.txt"
+    },
+    {
+      "path": "A240.pdf",
+      "extension": ".pdf",
+      "size": 1145054,
+      "sha256": "1812dc07ab8c89100af9f21b3ed2617b0dcb8c33b32f4696a05668306f87e9b6",
+      "status": "indexed",
+      "pages": 24,
+      "text_pages": 24,
+      "extracted": "extracted/pdf/A240.pdf.txt"
+    },
+    {
+      "path": "十大算法/dijkstra  c++程序/dijk.txt",
+      "extension": ".txt",
+      "size": 16677,
+      "sha256": "2dfbc31cb362c44c4918a2aec01cd029f8451b17392ad7da602ebab960a026fa",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 15857,
+      "extracted": "extracted/text/十大算法__dijkstra_c_程序__dijk.txt.txt"
+    },
+    {
+      "path": "十大算法/免疫算法.txt",
+      "extension": ".txt",
+      "size": 9668,
+      "sha256": "3d6bf9ca684282aa1035311d435d950d8c63db8cda41c28a2856326a05ea6eb8",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 7962,
+      "extracted": "extracted/text/十大算法__免疫算法.txt.txt"
+    },
+    {
+      "path": "十大算法/分治算法/c程序.txt",
+      "extension": ".txt",
+      "size": 399,
+      "sha256": "4757391acc76fbf63d9438a2aa590330c3cf29636e2dcda7aa96e41398c0c7a7",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 399,
+      "extracted": "extracted/text/十大算法__分治算法__c程序.txt.txt"
+    },
+    {
+      "path": "十大算法/分治算法/中国数学建模-编程交流-分治算法_1.txt",
+      "extension": ".txt",
+      "size": 12952,
+      "sha256": "8b0f71ded73c0c1f2a5c02c37e1aa0b96d06d75e0d08b2241da7518eda360fb3",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 9845,
+      "extracted": "extracted/text/十大算法__分治算法__中国数学建模-编程交流-分治算法_1.txt.txt"
+    },
+    {
+      "path": "十大算法/分治算法/中国数学建模-编程交流-分治算法_2.txt",
+      "extension": ".txt",
+      "size": 6496,
+      "sha256": "ffa567a3261b238728331f526aea7c8113f1551bca75eea163ddab943d68c6f9",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 5129,
+      "extracted": "extracted/text/十大算法__分治算法__中国数学建模-编程交流-分治算法_2.txt.txt"
+    },
+    {
+      "path": "十大算法/动态规划/中国数学建模-编程交流-动态规划算法_1.txt",
+      "extension": ".txt",
+      "size": 20765,
+      "sha256": "adaae3bf248d5ae09037ae141739920dff0c4fdb966e303d92578b8395a03fd5",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 14963,
+      "extracted": "extracted/text/十大算法__动态规划__中国数学建模-编程交流-动态规划算法_1.txt.txt"
+    },
+    {
+      "path": "十大算法/动态规划/中国数学建模-编程交流-动态规划算法_2.txt",
+      "extension": ".txt",
+      "size": 34514,
+      "sha256": "49c462a1033c5abef92cf6d45111bed55a362f158cf190a4b214d0828cb4731a",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 24852,
+      "extracted": "extracted/text/十大算法__动态规划__中国数学建模-编程交流-动态规划算法_2.txt.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/TSP模拟退火/accept.m",
+      "extension": ".m",
+      "size": 71,
+      "sha256": "37f1a15d9220107e0a423c380806ab76821db32cdc10186547b85038388c356a",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 71,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__TSP模拟退火__accept.m.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/TSP模拟退火/annealing.m",
+      "extension": ".m",
+      "size": 687,
+      "sha256": "746a570d02cd07bcd7498d9fa560d3daab38a00c56fca92525c370e1cd725092",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 561,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__TSP模拟退火__annealing.m.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/TSP模拟退火/calculate.m",
+      "extension": ".m",
+      "size": 204,
+      "sha256": "fbb2b408402373689177973becfcf4bf7e8e3ad6295dbcb8fdbf00af54493d44",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 204,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__TSP模拟退火__calculate.m.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/TSP模拟退火/cost.mat",
+      "extension": ".mat",
+      "size": 22672,
+      "sha256": "e331ecfa9b4b52b98b7ac86f9722f1650badcefe21938d705a03a4c41c2a25a0",
+      "status": "metadata-only"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/TSP模拟退火/cost_sum.m",
+      "extension": ".m",
+      "size": 100,
+      "sha256": "370bfa87c544488ebce51e97a1102db4a99bd974183fa746d6ca05bb72fdfa65",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 100,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__TSP模拟退火__cost_sum.m.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/TSP模拟退火/exchange2.m",
+      "extension": ".m",
+      "size": 366,
+      "sha256": "c2a77a7d4455114b9155367dff2f79af7f8a0f1d082f9504b9cc9e3bc8cea8a8",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 366,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__TSP模拟退火__exchange2.m.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/TSP模拟退火/exchange3.m",
+      "extension": ".m",
+      "size": 1314,
+      "sha256": "9d2ee0a896ccf5ac1468acd03e0ec30e4aa684bad868c0ab6d7213c42fc9d318",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1314,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__TSP模拟退火__exchange3.m.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/TSP模拟退火/说明.txt",
+      "extension": ".txt",
+      "size": 97,
+      "sha256": "93bdb99881655fadd5ca4f69a8e84fe1ceb2271301c6b022f8637f0b29f77ff4",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 57,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__TSP模拟退火__说明.txt.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/三边交换简单算法/bianquan.m",
+      "extension": ".m",
+      "size": 550,
+      "sha256": "f2855c207c85a400617240c87300a516440286b593799105317b160a1c3e0d92",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 550,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__三边交换简单算法__bianquan.m.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/三边交换简单算法/cost_sum.m",
+      "extension": ".m",
+      "size": 100,
+      "sha256": "370bfa87c544488ebce51e97a1102db4a99bd974183fa746d6ca05bb72fdfa65",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 100,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__三边交换简单算法__cost_sum.m.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/三边交换简单算法/jiaohuan3.m",
+      "extension": ".m",
+      "size": 1288,
+      "sha256": "1f874395344a4e840d279ae18577c1b313d869c7f295422a06e6506598a11cfe",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 1285,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__三边交换简单算法__jiaohuan3.m.txt"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/三边交换简单算法/哈密尔顿回路.rar",
+      "extension": ".rar",
+      "size": 1327,
+      "sha256": "312bc5ffecf408884d8beeef9f70b818f006ae0529760f3249f56fed1dd20a2e",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/图论/哈密尔顿回路/三边交换简单算法/说明.txt",
+      "extension": ".txt",
+      "size": 424,
+      "sha256": "47427601a2cf6aebefad5d54f95377f6e3f12e0fac1867a9e9771301f5700eb3",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 255,
+      "extracted": "extracted/text/十大算法__图论__哈密尔顿回路__三边交换简单算法__说明.txt.txt"
+    },
+    {
+      "path": "十大算法/图论/图论及其应用.doc",
+      "extension": ".doc",
+      "size": 1668096,
+      "sha256": "e1be7a9770712955c12c98be710b254cf6120d40bc82a1979e8d4caeccedebac",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/图论/灾情巡查.ppt",
+      "extension": ".ppt",
+      "size": 3162112,
+      "sha256": "a3a80e42ee8b90f20471cd5d7a1e3ea0d900396378ba62b885e45f6a7b21e2c4",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/搜索算法/中国数学建模-编程交流-搜索算法基础.txt",
+      "extension": ".txt",
+      "size": 23630,
+      "sha256": "d44767f9de91fc71279a8c61978a7a58f6f32184fa3e51c9feec711d7998c8c4",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 19076,
+      "extracted": "extracted/text/十大算法__搜索算法__中国数学建模-编程交流-搜索算法基础.txt.txt"
+    },
+    {
+      "path": "十大算法/概率算法/中国数学建模-编程交流-概率算法简介.txt",
+      "extension": ".txt",
+      "size": 10489,
+      "sha256": "82d836473b732f7246f0cff98ebbed46eeb7a98b0a18180655755006da88eae9",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 8146,
+      "extracted": "extracted/text/十大算法__概率算法__中国数学建模-编程交流-概率算法简介.txt.txt"
+    },
+    {
+      "path": "十大算法/模拟退火算法/中国数学建模-编程交流-模拟退火算法.txt",
+      "extension": ".txt",
+      "size": 14275,
+      "sha256": "59a8c73557afc40dbf6da5230e19e8a251551688bb7790f26b0085a9541042e0",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 10761,
+      "extracted": "extracted/text/十大算法__模拟退火算法__中国数学建模-编程交流-模拟退火算法.txt.txt"
+    },
+    {
+      "path": "十大算法/模拟退火算法/模拟退火算法.txt",
+      "extension": ".txt",
+      "size": 1160,
+      "sha256": "d35fecea9d183867144611a83f25e4104f9336c81b03e1b10630cd8387228db6",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 759,
+      "extracted": "extracted/text/十大算法__模拟退火算法__模拟退火算法.txt.txt"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/cro.m",
+      "extension": ".m",
+      "size": 397,
+      "sha256": "562446dab063a1febd8e13f5743cc08f5cdec9dcd0a707900a7a4c8030f9f66d",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 356,
+      "extracted": "extracted/text/十大算法__模拟退火_禁忌搜索_遗传算法_神经网络-MATLAB程序合集__简单函数优化的遗传算法程序__cro.m.txt"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/ft.m",
+      "extension": ".m",
+      "size": 52,
+      "sha256": "57f88d5be46ddaa7246d2261256c320f1502811625b08cf4a2c930fefe512767",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 48,
+      "extracted": "extracted/text/十大算法__模拟退火_禁忌搜索_遗传算法_神经网络-MATLAB程序合集__简单函数优化的遗传算法程序__ft.m.txt"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/ga.m",
+      "extension": ".m",
+      "size": 2437,
+      "sha256": "c1a709b588c07db1b31853790ebcc2ddc6f98fa21af62b990e1cbfcae0558734",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 2272,
+      "extracted": "extracted/text/十大算法__模拟退火_禁忌搜索_遗传算法_神经网络-MATLAB程序合集__简单函数优化的遗传算法程序__ga.m.txt"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/init.mat",
+      "extension": ".mat",
+      "size": 1288,
+      "sha256": "c980e392646c9c255035282a5220ca1e08c1fd832059883ffb7180c05a39b431",
+      "status": "metadata-only"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/main.m",
+      "extension": ".m",
+      "size": 1203,
+      "sha256": "d233ac06401545a7bba768cdd2825d1c2f1b5790112cd3054fdc4332d62e503f",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 1059,
+      "extracted": "extracted/text/十大算法__模拟退火_禁忌搜索_遗传算法_神经网络-MATLAB程序合集__简单函数优化的遗传算法程序__main.m.txt"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/mut.m",
+      "extension": ".m",
+      "size": 258,
+      "sha256": "92824b7c9edbc3038c2f6ac5d07e01e717573ad2dff7c8649605c17c2afdec71",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 217,
+      "extracted": "extracted/text/十大算法__模拟退火_禁忌搜索_遗传算法_神经网络-MATLAB程序合集__简单函数优化的遗传算法程序__mut.m.txt"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/n2to10.m",
+      "extension": ".m",
+      "size": 121,
+      "sha256": "39c9a211a175cc01609a9a86412bebe3edcf5bf1e3af77be8f7515c68b86d0b5",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 111,
+      "extracted": "extracted/text/十大算法__模拟退火_禁忌搜索_遗传算法_神经网络-MATLAB程序合集__简单函数优化的遗传算法程序__n2to10.m.txt"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/objf.m",
+      "extension": ".m",
+      "size": 404,
+      "sha256": "73548fe322b023fe09a1fb2476af4ad2b6bee3ed1198e8cfbc61caf76e7d4eb4",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 348,
+      "extracted": "extracted/text/十大算法__模拟退火_禁忌搜索_遗传算法_神经网络-MATLAB程序合集__简单函数优化的遗传算法程序__objf.m.txt"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/pro.m",
+      "extension": ".m",
+      "size": 109,
+      "sha256": "2daa3229d842fb0154fdfb8be18da2df13254bc6bdf471a948649d3019fa2d0c",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 109,
+      "extracted": "extracted/text/十大算法__模拟退火_禁忌搜索_遗传算法_神经网络-MATLAB程序合集__简单函数优化的遗传算法程序__pro.m.txt"
+    },
+    {
+      "path": "十大算法/模拟退火，禁忌搜索，遗传算法，神经网络-MATLAB程序合集/简单函数优化的遗传算法程序/sel.m",
+      "extension": ".m",
+      "size": 225,
+      "sha256": "802791b541fcfaf8a7371d45db2a939462bce2280829a70f2769c258c5c697fd",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 195,
+      "extracted": "extracted/text/十大算法__模拟退火_禁忌搜索_遗传算法_神经网络-MATLAB程序合集__简单函数优化的遗传算法程序__sel.m.txt"
+    },
+    {
+      "path": "十大算法/灰色预测/灰色预测.pdf",
+      "extension": ".pdf",
+      "size": 254693,
+      "sha256": "3caa624d289b72ceca68cd2cfb5681e4081024b3ce0a27dfdb4efb72375a72d6",
+      "status": "indexed",
+      "pages": 4,
+      "text_pages": 4,
+      "extracted": "extracted/pdf/十大算法__灰色预测__灰色预测.pdf.txt"
+    },
+    {
+      "path": "十大算法/灰色预测/灰色预测MATLAB程序.txt",
+      "extension": ".txt",
+      "size": 3949,
+      "sha256": "10f8c4f6ec283d118c26ba49dc03231155fa535bf72608e58762adf3e1251d0c",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 3630,
+      "extracted": "extracted/text/十大算法__灰色预测__灰色预测MATLAB程序.txt.txt"
+    },
+    {
+      "path": "十大算法/灰色预测/灰色预测法.doc",
+      "extension": ".doc",
+      "size": 67584,
+      "sha256": "f6be9975cc74fc24bef384b81373f85aacf6511dadb8faa9117c9cdc9c9ef92c",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/神经网络.zip",
+      "extension": ".zip",
+      "size": 306455,
+      "sha256": "65e0081b42e39d6a6744084530b3e3f900f62fd991d91d3cc8e4de4f7d21f7e0",
+      "status": "listed-not-extracted",
+      "members": [
+        "神经网络/",
+        "神经网络/matlab15.pdf",
+        "神经网络/matlab16.pdf"
+      ]
+    },
+    {
+      "path": "十大算法/神经网络/matlab15.pdf",
+      "extension": ".pdf",
+      "size": 70226,
+      "sha256": "d455f4a04e0b598f4ec614b49c9e9c552c904b2f19edb159cff1abd6cf4d77ea",
+      "status": "indexed",
+      "pages": 3,
+      "text_pages": 3,
+      "extracted": "extracted/pdf/十大算法__神经网络__matlab15.pdf.txt"
+    },
+    {
+      "path": "十大算法/神经网络/matlab16.pdf",
+      "extension": ".pdf",
+      "size": 272440,
+      "sha256": "cc01b83d09d3af29f0e789e4d7a91053aa9ad5f45811e238d1d5816245f9d6b4",
+      "status": "indexed",
+      "pages": 20,
+      "text_pages": 20,
+      "extracted": "extracted/pdf/十大算法__神经网络__matlab16.pdf.txt"
+    },
+    {
+      "path": "十大算法/穷举法求解0-1整数规划的matlab程序.txt",
+      "extension": ".txt",
+      "size": 5372,
+      "sha256": "39edfa6e314f5bd902a845559d40bdc8cf72f0682b7a16d93038fb28e696aa01",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 4348,
+      "extracted": "extracted/text/十大算法__穷举法求解0-1整数规划的matlab程序.txt.txt"
+    },
+    {
+      "path": "十大算法/组合算法/中国数学建模-编程交流-组合算法概论.txt",
+      "extension": ".txt",
+      "size": 52657,
+      "sha256": "67c17e9e3854be8744ef10882a10ca01a0e946f16f1e9c87084704408e2ebce2",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 38339,
+      "extracted": "extracted/text/十大算法__组合算法__中国数学建模-编程交流-组合算法概论.txt.txt"
+    },
+    {
+      "path": "十大算法/贪婪算法/中国数学建模-编程交流-贪婪算法_1.txt",
+      "extension": ".txt",
+      "size": 58228,
+      "sha256": "9521da8225fcaa9be49d08fe4cec8582acce02662ed2db86291bc651922d68ef",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 42109,
+      "extracted": "extracted/text/十大算法__贪婪算法__中国数学建模-编程交流-贪婪算法_1.txt.txt"
+    },
+    {
+      "path": "十大算法/贪婪算法/中国数学建模-编程交流-贪婪算法_2.txt",
+      "extension": ".txt",
+      "size": 24803,
+      "sha256": "016d25be5fb8343a1f43ffb6326ebc252405317afc7b1a04792baab42c280b5e",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 18319,
+      "extracted": "extracted/text/十大算法__贪婪算法__中国数学建模-编程交流-贪婪算法_2.txt.txt"
+    },
+    {
+      "path": "十大算法/贪婪算法/贪心算法.txt",
+      "extension": ".txt",
+      "size": 3359,
+      "sha256": "973534c3fae2013c7b0251aac75102c3ef6fda9369770c1cb41f6600eeff51f7",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 2091,
+      "extracted": "extracted/text/十大算法__贪婪算法__贪心算法.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/2006-5-18唐慧丰-遗传算法原理与应用.ppt",
+      "extension": ".ppt",
+      "size": 395776,
+      "sha256": "497a9e6e645938e63e0f37abec23d8ccb5b6ea85afcc86e0133c7eea77a03aa3",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/B2F.m",
+      "extension": ".m",
+      "size": 658,
+      "sha256": "caea6aa308c917bc76e4d3980872e51b48889a0d128b746fe638d85f752e5ef7",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 596,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__B2F.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/changes.m",
+      "extension": ".m",
+      "size": 959,
+      "sha256": "6131cf2e58e7b2cd7e9544b4bf335f9125fc89508b6b115d574e43c2a6e1a1d3",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 881,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__changes.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/cross.m",
+      "extension": ".m",
+      "size": 1155,
+      "sha256": "8eddbc1746d3ce06c04e4f33f27630936f1363ff0bd4e46b9e4728f0d6a4ef96",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 1076,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__cross.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/de2bi.m",
+      "extension": ".m",
+      "size": 1048,
+      "sha256": "4f30725723950ae1bdcef724606abbee72b698362ef807e41355418a50fe37e9",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 936,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__de2bi.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/F2B.m",
+      "extension": ".m",
+      "size": 540,
+      "sha256": "a654ccb2ce5b7741bacf18e5a16ae600391206a70d4f5bb6daebdbb2ed3030ef",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 501,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__F2B.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/f553.m",
+      "extension": ".m",
+      "size": 538,
+      "sha256": "c3efd92dd04b3ec59c80ec94d94e6296dc2f327da97efc9df149e05e76ed1658",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 518,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__f553.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/ga.m",
+      "extension": ".m",
+      "size": 1069,
+      "sha256": "63c2ae74e4a035bbec682e2c8ef9d6b7cb3481ecd2713f56cc86dc7b6e5e8f37",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 972,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__ga.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/gaDemo1Eeval.m",
+      "extension": ".m",
+      "size": 172,
+      "sha256": "82092f0e0f6cd34f61a92150513e4c7826f922afcb9cd933ad587ca2cac7106e",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 146,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__gaDemo1Eeval.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/INTinti.m",
+      "extension": ".m",
+      "size": 375,
+      "sha256": "86e35ec011f252b6ca717adb34969009a3ebc0aceb4c9c4c24b22724a000e949",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 355,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__INTinti.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/mutation.m",
+      "extension": ".m",
+      "size": 529,
+      "sha256": "8b1dcac14752d20cfa8a63de5d92b869f5efd00cb7650bbb9cce458a603a390a",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 491,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__mutation.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/myfun.m",
+      "extension": ".m",
+      "size": 153,
+      "sha256": "b1855695ae6d222117e6b1937ef2063bbcdbb87810659120e19177ed1da2ed9c",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 144,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__myfun.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/myga.m",
+      "extension": ".m",
+      "size": 1608,
+      "sha256": "e81f0d48d2000673960cd2f40e86e892a8cab20282d90de7bc0ae7280a0552b2",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 1489,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__myga.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/xcross.m",
+      "extension": ".m",
+      "size": 131,
+      "sha256": "2ec2484033d8e1167922fbb2b1b9f7c57f2c16034f64f52652be91c9cd4cec84",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 131,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__xcross.m.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/数学中国免责声明.txt",
+      "extension": ".txt",
+      "size": 3194,
+      "sha256": "e2ee3d6571133e6083dc144dce8b9f545edd0062f936bff22cd1e3353d6b5fac",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 1737,
+      "extracted": "extracted/text/十大算法__遗传算法__与已有的相同__数学中国免责声明.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/与已有的相同/用MATLAB实现遗传算法程序.pdf",
+      "extension": ".pdf",
+      "size": 163488,
+      "sha256": "2f07f6ba19dfaec6f095ca2a7789c1e93d18c5f44e52bc912324673494933b6e",
+      "status": "indexed",
+      "pages": 3,
+      "text_pages": 3,
+      "extracted": "extracted/pdf/十大算法__遗传算法__与已有的相同__用MATLAB实现遗传算法程序.pdf.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/基于遗传算法的随机优化搜索.ppt",
+      "extension": ".ppt",
+      "size": 473088,
+      "sha256": "ff42b80e51b83273a23f6b297d280734fa11f77210cac4f7c357f9c36b41d69f",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传算法/源程序.txt",
+      "extension": ".txt",
+      "size": 7008,
+      "sha256": "ebef31117ca693ca11f54353e194f7b8ee0b2c82fe8ce422d96ddfa3f65c1127",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 5749,
+      "extracted": "extracted/text/十大算法__遗传算法__源程序.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/遗传算法.ppt",
+      "extension": ".ppt",
+      "size": 123904,
+      "sha256": "db02e734d132a2bc6f403e311992c13efb0e04acacd3a4ea6ecb0071a34b57ea",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传算法/遗传算法工具箱2/遗传工具箱.rar",
+      "extension": ".rar",
+      "size": 105129,
+      "sha256": "f1f6a30ab3e9cb280437b7df21ac18f375ff9b827240729e79de65443efdb6e1",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传算法/遗传算法工具箱/GA.rar",
+      "extension": ".rar",
+      "size": 555643,
+      "sha256": "3cd46e2d7e142e5d59f4e8713436ba169bf45282b84fc62fd8b827ac5823d8bc",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传算法/遗传算法工具箱/GA2.zip",
+      "extension": ".zip",
+      "size": 109092,
+      "sha256": "5c89ec5caaa0c49db4de7da65b227ac2f30d1a890fa33d9eea27c3295f1f9480",
+      "status": "listed-not-extracted",
+      "members": [
+        "GAOT/",
+        "GAOT/Contents.m",
+        "GAOT/arithXover.m",
+        "GAOT/b2f.m",
+        "GAOT/binaryMutation.m",
+        "GAOT/gaot.ps",
+        "GAOT/calcbits.m",
+        "GAOT/coranaEval.m",
+        "GAOT/coranaMin.m",
+        "GAOT/delta.m",
+        "GAOT/f2b.m",
+        "GAOT/ga.m",
+        "GAOT/gademo1.m",
+        "GAOT/gademo1eval1.m",
+        "GAOT/gademo2.m",
+        "GAOT/gademo3.m",
+        "GAOT/heuristicXover.m",
+        "GAOT/initialize.m",
+        "GAOT/maxGenTerm.m",
+        "GAOT/multiNonUnifMutation.m",
+        "GAOT/nonUnifMutation.m",
+        "GAOT/normGeomSelect.m",
+        "GAOT/optMaxGenTerm.m",
+        "GAOT/parse.m",
+        "GAOT/roulette.m",
+        "GAOT/simpleXover.m",
+        "GAOT/tournSelect.m",
+        "GAOT/unifMutation.m",
+        "GAOT/gaot.dvi",
+        "GAOT/gaotindex.html",
+        "GAOT/index.html",
+        "GAOT/boundaryMutation.m",
+        "GAOT/README"
+      ]
+    },
+    {
+      "path": "十大算法/遗传算法/遗传算法程序 matlab.txt",
+      "extension": ".txt",
+      "size": 8643,
+      "sha256": "5126c26a028c20578f8f37d66349184c4fed80e36ed7770aad75aa6d02d434ea",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 7795,
+      "extracted": "extracted/text/十大算法__遗传算法__遗传算法程序_matlab.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传算法/遗传算法解决 TSP 问题.txt",
+      "extension": ".txt",
+      "size": 9094,
+      "sha256": "365635e679a735c858baf795b05df00f1262d18cc3e82cf1cf18ba7998abe05c",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 8037,
+      "extracted": "extracted/text/十大算法__遗传算法__遗传算法解决_TSP_问题.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/Anneal.m",
+      "extension": ".m",
+      "size": 895,
+      "sha256": "a68b0f4e7a157bbf0c8065df9cefa07bfa3e3703d32607f81f39c48fe5edf1e1",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 895,
+      "extracted": "extracted/text/十大算法__遗传退火法__Anneal.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/Anneal5.m",
+      "extension": ".m",
+      "size": 860,
+      "sha256": "32d699e6edca2b93a3d028447b6b895efc9b2e020c8bc7a94dea7e6681e6fc4d",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 860,
+      "extracted": "extracted/text/十大算法__遗传退火法__Anneal5.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/Anneal7.m",
+      "extension": ".m",
+      "size": 1420,
+      "sha256": "26fac9884ecdd4dbb143f51bfafd3bf0ca778257fe5ce13c14650734dabf2243",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1420,
+      "extracted": "extracted/text/十大算法__遗传退火法__Anneal7.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/checkbound.m",
+      "extension": ".m",
+      "size": 2029,
+      "sha256": "59272747a735d6bd5861f7b480029c829a1bd4352df55aa128943025aec47dd6",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2029,
+      "extracted": "extracted/text/十大算法__遗传退火法__checkbound.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/constrValidate.m",
+      "extension": ".m",
+      "size": 2076,
+      "sha256": "a064a2109d1ab1acdf46421b02bd3dd823614086902e7ceaab5739a045e0bada",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2076,
+      "extracted": "extracted/text/十大算法__遗传退火法__constrValidate.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/fcnvectorizer.m",
+      "extension": ".m",
+      "size": 672,
+      "sha256": "4516b7a3e339cd609abe853a71e7e86bdfe628bfd6106b2a747c7f16654bb1de",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 672,
+      "extracted": "extracted/text/十大算法__遗传退火法__fcnvectorizer.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/ga_nn.m",
+      "extension": ".m",
+      "size": 10832,
+      "sha256": "a7db10132e35c4ca2e6d7054a7ecb74080d1a3cccbd06e461c2eb99076ea4bfa",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 10832,
+      "extracted": "extracted/text/十大算法__遗传退火法__ga_nn.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/ga_nn4.m",
+      "extension": ".m",
+      "size": 10833,
+      "sha256": "f4b1b5ddba5371de39498cab81891f3123ab53627b2da471987bf87b1a5ea8e5",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 10833,
+      "extracted": "extracted/text/十大算法__遗传退火法__ga_nn4.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/gacreation_nn.m",
+      "extension": ".m",
+      "size": 3287,
+      "sha256": "89c6de004ec2a7680eb01c83db348cd143ecb0808b97545cb8b5b13de964b750",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 3287,
+      "extracted": "extracted/text/十大算法__遗传退火法__gacreation_nn.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/gaoptions.mat",
+      "extension": ".mat",
+      "size": 3439,
+      "sha256": "3d67ad9ff34158d614245d1b3d7ac4847d1cf90ae4f7daf09d9646dc1b299a61",
+      "status": "metadata-only"
+    },
+    {
+      "path": "十大算法/遗传退火法/gaoutput.m",
+      "extension": ".m",
+      "size": 1058,
+      "sha256": "f4624239a945630ffc2f63b17caf0d1fe6ecfc55897ccafe7a5290d988c89c69",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1058,
+      "extracted": "extracted/text/十大算法__遗传退火法__gaoutput.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/gaplot.m",
+      "extension": ".m",
+      "size": 10943,
+      "sha256": "f38bc6cc76f1682a43a7c4a1a9683c0397a969a051d70754019d6c378497967e",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 10943,
+      "extracted": "extracted/text/十大算法__遗传退火法__gaplot.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/isfeasible.m",
+      "extension": ".m",
+      "size": 1135,
+      "sha256": "9c6bcbc987a42c1e6bd73526d22d558b034e4148374d18a073cfdfbea6ae61f3",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1135,
+      "extracted": "extracted/text/十大算法__遗传退火法__isfeasible.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/isItTimeToStop.m",
+      "extension": ".m",
+      "size": 4128,
+      "sha256": "848d2bdbd011ce65e4570541e65fedf43645238b91172946987fee6c173079bf",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 4128,
+      "extracted": "extracted/text/十大算法__遗传退火法__isItTimeToStop.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/makeState.m",
+      "extension": ".m",
+      "size": 2157,
+      "sha256": "7e2adf5ee7ec69b5a231e56a9bedf14d06b213dd6b9f08d3185698bd417ad2aa",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2157,
+      "extracted": "extracted/text/十大算法__遗传退火法__makeState.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/migrate.m",
+      "extension": ".m",
+      "size": 3678,
+      "sha256": "94aeafe27466abf92f768d96c571def997bd55d8ab3783b21ae9060be9488051",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 3678,
+      "extracted": "extracted/text/十大算法__遗传退火法__migrate.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/PopAnneal1.m",
+      "extension": ".m",
+      "size": 1327,
+      "sha256": "cc4cfe8b9054aa51690bc0416f2fe187c6abb254f42d596bc1af7e05f2ea3abb",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1327,
+      "extracted": "extracted/text/十大算法__遗传退火法__PopAnneal1.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/PopAnneal2.m",
+      "extension": ".m",
+      "size": 1657,
+      "sha256": "2c6d1ce8ab716e50486d1ed17150a3991701306932c74e2dde5b9ce0b58ceb4e",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1657,
+      "extracted": "extracted/text/十大算法__遗传退火法__PopAnneal2.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/PopAnneal3.m",
+      "extension": ".m",
+      "size": 2170,
+      "sha256": "eee815f63308d9b9529d35780abfbe51a3994f046f0b17fbe8b57aa329fa1ede",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2170,
+      "extracted": "extracted/text/十大算法__遗传退火法__PopAnneal3.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/PopAnneal4.m",
+      "extension": ".m",
+      "size": 1505,
+      "sha256": "774ea62a102f2035e81bd2760f1ef7c9546cd0cbba6b9782e3b4fa0de4fac5e1",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1505,
+      "extracted": "extracted/text/十大算法__遗传退火法__PopAnneal4.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/PopAnneal5.m",
+      "extension": ".m",
+      "size": 1726,
+      "sha256": "18db5feb4b1b74064c5eaabeb581dfe60aea5296a6181c399a3219032dfdbdbc",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1726,
+      "extracted": "extracted/text/十大算法__遗传退火法__PopAnneal5.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/PopAnneal6.m",
+      "extension": ".m",
+      "size": 2261,
+      "sha256": "3e25817c272264e52a30c99d741fafc660a791f8dfb7bdcfc3a82fbae34bc821",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2261,
+      "extracted": "extracted/text/十大算法__遗传退火法__PopAnneal6.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/readme.txt",
+      "extension": ".txt",
+      "size": 749,
+      "sha256": "63e88f8760a9d4314551a1971275494f0216b63cc92224b990e9cc93a8c13060",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 431,
+      "extracted": "extracted/text/十大算法__遗传退火法__readme.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/stepGASA.m",
+      "extension": ".m",
+      "size": 2530,
+      "sha256": "2644577c6902eb32d348adc73a91db2ff7d50d33a7987f930b7dc214a47be328",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2530,
+      "extracted": "extracted/text/十大算法__遗传退火法__stepGASA.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/stepGASA4.m",
+      "extension": ".m",
+      "size": 2459,
+      "sha256": "5aa45fd1d67353db6d032e030193cb1632c0ad38fe3a06158438d100e911a4bb",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2459,
+      "extracted": "extracted/text/十大算法__遗传退火法__stepGASA4.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/validate.m",
+      "extension": ".m",
+      "size": 12603,
+      "sha256": "47e400ecf1d79ac67812cf9fedf6e2edfbb28cbb3f2564b66f1023f4b8a9f7bd",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 12603,
+      "extracted": "extracted/text/十大算法__遗传退火法__validate.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/anneal.m",
+      "extension": ".m",
+      "size": 16965,
+      "sha256": "474c265ee1af87894322fc89f00c0168e4b96552c388755bdf3794e57881cfcc",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 16965,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__anneal.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/berkeley.m",
+      "extension": ".m",
+      "size": 1079,
+      "sha256": "b38a57b4a3a4b2427406987049be0131b9d7923d0b9bbf865572f2f78f27d8bf",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1079,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__berkeley.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/COPYRIGHT.txt",
+      "extension": ".txt",
+      "size": 1456,
+      "sha256": "91414c26c312cf2235b888c56fd0e0d9a54f127aaa4ccbcd41ed9c198b956b9a",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1456,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__COPYRIGHT.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/dispEh.m",
+      "extension": ".m",
+      "size": 1025,
+      "sha256": "379b7e4ab972043c688c6a06f0dfddeede02918b4db3012962bfddd8375b3c75",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1025,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__dispEh.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/dispEt.m",
+      "extension": ".m",
+      "size": 938,
+      "sha256": "17cc3ea07673c8a066ad296cede271d78ab3bb58d33e8c1285ea2f8709026376",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 938,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__dispEt.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/dispMat.m",
+      "extension": ".m",
+      "size": 629,
+      "sha256": "a039db731b4ff573ed0eb678a8f42a9f31f1e520df3e4ed819b685d566601d00",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 629,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__dispMat.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/ensembleInit.m",
+      "extension": ".m",
+      "size": 1461,
+      "sha256": "fdbaf14c1f7ced86332972b6c753062009b0022224bcf0cabe9600d938effc94",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1461,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__ensembleInit.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/chemcluster/cluster_cost.m",
+      "extension": ".m",
+      "size": 713,
+      "sha256": "56d83d5077a151cdda0b2586e75f4f802e3f987eb5308f7edf42df654988a5e8",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 713,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__chemcluster__cluster_cost.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/chemcluster/cluster_init.m",
+      "extension": ".m",
+      "size": 1021,
+      "sha256": "34f6d0da4d1812aac04a73f8d3fe800379818376067c2803a72be8e3a18c18c1",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1021,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__chemcluster__cluster_init.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/chemcluster/cluster_new.m",
+      "extension": ".m",
+      "size": 859,
+      "sha256": "7c342fbdd39cf61aa2cb5c593e146b298cf3f0f7831e4c6ceb056bc8b83a6c9c",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 859,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__chemcluster__cluster_new.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/chemcluster/cluster_perturb.m",
+      "extension": ".m",
+      "size": 967,
+      "sha256": "17c754e583452090f1abcf3a7e7c1d69eb72876ed3bafebd5713beaa46ef89fb",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 967,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__chemcluster__cluster_perturb.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/chemcluster/clusterdistances.m",
+      "extension": ".m",
+      "size": 467,
+      "sha256": "48655141626b84aa66c03f41bc79e725ac22a5f56917fe3f06e736166d5a4dd1",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 467,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__chemcluster__clusterdistances.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/chemcluster/clusterplot.m",
+      "extension": ".m",
+      "size": 364,
+      "sha256": "eaf6c539e1c1cd96c172f010eb4020771b1fc2f9719323e62dfe4b8eb076e8ad",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 364,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__chemcluster__clusterplot.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/chemcluster/test_all.m",
+      "extension": ".m",
+      "size": 3737,
+      "sha256": "b43891d60e986c7bfad0f4d0af03273d57c27119ec5cccbdf4191e746890aa2c",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 3737,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__chemcluster__test_all.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/chemcluster/try_me.m",
+      "extension": ".m",
+      "size": 1684,
+      "sha256": "939c9fc1a2c5a9b40e91bdf9e9f96b8a060beca5f0d43525406f50b2e7ad881e",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1684,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__chemcluster__try_me.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/graphbipart/bipart_cost.m",
+      "extension": ".m",
+      "size": 724,
+      "sha256": "f79da2aa487a0ea5a992015128221d8fc28849b662b426680b2eedd01c7b6bdf",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 724,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__graphbipart__bipart_cost.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/graphbipart/bipart_init.m",
+      "extension": ".m",
+      "size": 1748,
+      "sha256": "4f0fc127f51d2b55fc0f967ad91d50e612ec0f1b284b1d09b6c9c550a0ea761a",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1748,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__graphbipart__bipart_init.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/graphbipart/bipart_new.m",
+      "extension": ".m",
+      "size": 452,
+      "sha256": "33cd492688279a7d5694a82817bc495ae057b8140604fca086b8c0de7194d6d5",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 452,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__graphbipart__bipart_new.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/graphbipart/bipart_perturb.m",
+      "extension": ".m",
+      "size": 573,
+      "sha256": "712461c50fa65168888df0d30409ac6311950ad21e3a2200cb89e8ea882796b2",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 573,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__graphbipart__bipart_perturb.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/graphbipart/try_me.m",
+      "extension": ".m",
+      "size": 1569,
+      "sha256": "f51ad964135f69284c760f2d5606ef084f3e1c2ec5cbaeca77fb0168d26886da",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1569,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__graphbipart__try_me.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/proteinfold/sequence_cost.m",
+      "extension": ".m",
+      "size": 1940,
+      "sha256": "6460e0eb403ec86b6052f250a7722ae9b87d652bae5c1dea2db19dc7ccf319fe",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1940,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__proteinfold__sequence_cost.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/proteinfold/sequence_init.m",
+      "extension": ".m",
+      "size": 1635,
+      "sha256": "a213e70d295f8b3877c0b39fa45ecce7745b45f00814f3fcb7475b7082b83efd",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1635,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__proteinfold__sequence_init.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/proteinfold/sequence_new.m",
+      "extension": ".m",
+      "size": 1135,
+      "sha256": "33eb4563fc3b99048c98992bf76bc58bbd5718eed194565d6c0bae13a0f4a8b3",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1135,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__proteinfold__sequence_new.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/proteinfold/sequence_perturb.m",
+      "extension": ".m",
+      "size": 2305,
+      "sha256": "85d8deb311028c19813399b97e8b8fed82f101b898c40d6de9a09af9b9b6add3",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2305,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__proteinfold__sequence_perturb.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/proteinfold/try_me.m",
+      "extension": ".m",
+      "size": 1700,
+      "sha256": "b9b6148b9dd7e41fc75685ad5e67c97063af29a17596934f351cccca2ff603c8",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1700,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__proteinfold__try_me.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/README.txt",
+      "extension": ".txt",
+      "size": 467,
+      "sha256": "41d60013f05f1ca9a80282fe411fc6bd28d939959d590af5b91f054d9a6d4136",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 467,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__README.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/decon_cost.m",
+      "extension": ".m",
+      "size": 867,
+      "sha256": "80656b8bce9c38f2f0bb39b8a303a34dadbf4a521d224260447798022615e61e",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 867,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__decon_cost.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/decon_init.m",
+      "extension": ".m",
+      "size": 2096,
+      "sha256": "ff28680370275023b2c035c5a4b958283e837bd7b0e9d3d7a19d3f7f4bb55b61",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2096,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__decon_init.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/decon_new.m",
+      "extension": ".m",
+      "size": 820,
+      "sha256": "e8eda59754eff350db45bb3b2c2ec6c778610c038626a7876c4d781766e2b60b",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 820,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__decon_new.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/decon_perturb.m",
+      "extension": ".m",
+      "size": 1171,
+      "sha256": "1b50774c0292dc8315b036c97757093069d683ff558692e24171b784f9ccf0bf",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1171,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__decon_perturb.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/eventparts.m",
+      "extension": ".m",
+      "size": 508,
+      "sha256": "c206fdb95e2fd952dd974697310e3b33f95f65e91e4757c8f0a9d99b9934d0d4",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 508,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__eventparts.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/eventplot.m",
+      "extension": ".m",
+      "size": 579,
+      "sha256": "6ca58614fe6fa406169a76c315773de2663da2c8b52fd2ff33441cb36ba4a008",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 579,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__eventplot.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/modelparts.m",
+      "extension": ".m",
+      "size": 457,
+      "sha256": "e9366218cab96e4a591dc07e85fc4073367776382075d1ce1bbed3568287f189",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 457,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__modelparts.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/modelplot.m",
+      "extension": ".m",
+      "size": 751,
+      "sha256": "88bee6e636df10f2945b5a17ce0ad972a7a447c156dece8ee010bbe98cbfc191",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 751,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__modelplot.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/modelsignal.m",
+      "extension": ".m",
+      "size": 648,
+      "sha256": "96e908e214f1aafaa9217c108d02475ac166eff400d3acff80ab69d8447f1af2",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 648,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__modelsignal.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/README.txt",
+      "extension": ".txt",
+      "size": 737,
+      "sha256": "de20bf372aec7c46220e7f8b1da6f4fd9c75882e5b914d9b219c5065b60103db",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 737,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__README.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/seismicdecon/try_me.m",
+      "extension": ".m",
+      "size": 1570,
+      "sha256": "1823d4573a603609f5dc5517a578dfd2cc4d4333d644607d3f25d916238a40e3",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1570,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__seismicdecon__try_me.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/spinglass/Jcoord.m",
+      "extension": ".m",
+      "size": 755,
+      "sha256": "b85c8f86312f39493e8cce93228c07bfea9c9a19bdcb5499b9f2b75453832183",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 755,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__spinglass__Jcoord.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/spinglass/spin_cost.m",
+      "extension": ".m",
+      "size": 579,
+      "sha256": "4cb9a9798cd8f45b7e2b1aa92033fae2f7b9d623cbec975f86578f9b166c4de3",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 579,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__spinglass__spin_cost.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/spinglass/spin_init.m",
+      "extension": ".m",
+      "size": 2587,
+      "sha256": "224e3f1f7a554f20071d156e6e983c69b729b64cac7a74bcb093b7c2ba80ca06",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2587,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__spinglass__spin_init.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/spinglass/spin_new.m",
+      "extension": ".m",
+      "size": 495,
+      "sha256": "0b6847e96cec90a2826b31923484d01197063576cdf07623e2ae69810ced89de",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 495,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__spinglass__spin_new.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/spinglass/spin_perturb.m",
+      "extension": ".m",
+      "size": 604,
+      "sha256": "ec8d2b62ff8165eb01e7872fb6f0181942bbc60a707eef1e720a4a2805f24d5a",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 604,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__spinglass__spin_perturb.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/spinglass/try_me.m",
+      "extension": ".m",
+      "size": 1662,
+      "sha256": "f1d54d5aab390c0d35b78feb7ada6df447775b31f638e4e58c01b9492c58259d",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1662,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__spinglass__try_me.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/tsp/route_cost.m",
+      "extension": ".m",
+      "size": 569,
+      "sha256": "b529a2e660924bc9a43908c6d4692c1065c7190110c2b8f0d678068b8381fec8",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 569,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__tsp__route_cost.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/tsp/route_init.m",
+      "extension": ".m",
+      "size": 1025,
+      "sha256": "71861ccd0163939a5e8e13b69c544db6ea3b33eed664f859632eb859d08b12d0",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1025,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__tsp__route_init.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/tsp/route_new.m",
+      "extension": ".m",
+      "size": 466,
+      "sha256": "adf33023ea2405fa1c0a88dcc0ef39e7288f6ce6b15c70866604e914c902ab4b",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 466,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__tsp__route_new.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/tsp/route_perturb.m",
+      "extension": ".m",
+      "size": 1090,
+      "sha256": "b41bfa63285938c7630afaf63fade8d159a4204675dcb666b8047de737fabaef",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1090,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__tsp__route_perturb.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/examples/tsp/try_me.m",
+      "extension": ".m",
+      "size": 1690,
+      "sha256": "f33553bc4b88d457dc577f19356b59493640db3cf01af2040b98db094fa55da5",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1690,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__examples__tsp__try_me.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/franz.m",
+      "extension": ".m",
+      "size": 878,
+      "sha256": "53c4d3ac2277ae04d3a31821036f34e55d705b30ea7b1b7af6535813c13f9e8f",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 878,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__franz.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/geman.m",
+      "extension": ".m",
+      "size": 885,
+      "sha256": "fd4a350807c3a736a05e7aec3a34ae59311df39c928cfb830b1a0c8b0834ae27",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 885,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__geman.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/geometric.m",
+      "extension": ".m",
+      "size": 859,
+      "sha256": "130f6082b3e15570afe303957532c3ee139afbdcb9aaa95d72e3b77692bd38f0",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 859,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__geometric.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/hartley.m",
+      "extension": ".m",
+      "size": 894,
+      "sha256": "b53dbb13ae3cb465e75cadf8e6a68c79bc0e3348933fb210a9321bfb7a8bbf10",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 894,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__hartley.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/historyupdate.m",
+      "extension": ".m",
+      "size": 1429,
+      "sha256": "c84dc8bb76375a41614fef8691254b7467d496a958d5d2489f6f4faae778a9b5",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1429,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__historyupdate.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/hoffmann.m",
+      "extension": ".m",
+      "size": 1460,
+      "sha256": "106d283b01fd4d404b1d3018b0aca6ce344f273bae3b3116bfce4a6c473def4e",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1460,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__hoffmann.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/metropolis.m",
+      "extension": ".m",
+      "size": 597,
+      "sha256": "0956300792f380b2e8ea834c743377702cd939cf1c93a49ddee3665baedad1dc",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 597,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__metropolis.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/metropoliswalk.m",
+      "extension": ".m",
+      "size": 5115,
+      "sha256": "0188aa4119dc2b58e68affd03c7ebfa1d9d3c500973a77c7e91e2e606a8e775b",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 5115,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__metropoliswalk.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/mktemplate.m",
+      "extension": ".m",
+      "size": 3152,
+      "sha256": "35edb7d6ead0543f789c8c1022d8d6bb2f21f170bc3f6e4460ce2cb0e1afdd05",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 3152,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__mktemplate.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/nextstate.m",
+      "extension": ".m",
+      "size": 1605,
+      "sha256": "13e837ea8c2fdb9091b9bb7204cf838ce9e03d9888418b11fe6fa7ecbdf5d636",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1605,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__nextstate.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/plotBins.m",
+      "extension": ".m",
+      "size": 1289,
+      "sha256": "b01e113fe1856e804352805302735cf6b9cd64d6c63e5bc0a82cb605cba8a655",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1289,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__plotBins.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/randomwalk.m",
+      "extension": ".m",
+      "size": 2606,
+      "sha256": "deb18107ebd6d5484ae8f68acfb2711f9c26018d64945f3afe5ab92afa8b6aba",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2606,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__randomwalk.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/README.txt",
+      "extension": ".txt",
+      "size": 1732,
+      "sha256": "7f6de6924ee6a8de3b51ce8b78d2a4f52a39754043eb1df2d2b2a6a4c80e03f1",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1732,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__README.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/retrospect.m",
+      "extension": ".m",
+      "size": 1158,
+      "sha256": "eca1a50f46761354df3d0e62f60af7b91be6090f95da7daf6181afae06a5f096",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1158,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__retrospect.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/satools.m",
+      "extension": ".m",
+      "size": 972,
+      "sha256": "09b9d87fb7fe5861b664c818e4edb8995cd6c5cb5379d3407e8810c4faacc250",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 972,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__satools.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/satoolsversion.m",
+      "extension": ".m",
+      "size": 390,
+      "sha256": "7644ee78d3ac119c6034e0470479fc155c6a3c2c624c5f5e97af649e3f54d358",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 390,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__satoolsversion.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/stillinger3Dpoints.m",
+      "extension": ".m",
+      "size": 1554,
+      "sha256": "fca0a5b529aabd9938bec325c9fc2b07c04330dfe8b805b20c220043c12076ee",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1554,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__stillinger3Dpoints.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/szu.m",
+      "extension": ".m",
+      "size": 589,
+      "sha256": "167e29eb27c086b6e280c5171437c3f0ea50fe17f343a0f3f90291a477d61295",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 589,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__szu.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/template_cost.txt",
+      "extension": ".txt",
+      "size": 296,
+      "sha256": "e72f46f0cc210c5577c2cf1ce45f22009c007954ee0c09a2af27de12148cffe2",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 296,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__template_cost.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/template_init.txt",
+      "extension": ".txt",
+      "size": 188,
+      "sha256": "cf3a17099fccefc4cfab0717da64c1370147d02a3ede773ff3a35272179ee98a",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 188,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__template_init.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/template_new.txt",
+      "extension": ".txt",
+      "size": 371,
+      "sha256": "0477642751a005607390483fc39081420db20a0f4ef4cdda1432b5f584d1766a",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 371,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__template_new.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/template_perturb.txt",
+      "extension": ".txt",
+      "size": 262,
+      "sha256": "2609d75e2dd5f3954a654d7b9a203b857581691c809ca4cb698e63eeb90d0ae9",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 262,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__template_perturb.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/template_try_me.txt",
+      "extension": ".txt",
+      "size": 1396,
+      "sha256": "255ee88a9df9d61e00b461f8ff0e15f45b37b25fdde5b3aed1be7d8237f57201",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1396,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__template_try_me.txt.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/TfinalNstop.m",
+      "extension": ".m",
+      "size": 1669,
+      "sha256": "72134a4957141587b5d2dedfe00726bb37e85d53944a9aaf362fa21736df3cd8",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1669,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__TfinalNstop.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/thermospeedHC.m",
+      "extension": ".m",
+      "size": 1172,
+      "sha256": "372b40e64956fe86db2ef38716014dc1479ec6109f9e72a79f049dc3cef6a0a2",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1172,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__thermospeedHC.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/thermospeedR.m",
+      "extension": ".m",
+      "size": 1088,
+      "sha256": "1dfe1d45874fd9091699d829b2e56de9f06ffea59fd9b54b8f20e9f5cd3a37cb",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 1088,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__thermospeedR.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/threshold.m",
+      "extension": ".m",
+      "size": 581,
+      "sha256": "8098ae8161209cfb1db7270f824dc9a744a40e3338397dea0c8c958864a62459",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 581,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__threshold.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/TinitAccept.m",
+      "extension": ".m",
+      "size": 4254,
+      "sha256": "681ec22a4ccf92ef45b7bb16bf427c063bfb9dc85d542140be0e2db25a412619",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 4254,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__TinitAccept.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/TinitT0.m",
+      "extension": ".m",
+      "size": 2272,
+      "sha256": "04082f2467b1d1664f8454efc516d8465c81ffd963c110aaa3fcbc07c73b19e2",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 2272,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__TinitT0.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/TinitWhite.m",
+      "extension": ".m",
+      "size": 3003,
+      "sha256": "a4e9ffdf5be99f56931056d4e12d091ae76c455361bb3daabefdc1ee56b344f9",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 3003,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__TinitWhite.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/TM.m",
+      "extension": ".m",
+      "size": 4775,
+      "sha256": "f3df9c3de98481a6f0748ae42564b784ab928c673260328cc6a9580f9aa2d4df",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 4775,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__TM.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一个Matlab的模拟退火算法工具箱/tsallis.m",
+      "extension": ".m",
+      "size": 725,
+      "sha256": "8b10b8c6d0e872e64aff31f8446411cccac9ed103a440e8c7b3f096e0aa655b5",
+      "status": "indexed",
+      "encoding": "utf-8-sig",
+      "characters": 725,
+      "extracted": "extracted/text/十大算法__遗传退火法__一个Matlab的模拟退火算法工具箱__tsallis.m.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/一种改进的遗传退火进化算法.pdf",
+      "extension": ".pdf",
+      "size": 603934,
+      "sha256": "a2a44a904cbb97116f49a15c94b03986cd6c6e672348d1cee31a7bd890c30fdf",
+      "status": "indexed",
+      "pages": 11,
+      "text_pages": 11,
+      "extracted": "extracted/pdf/十大算法__遗传退火法__一种改进的遗传退火进化算法.pdf.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/切割问题的概率解法.vip",
+      "extension": ".vip",
+      "size": 113796,
+      "sha256": "2c5dbe63d34132a1606bd7239652ae3761d2b5b6442d80f1d643932c5d4ae19d",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/单纯行—模拟退火算法.vip",
+      "extension": ".vip",
+      "size": 86306,
+      "sha256": "2270f1b512f2153ed0e2e6f6c19a23be1bfd140eec31e922037a3753a312bc23",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/基于MATLAB的模拟退火算法的实现.vip",
+      "extension": ".vip",
+      "size": 103895,
+      "sha256": "7d3623ed597f9d953a4f500146fabb35a082875da3ab9214aaf0c35366ae5f0e",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/基于模拟退火算法旅行商问题的实现.vip",
+      "extension": ".vip",
+      "size": 65490,
+      "sha256": "9b89e46ba25d4ad911c466f13fb3790ea4d8dd24fccc8755270fab5b4d9a633c",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/多目标优化的一类模拟退火算法.vip",
+      "extension": ".vip",
+      "size": 124932,
+      "sha256": "62760c57ad538334186257938d1d656dd34ab3aaba62b3b5a70fe31b1b53adde",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/多重运输问题的模拟退火算法.vip",
+      "extension": ".vip",
+      "size": 88601,
+      "sha256": "2aa5323997b9dd07182963a6ae6d53f9d1fb34f43a8ab53f0fc293bbee577bf5",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/布局问题的模拟退火算法.vip",
+      "extension": ".vip",
+      "size": 105053,
+      "sha256": "911452889859c9a309d7b283097cba1353f4451ea84fd0c65394023bbd25988d",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/模拟退火法.doc",
+      "extension": ".doc",
+      "size": 31232,
+      "sha256": "bac770fc3d35b763c53379dfd330aa0ac7af7a90abe3289c085de16df59397b1",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/模拟退火算法.htm",
+      "extension": ".htm",
+      "size": 38636,
+      "sha256": "cfef9ec2f5de154e70c7f6a62a5b10f4cb5d9a899e7ed7a9f4ff9cad17bbe218",
+      "status": "indexed",
+      "encoding": "gb18030",
+      "characters": 34619,
+      "extracted": "extracted/text/十大算法__遗传退火法__模拟退火发论文集__模拟退火算法.htm.txt"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/模拟退火算法中的退火策略研究.vip",
+      "extension": ".vip",
+      "size": 99432,
+      "sha256": "5ef3ea5dd87a7757edd5b159ae7b6c819069bc263dc966e6b2278f0e4645269a",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/求解旅行商问题的模拟退火算法.vip",
+      "extension": ".vip",
+      "size": 82691,
+      "sha256": "788c7faf65e954ea5cf94b5b48e7be89bf05cee536e2473a3cfa0fb6349a88ea",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "十大算法/遗传退火法/模拟退火发论文集/用模拟退火算法求解有顺序约束指派问题.vip",
+      "extension": ".vip",
+      "size": 153578,
+      "sha256": "c1a87c76fc01026d37cbd7eeda3de58232579724cba76e8405f8514614b05669",
+      "status": "needs-conversion"
+    },
+    {
+      "path": "数学建模算法全收录800页.pdf",
+      "extension": ".pdf",
+      "size": 4607367,
+      "sha256": "f845fd6c2ed3cd4f9d6a0d2599af6d08e0406ac14e51d7f4ea31713112d728c8",
+      "status": "indexed",
+      "pages": 800,
+      "text_pages": 800,
+      "extracted": "extracted/pdf/数学建模算法全收录800页.pdf.txt"
+    }
+  ]
+}

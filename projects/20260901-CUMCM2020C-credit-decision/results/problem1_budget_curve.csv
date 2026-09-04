@@ -1,0 +1,4 @@
+﻿budget_yuan,expected_benefit_yuan,risk_loss_principal_yuan,solver_message,solver_status,budget_error_yuan,max_risk_yuan,min_selected_loan_yuan,max_selected_loan_yuan,selected_count,robust_min_benefit_yuan
+20000000.0,297811.6417005396,273483.14132025134,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,0.0,273483.14132025134,1000000.0,1000000.0,20,
+50000000.0,655495.7532806114,693839.5526656784,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,0.0,693839.5526656786,1000000.0,1000000.0,50,
+80000000.0,847970.9035376192,1336016.478108662,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,0.0,1336016.478108662,1000000.0,1000000.0,80,

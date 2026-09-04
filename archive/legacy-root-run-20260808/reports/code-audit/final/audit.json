@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "stage": "final",
+  "generated_unix": 1786188136.796484,
+  "project_root": "C:\\hiyan-codex\\shumo",
+  "status": "VERIFIED",
+  "checks": [
+    {
+      "check": "python-runtime",
+      "status": "VERIFIED",
+      "source": "C:\\hiyan-codex\\shumo\\.codex\\runtime.local.json",
+      "requested": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "executable": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "version": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "check": "python-files",
+      "status": "VERIFIED",
+      "files": [
+        {
+          "path": "code\\main.py",
+          "status": "VERIFIED",
+          "sha256": "998681f079759be1cf4ac1d063d8cec7094a9ed09481bf5417d1190ed1962343"
+        }
+      ]
+    },
+    {
+      "check": "imports",
+      "status": "VERIFIED",
+      "modules": [
+        {
+          "module": "__future__",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "argparse",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "dataclasses",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "itertools",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "json",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "logging",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "matplotlib",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\matplotlib\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "numpy",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\numpy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "pathlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "scipy",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\scipy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "time",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "typing",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        }
+      ]
+    },
+    {
+      "check": "static-risks",
+      "status": "VERIFIED",
+      "findings": []
+    },
+    {
+      "check": "code-quality",
+      "status": "VERIFIED",
+      "tools": [
+        {
+          "tool": "ruff",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "-m",
+            "ruff",
+            "check",
+            "code",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 0.096,
+          "stdout": "All checks passed!\n",
+          "stderr": ""
+        },
+        {
+          "tool": "pytest",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "-m",
+            "pytest",
+            "-q",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 2.309,
+          "stdout": ".......                                                                  [100%]\n============================== warnings summary ===============================\n..\\..\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\_pytest\\cacheprovider.py:469\n  C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\_pytest\\cacheprovider.py:469: PytestCacheWarning: could not create cache path C:\\hiyan-codex\\shumo\\.pytest_cache\\v\\cache\\nodeids: [WinError 5] �ܾ����ʡ�: 'C:\\\\hiyan-codex\\\\shumo\\\\.pytest_cache\\\\v\\\\cache'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n7 passed, 1 warning in 1.76s\n",
+          "stderr": ""
+        },
+        {
+          "tool": "boundary-test-evidence",
+          "status": "VERIFIED",
+          "test_files": [
+            "tests\\test_main.py"
+          ],
+          "detected_categories": {
+            "normal": [
+              "valid",
+              "normal"
+            ],
+            "boundary": [
+              "zero",
+              "extreme"
+            ],
+            "failure": [
+              "invalid",
+              "error",
+              "raises",
+              "fail"
+            ]
+          },
+          "reason": "keyword scan is supporting evidence; review assertions and independence manually"
+        }
+      ]
+    },
+    {
+      "check": "runtime-entries",
+      "status": "VERIFIED",
+      "runs": [
+        {
+          "name": "g2-smoke",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "C:\\hiyan-codex\\shumo\\code\\main.py",
+            "--smoke"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 1.922,
+          "artifacts": [
+            {
+              "path": "results/problem1_baseline.json",
+              "status": "VERIFIED",
+              "size_bytes": 445,
+              "modified_unix": 1786188141.4478757,
+              "sha256": "3b7214828a94d62e9d11c3c1075f1c7fa7a996cedf9250671dc1d2f865adbbf2"
+            },
+            {
+              "path": "results/problem2_g2.json",
+              "status": "VERIFIED",
+              "size_bytes": 32266,
+              "modified_unix": 1786188141.4498801,
+              "sha256": "cfc3e80d6d6e95809f09e987163f45726e7e54717b9eccaf26b0185caf4cd80f"
+            }
+          ]
+        },
+        {
+          "name": "g3-full",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "C:\\hiyan-codex\\shumo\\code\\main.py",
+            "--full"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 3.153,
+          "artifacts": [
+            {
+              "path": "results/g3_summary.json",
+              "status": "VERIFIED",
+              "size_bytes": 5517,
+              "modified_unix": 1786188144.5526009,
+              "sha256": "5d7722b7e66fc19f3f2417a7bb2a34936fb6853eeec61166736f0cd4d00650b5"
+            },
+            {
+              "path": "figures/sprt_operating_characteristics.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 16633,
+              "modified_unix": 1786188143.9655964,
+              "sha256": "ff533c7d9b82a654b985f58a6844454cd0871320dc58f71c53ba86e67b06c963"
+            },
+            {
+              "path": "figures/problem2_sensitivity.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 24668,
+              "modified_unix": 1786188144.198547,
+              "sha256": "25fff7f0314070ec95a6eadca9e6f520ee612b0bce5caa1a4d2d665267267114"
+            },
+            {
+              "path": "figures/problem3_policy_comparison.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 18591,
+              "modified_unix": 1786188144.4202697,
+              "sha256": "524ebb36ffb8fabb8e8011c7f41bdd0c793312f49f4890c0cf866113d137c807"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check": "external-interfaces",
+      "status": "VERIFIED",
+      "interfaces": [
+        {
+          "name": "numpy",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "G2 preflight import and smoke-run evidence"
+        },
+        {
+          "name": "scipy",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "G2 preflight import and smoke-run evidence"
+        }
+      ]
+    }
+  ]
+}

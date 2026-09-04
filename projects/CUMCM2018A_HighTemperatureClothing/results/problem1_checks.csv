@@ -1,0 +1,11 @@
+﻿校核项,数值,单位,状态
+rmse_c,0.0026274291374215244,,PASS
+mae_c,0.002317356582790059,,PASS
+max_abs_error_c,0.007754882843364896,,PASS
+modeled_final_c,48.08221508578406,,PASS
+steady_closed_form_c,48.08221508648128,,PASS
+final_to_steady_gap_c,-6.972200594645983e-10,,PASS
+duration_above_44_s,5126.385469211822,,PASS
+mesh_cells,152.0,,PASS
+max_energy_balance_residual_w_m2,2.341863591936999e-09,,PASS
+max_interface_flux_mismatch_w_m2,6.30819840807817e-11,,PASS

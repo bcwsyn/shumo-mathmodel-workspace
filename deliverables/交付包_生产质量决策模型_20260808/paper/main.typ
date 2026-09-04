@@ -1,0 +1,141 @@
+#let body-font = ("Times New Roman", "SimSun", "NSimSun", "SimSun", "STSong")
+#let song-font = ("SimSun", "NSimSun", "SimSun", "STSong", "Times New Roman")
+#let hei-font = ("SimHei", "SimSun", "STSong")
+#let kai-font = ("KaiTi", "STKaiti", "SimSun")
+
+#let cn-numbering(..nums) = {
+  let ns = nums.pos()
+  if ns.len() == 1 {
+    numbering("一、", ns.at(0))
+  } else if ns.len() == 2 {
+    numbering("1.1", ns.at(0), ns.at(1))
+  } else {
+    numbering("1.1.1", ns.at(0), ns.at(1), ns.at(2))
+  }
+}
+
+#set document(title: "基于抽样置信与循环报酬过程的生产质量决策模型", author: ())
+#set page(
+  paper: "a4",
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm),
+  numbering: "1",
+)
+#set text(font: body-font, size: 12.05pt, lang: "zh")
+#set par(
+  first-line-indent: (amount: 2em, all: true),
+  justify: true,
+  leading: 0.72em,
+  spacing: 0.35em,
+)
+#set heading(numbering: cn-numbering)
+#set enum(numbering: "1.")
+#set table(inset: 0.45em)
+#show heading.where(level: 1): set align(center)
+#show heading.where(level: 1): set text(size: 17.3pt, weight: "bold")
+#show heading.where(level: 1): set block(above: 1.25em, below: 0.82em)
+#show heading.where(level: 2): set text(size: 14.45pt, weight: "bold")
+#show heading.where(level: 2): set block(above: 1.15em, below: 0.55em)
+#show heading.where(level: 3): set text(size: 12.05pt, weight: "bold")
+#show heading.where(level: 3): set block(above: 1.15em, below: 0.55em)
+#show figure.caption: it => text(size: 12pt, weight: "bold")[#it]
+#show raw: set text(size: 10pt, font: ("Courier New", "Consolas", "SimSun"))
+#show raw.where(block: true): set block(
+  fill: luma(97%),
+  stroke: 0.8pt + luma(70%),
+  inset: 0.7em,
+  above: 0.7em,
+  below: 0.7em,
+)
+
+#let song = (body) => text(font: song-font, body)
+#let hei = (body) => text(font: hei-font, weight: "bold", body)
+#let kai = (body) => text(font: kai-font, body)
+#let paper-title(body) = {
+  align(center)[#text(size: 17.3pt, weight: "bold")[#body]]
+  v(1em)
+}
+#let abstract-title() = align(center)[#text(size: 14pt, weight: "bold")[摘要]]
+#let keywords-cn(body) = block(above: 1em)[
+  #text(font: hei-font, size: 12pt, weight: "bold")[关键字：] #body
+]
+#let abstract-cn(body, keywords) = {
+  abstract-title()
+  block(above: 0.15em)[#body]
+  keywords-cn(keywords)
+  pagebreak()
+}
+#let toc-page() = {
+  show outline.entry.where(level: 1): it => link(
+    it.element.location(),
+    block(above: 7pt)[
+      #text(font: hei-font, size: 12pt, weight: "bold")[
+        #grid(
+          columns: (auto, 1fr, auto),
+          column-gutter: 0.5em,
+          [#it.prefix()#it.body()],
+          [#repeat[.]],
+          [#it.page()],
+        )
+      ]
+    ],
+  )
+  outline(
+    title: align(center)[#text(font: hei-font, size: 17.3pt, weight: "bold")[目录]],
+    depth: 3,
+  )
+  pagebreak()
+}
+#let references-cn() = [
+#heading(numbering: none, outlined: true)[参考文献]
+#{ set par(first-line-indent: 0pt, spacing: 0.35em); include("references.typ") }
+]
+#let appendix-cn(file: "sections/A_code.typ") = [
+#heading(numbering: none, outlined: true)[附录 A #h(1em) 核心代码]
+#include(file)
+]
+
+#let three-line-table(caption, columns, header, body, inset: (x: 0.35em, y: 0.52em), cell-align: center) = {
+  let col-count = header.len()
+  let body-rows = calc.floor(body.len() / col-count)
+  let bottom-y = body-rows + 1
+  let styled-header = header.map(cell => strong(cell))
+
+  block(width: 100%, breakable: false)[
+    #align(center)[
+      #box[
+        #align(center)[#text(font: hei-font, size: 10.5pt, weight: "bold")[#caption]]
+        #v(0.6em)
+        #table(
+          columns: columns,
+          align: cell-align,
+          stroke: none,
+          inset: inset,
+          table.hline(y: 0, stroke: 0.8pt),
+          table.hline(y: 1, stroke: 0.5pt),
+          table.hline(y: bottom-y, stroke: 0.8pt),
+          ..styled-header,
+          ..body,
+        )
+      ]
+    ]
+  ]
+}
+
+#counter(page).update(1)
+
+#paper-title[基于抽样置信与循环报酬过程的生产质量决策模型]
+
+#abstract-cn[
+  [针对零配件缺陷、装配失效与售后调换共同作用的生产决策问题，本文构建抽样—生产—风险一体化模型。问题一采用精确单侧二项置信界和序贯概率比检验：22 件全合格时 90% 上界为 9.9372%，可接收；真实次品率为 5% 和 15% 时平均检测量分别为 103.51 和 130.60。问题二将检测、拆解和售后回收表示为吸收状态报酬过程，对 16 种策略精确比较，给出表 1 六种情形的推荐方案。问题三用树形更新成本递推评估结构化候选策略，最佳候选为半成品拆解、成品不检和售后拆解，期望净收益为 60.222222 元。问题四以 Jeffreys Beta 后验传播抽样不确定性；在每节点样本量 100 和 500 的透明情景下，问题三推荐策略的逐次最优频率分别为 92.9% 和 100%。因题面未提供实际抽样记录，后验数值均明确作为样本规模情景。]
+][
+  [抽样检测] #h(1em) [序贯概率比检验] #h(1em) [马尔可夫报酬过程] #h(1em) [生产决策]
+]
+
+#toc-page()
+
+#include("sections/content.typ")
+
+#pagebreak()
+#references-cn()
+#pagebreak()
+#appendix-cn()

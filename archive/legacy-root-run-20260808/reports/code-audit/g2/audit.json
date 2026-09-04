@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "stage": "g2",
+  "generated_unix": 1786186880.8594236,
+  "project_root": "C:\\hiyan-codex\\shumo",
+  "status": "VERIFIED",
+  "checks": [
+    {
+      "check": "python-runtime",
+      "status": "VERIFIED",
+      "source": "C:\\hiyan-codex\\shumo\\.codex\\runtime.local.json",
+      "requested": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "executable": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "version": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "check": "python-files",
+      "status": "VERIFIED",
+      "files": [
+        {
+          "path": "code\\main.py",
+          "status": "VERIFIED",
+          "sha256": "13162c153b7c62269f72385bd5c65ec4a5e8c31d8aa73934be4b2706687eb3d2"
+        }
+      ]
+    },
+    {
+      "check": "imports",
+      "status": "VERIFIED",
+      "modules": [
+        {
+          "module": "__future__",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "argparse",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "dataclasses",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "itertools",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "json",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "logging",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "numpy",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\numpy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "pathlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "scipy",
+          "status": "VERIFIED",
+          "origin": "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\scipy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "typing",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        }
+      ]
+    },
+    {
+      "check": "static-risks",
+      "status": "VERIFIED",
+      "findings": []
+    },
+    {
+      "check": "code-quality",
+      "status": "VERIFIED",
+      "tools": [
+        {
+          "tool": "ruff",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "-m",
+            "ruff",
+            "check",
+            "code",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 0.085,
+          "stdout": "All checks passed!\n",
+          "stderr": ""
+        },
+        {
+          "tool": "pytest",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "-m",
+            "pytest",
+            "-q",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 1.284,
+          "stdout": ".....                                                                    [100%]\n============================== warnings summary ===============================\n..\\..\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\_pytest\\cacheprovider.py:469\n  C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\_pytest\\cacheprovider.py:469: PytestCacheWarning: could not create cache path C:\\hiyan-codex\\shumo\\.pytest_cache\\v\\cache\\nodeids: [WinError 5] �ܾ����ʡ�: 'C:\\\\hiyan-codex\\\\shumo\\\\.pytest_cache\\\\v\\\\cache'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.88s\n",
+          "stderr": ""
+        },
+        {
+          "tool": "boundary-test-evidence",
+          "status": "VERIFIED",
+          "test_files": [
+            "tests\\test_main.py"
+          ],
+          "detected_categories": {
+            "normal": [
+              "valid"
+            ],
+            "boundary": [
+              "zero",
+              "extreme"
+            ],
+            "failure": [
+              "invalid",
+              "error",
+              "raises",
+              "fail"
+            ]
+          },
+          "reason": "keyword scan is supporting evidence; review assertions and independence manually"
+        }
+      ]
+    },
+    {
+      "check": "runtime-entries",
+      "status": "VERIFIED",
+      "runs": [
+        {
+          "name": "g2-smoke",
+          "status": "VERIFIED",
+          "command": [
+            "C:\\Users\\lw195\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "C:\\hiyan-codex\\shumo\\code\\main.py",
+            "--smoke"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 1.01,
+          "artifacts": [
+            {
+              "path": "results/problem1_baseline.json",
+              "status": "VERIFIED",
+              "size_bytes": 445,
+              "modified_unix": 1786186883.552513,
+              "sha256": "3b7214828a94d62e9d11c3c1075f1c7fa7a996cedf9250671dc1d2f865adbbf2"
+            },
+            {
+              "path": "results/problem2_g2.json",
+              "status": "VERIFIED",
+              "size_bytes": 32266,
+              "modified_unix": 1786186883.552513,
+              "sha256": "cfc3e80d6d6e95809f09e987163f45726e7e54717b9eccaf26b0185caf4cd80f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check": "external-interfaces",
+      "status": "VERIFIED",
+      "interfaces": [
+        {
+          "name": "numpy",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "G2 preflight import and smoke-run evidence"
+        },
+        {
+          "name": "scipy",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "G2 preflight import and smoke-run evidence"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1166 @@
+{
+  "1": [
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 18.111111111111107,
+      "condition_number": 4.048917339522306,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 16.73251028806584,
+      "condition_number": 6.271791373036985,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 15.444444444444443,
+      "condition_number": 4.048917339522306,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 15.360768175582994,
+      "condition_number": 12.01215889535001,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 15.33333333333333,
+      "condition_number": 4.397836749885508,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 14.43621399176955,
+      "condition_number": 6.271791373036985,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 13.475994513031551,
+      "condition_number": 12.01215889535001,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 13.440329218106992,
+      "condition_number": 7.71816721805042,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 12.666666666666664,
+      "condition_number": 4.397836749885508,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 11.144032921810695,
+      "condition_number": 7.71816721805042,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 1.718325256020024e+18,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 1.718325256020024e+18,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    }
+  ],
+  "2": [
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 12.00000000000001,
+      "condition_number": 4.048917339522305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 9.750000000000005,
+      "condition_number": 4.048917339522305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 4.812500000000011,
+      "condition_number": 4.905049812379026,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 3.406250000000016,
+      "condition_number": 7.614423049688215,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 2.562500000000001,
+      "condition_number": 4.905049812379026,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 2.0937500000000027,
+      "condition_number": 7.614423049688215,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": -4.015624999999982,
+      "condition_number": 9.336167344849722,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": -4.406249999999983,
+      "condition_number": 15.812391744598703,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": -4.54687499999999,
+      "condition_number": 15.812391744598703,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": -5.328124999999989,
+      "condition_number": 9.336167344849722,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 1.6211279520285926e+17,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 1.6211279520285926e+17,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    }
+  ],
+  "3": [
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 15.444444444444443,
+      "condition_number": 4.048917339522306,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 15.444444444444443,
+      "condition_number": 4.048917339522306,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 14.43621399176955,
+      "condition_number": 6.271791373036985,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 13.475994513031551,
+      "condition_number": 12.01215889535001,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 12.666666666666664,
+      "condition_number": 4.397836749885508,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 12.666666666666664,
+      "condition_number": 4.397836749885508,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 11.144032921810695,
+      "condition_number": 7.71816721805042,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 11.10288065843622,
+      "condition_number": 6.271791373036985,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 7.810699588477365,
+      "condition_number": 7.71816721805042,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 6.438957475994512,
+      "condition_number": 12.01215889535001,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 1.718325256020024e+18,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 1.718325256020024e+18,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    }
+  ],
+  "4": [
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 14.750000000000005,
+      "condition_number": 4.048917339522305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 9.75,
+      "condition_number": 4.048917339522305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 8.5,
+      "condition_number": 4.905049812379026,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 5.609375000000015,
+      "condition_number": 7.614423049688215,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 3.500000000000001,
+      "condition_number": 4.905049812379026,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 0.1406250000000071,
+      "condition_number": 9.336167344849722,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": -2.593749999999993,
+      "condition_number": 15.812391744598703,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": -8.140624999999986,
+      "condition_number": 7.614423049688215,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": -13.609374999999991,
+      "condition_number": 9.336167344849722,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": -27.281249999999993,
+      "condition_number": 15.812391744598703,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 1.6211279520285926e+17,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 1.6211279520285926e+17,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    }
+  ],
+  "5": [
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 11.987654320987655,
+      "condition_number": 7.9290562453740385,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 11.864197530864198,
+      "condition_number": 7.9290562453740385,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 10.583333333333332,
+      "condition_number": 3.994027953573305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 9.703703703703711,
+      "condition_number": 13.155491971842109,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 9.472222222222216,
+      "condition_number": 3.994027953573305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 7.358024691358028,
+      "condition_number": 13.155491971842109,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 7.018518518518514,
+      "condition_number": 4.347731492756208,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 5.907407407407395,
+      "condition_number": 4.347731492756208,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 1.3703703703703702,
+      "condition_number": 6.800804394673051,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 0.2592592592592755,
+      "condition_number": 6.800804394673051,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 5.1843163406623955e+17,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 5.1843163406623955e+17,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    }
+  ],
+  "6": [
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 21.678670360110793,
+      "condition_number": 10.706526755355378,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 21.328765126111676,
+      "condition_number": 5.7968486769282865,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 19.843125820090382,
+      "condition_number": 10.706526755355378,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 19.345968800116626,
+      "condition_number": 7.171048214080155,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 19.24099722991689,
+      "condition_number": 4.208492801205895,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 19.084997813092283,
+      "condition_number": 5.7968486769282865,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 18.631578947368418,
+      "condition_number": 4.048917339522305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 17.10220148709724,
+      "condition_number": 7.171048214080155,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": false
+      },
+      "expected_profit": 16.609418282548468,
+      "condition_number": 4.208492801205895,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": 15.999999999999996,
+      "condition_number": 4.048917339522305,
+      "feasible": true,
+      "reason": "ok"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 3.971431712813513e+18,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": false,
+        "inspect_part_2": true,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": 3.971431712813513e+18,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": false,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    },
+    {
+      "policy": {
+        "inspect_part_1": true,
+        "inspect_part_2": false,
+        "inspect_product": true,
+        "disassemble_bad_product": true
+      },
+      "expected_profit": null,
+      "condition_number": Infinity,
+      "feasible": false,
+      "reason": "循环无法稳定吸收或矩阵严重病态"
+    }
+  ]
+}

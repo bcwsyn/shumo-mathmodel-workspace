@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="349.02pt" height="208.7784pt" viewBox="0 0 349.02 208.7784" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-04T10:34:17.347500</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 208.7784 
+L 349.02 208.7784 
+L 349.02 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 12.14874 148.819925 
+L 71.37486 148.819925 
+Q 78.18246 148.819925 78.18246 144.817157 
+L 78.18246 51.952939 
+Q 78.18246 47.950171 71.37486 47.950171 
+L 12.14874 47.950171 
+Q 5.34114 47.950171 5.34114 51.952939 
+L 5.34114 144.817157 
+Q 5.34114 148.819925 12.14874 148.819925 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #eaf2f8; stroke: #2878b5; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 87.03234 126.804701 
+L 132.64326 126.804701 
+Q 139.45086 126.804701 139.45086 122.801933 
+L 139.45086 73.968163 
+Q 139.45086 69.965395 132.64326 69.965395 
+L 87.03234 69.965395 
+Q 80.22474 69.965395 80.22474 73.968163 
+L 80.22474 122.801933 
+Q 80.22474 126.804701 87.03234 126.804701 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #f5f7fa; stroke: #64748b; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 151.70454 126.804701 
+L 197.31546 126.804701 
+Q 204.12306 126.804701 204.12306 122.801933 
+L 204.12306 73.968163 
+Q 204.12306 69.965395 197.31546 69.965395 
+L 151.70454 69.965395 
+Q 144.89694 69.965395 144.89694 73.968163 
+L 144.89694 122.801933 
+Q 144.89694 126.804701 151.70454 126.804701 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #eaf6f3; stroke: #2a9d8f; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 219.78054 84.775637 
+L 268.79526 84.775637 
+Q 275.60286 84.775637 275.60286 80.772869 
+L 275.60286 39.944635 
+Q 275.60286 35.941867 268.79526 35.941867 
+L 219.78054 35.941867 
+Q 212.97294 35.941867 212.97294 39.944635 
+L 212.97294 80.772869 
+Q 212.97294 84.775637 219.78054 84.775637 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #fcf2e8; stroke: #d4a017; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 219.78054 156.825461 
+L 268.79526 156.825461 
+Q 275.60286 156.825461 275.60286 152.822693 
+L 275.60286 111.994459 
+Q 275.60286 107.991691 268.79526 107.991691 
+L 219.78054 107.991691 
+Q 212.97294 107.991691 212.97294 111.994459 
+L 212.97294 152.822693 
+Q 212.97294 156.825461 219.78054 156.825461 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #fcf2e8; stroke: #d4a017; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 287.85654 124.803317 
+L 336.87126 124.803317 
+Q 343.67886 124.803317 343.67886 120.800549 
+L 343.67886 65.962627 
+Q 343.67886 61.959859 336.87126 61.959859 
+L 287.85654 61.959859 
+Q 281.04894 61.959859 281.04894 65.962627 
+L 281.04894 120.800549 
+Q 281.04894 124.803317 287.85654 124.803317 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #f7eef8; stroke: #8e44ad; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 218.07864 204.858677 
+L 335.16936 204.858677 
+Q 341.97696 204.858677 341.97696 200.855909 
+L 341.97696 172.035979 
+Q 341.97696 168.033211 335.16936 168.033211 
+L 218.07864 168.033211 
+Q 211.27104 168.033211 211.27104 172.035979 
+L 211.27104 200.855909 
+Q 211.27104 204.858677 218.07864 204.858677 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #eaf6f3; stroke: #2a9d8f; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 72.691838 98.385048 
+Q 77.500775 98.385048 81.023973 98.385048 
+" clip-path="url(#p72b41fcedf)" style="fill: none; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 77.023973 96.385048 
+L 81.023973 98.385048 
+L 77.023973 100.385048 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 137.364038 98.385048 
+Q 142.172975 98.385048 145.696173 98.385048 
+" clip-path="url(#p72b41fcedf)" style="fill: none; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 141.696173 96.385048 
+L 145.696173 98.385048 
+L 141.696173 100.385048 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 200.856002 96.558467 
+Q 208.548351 79.371115 215.715463 63.357325 
+" clip-path="url(#p72b41fcedf)" style="fill: none; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 212.255912 66.191317 
+L 215.715463 63.357325 
+L 215.906926 67.82536 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 200.933909 100.175104 
+Q 208.547936 115.396684 215.586768 129.468363 
+" clip-path="url(#p72b41fcedf)" style="fill: none; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 215.586007 124.996227 
+L 215.586768 129.468363 
+L 212.008603 126.78569 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 272.390856 62.154427 
+Q 278.325861 74.368359 283.698928 85.425852 
+" clip-path="url(#p72b41fcedf)" style="fill: none; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 283.749581 80.954003 
+L 283.698928 85.425852 
+L 280.15184 82.70222 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 272.390856 130.612901 
+Q 278.325861 118.398969 283.698928 107.341476 
+" clip-path="url(#p72b41fcedf)" style="fill: none; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 280.15184 110.065108 
+L 283.698928 107.341476 
+L 283.749581 111.813325 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 311.288475 120.085113 
+Q 294.494696 146.417094 278.392285 171.665039 
+" clip-path="url(#p72b41fcedf)" style="fill: none; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 282.229412 169.367984 
+L 278.392285 171.665039 
+L 278.856917 167.217105 
+z
+" clip-path="url(#p72b41fcedf)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(19.2618 74.009132)">六项经营指标</text>
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(19.2618 84.822389)">销项月度波动</text>
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(19.2618 95.616896)">销售近期下滑</text>
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(13.397152 106.411989)">客户/供应商 HHI</text>
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(23.0118 117.170168)">销项负数率</text>
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(26.7618 128.001589)">低活跃度</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.6px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(88.3378 95.232401)">百分位排序</text>
+    <text style="font-size: 8.6px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(92.6378 107.576508)">等权平均</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(152.01 95.072406)">经营脆弱度</text>
+    <!-- $v_i \in [0,1]$ -->
+    <g style="fill: #243447" transform="translate(153.63 107.602533)">
+     <text>
+      <tspan x="0" y="-0.15625" style="font-style: oblique; font-size: 9px; font-family: 'DejaVu Sans'; fill: #243447">v</tspan>
+      <tspan x="5.326172" y="1.193746" style="font-style: oblique; font-size: 6.3px; font-family: 'DejaVu Sans'; fill: #243447">i</tspan>
+      <tspan x="9.076025" y="-0.15625" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #243447">∈</tspan>
+      <tspan x="18.669287" y="-0.15625" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #243447">[</tspan>
+      <tspan x="22.180518" y="-0.15625" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #243447">0</tspan>
+      <tspan x="27.906592" y="-0.15625" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #243447">,</tspan>
+      <tspan x="32.52085" y="-0.15625" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #243447">1</tspan>
+      <tspan x="38.246924" y="-0.15625" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #243447">]</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.1px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(228.0879 57.389398)">风险通道</text>
+    <!-- $\rho_{is}=\rho_i(1+\delta_s v_i)$ -->
+    <g style="fill: #243447" transform="translate(212.8194 68.411489)">
+     <text>
+      <tspan x="0" y="-0.859375" style="font-style: oblique; font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">ρ</tspan>
+      <tspan x="19.820374" y="-0.859375" style="font-style: oblique; font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">ρ</tspan>
+      <tspan x="44.996138" y="-0.859375" style="font-style: oblique; font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">δ</tspan>
+      <tspan x="53.12128" y="-0.859375" style="font-style: oblique; font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">v</tspan>
+      <tspan x="5.137634" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">i</tspan>
+      <tspan x="6.711726" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">s</tspan>
+      <tspan x="24.958008" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">i</tspan>
+      <tspan x="49.948027" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">s</tspan>
+      <tspan x="57.911136" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">i</tspan>
+      <tspan x="11.461838" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">=</tspan>
+      <tspan x="26.753584" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">(</tspan>
+      <tspan x="29.911253" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">1</tspan>
+      <tspan x="36.637602" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">+</tspan>
+      <tspan x="59.706712" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">)</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.1px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(228.0879 129.470863)">留存通道</text>
+    <!-- $q_{is}=(1-\ell_i)(1-\gamma_s v_i)$ -->
+    <g style="fill: #243447" transform="translate(203.0994 140.461313)">
+     <text>
+      <tspan x="0" y="-0.859375" style="font-style: oblique; font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">q</tspan>
+      <tspan x="38.062927" y="-0.859375" style="font-style: oblique; font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">ℓ</tspan>
+      <tspan x="64.602141" y="-0.859375" style="font-style: oblique; font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">γ</tspan>
+      <tspan x="72.56525" y="-0.859375" style="font-style: oblique; font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">v</tspan>
+      <tspan x="5.137634" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">i</tspan>
+      <tspan x="6.711726" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">s</tspan>
+      <tspan x="41.406342" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">i</tspan>
+      <tspan x="69.391997" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">s</tspan>
+      <tspan x="77.355106" y="0.355621" style="font-style: oblique; font-size: 5.67px; font-family: 'DejaVu Sans'; fill: #243447">i</tspan>
+      <tspan x="11.461838" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">=</tspan>
+      <tspan x="19.820374" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">(</tspan>
+      <tspan x="22.978043" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">1</tspan>
+      <tspan x="29.704391" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">−</tspan>
+      <tspan x="43.201918" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">)</tspan>
+      <tspan x="46.359587" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">(</tspan>
+      <tspan x="49.517256" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">1</tspan>
+      <tspan x="56.243605" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">−</tspan>
+      <tspan x="79.150682" y="-0.859375" style="font-size: 8.1px; font-family: 'DejaVu Sans'; fill: #243447">)</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.6px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(289.5639 79.641656)">情景单位效益</text>
+    <!-- $u_{is}(r)$ -->
+    <g style="fill: #243447" transform="translate(303.1679 90.195934)">
+     <text>
+      <tspan x="0" y="-0.234375" style="font-style: oblique; font-size: 7.6px; font-family: 'DejaVu Sans'; fill: #243447">u</tspan>
+      <tspan x="12.22952" y="-0.234375" style="font-style: oblique; font-size: 7.6px; font-family: 'DejaVu Sans'; fill: #243447">r</tspan>
+      <tspan x="4.812836" y="0.905621" style="font-style: oblique; font-size: 5.32px; font-family: 'DejaVu Sans'; fill: #243447">i</tspan>
+      <tspan x="6.289687" y="0.905621" style="font-style: oblique; font-size: 5.32px; font-family: 'DejaVu Sans'; fill: #243447">s</tspan>
+      <tspan x="9.266919" y="-0.234375" style="font-size: 7.6px; font-family: 'DejaVu Sans'; fill: #243447">(</tspan>
+      <tspan x="15.351559" y="-0.234375" style="font-size: 7.6px; font-family: 'DejaVu Sans'; fill: #243447">)</tspan>
+     </text>
+    </g>
+    <text style="font-size: 7.6px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(293.3639 101.52268)">风险与留存</text>
+    <text style="font-size: 7.6px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(297.1639 112.402332)">共同作用</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.9px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(229.224 183.530157)">同一授信组合面对全部情景</text>
+    <text style="font-size: 7.9px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; fill: #243447" transform="translate(223.780406 194.884942)">maximin 最大化最坏组合效益</text>
+   </g>
+   <g id="text_8">
+    <!-- 压力参数：$\delta_s$、$\gamma_s$（决策情景，不是观测事实） -->
+    <g style="fill: #64748b" transform="translate(160.3279 20.331072)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">压</tspan>
+      <tspan x="8" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">力</tspan>
+      <tspan x="16" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">参</tspan>
+      <tspan x="24" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">数</tspan>
+      <tspan x="32" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">：</tspan>
+      <tspan x="48.030859" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">、</tspan>
+      <tspan x="63.901562" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">（</tspan>
+      <tspan x="71.901562" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">决</tspan>
+      <tspan x="79.901562" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">策</tspan>
+      <tspan x="87.901562" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">情</tspan>
+      <tspan x="95.901562" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">景</tspan>
+      <tspan x="103.901562" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">，</tspan>
+      <tspan x="111.901562" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">不</tspan>
+      <tspan x="119.901562" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">是</tspan>
+      <tspan x="127.901562" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">观</tspan>
+      <tspan x="135.901563" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">测</tspan>
+      <tspan x="143.901563" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">事</tspan>
+      <tspan x="151.901563" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">实</tspan>
+      <tspan x="159.901563" y="-0.28125" style="font-size: 8px; font-family: 'Microsoft YaHei'; fill: #64748b">）</tspan>
+      <tspan x="40" y="-0.28125" style="font-style: oblique; font-size: 8px; font-family: 'DejaVu Sans'; fill: #64748b">δ</tspan>
+      <tspan x="56.030859" y="-0.28125" style="font-style: oblique; font-size: 8px; font-family: 'DejaVu Sans'; fill: #64748b">γ</tspan>
+      <tspan x="44.894531" y="0.918746" style="font-style: oblique; font-size: 5.6px; font-family: 'DejaVu Sans'; fill: #64748b">s</tspan>
+      <tspan x="60.765234" y="0.918746" style="font-style: oblique; font-size: 5.6px; font-family: 'DejaVu Sans'; fill: #64748b">s</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p72b41fcedf">
+   <rect x="4.32" y="4.32" width="340.38" height="200.1384"/>
+  </clipPath>
+ </defs>
+</svg>

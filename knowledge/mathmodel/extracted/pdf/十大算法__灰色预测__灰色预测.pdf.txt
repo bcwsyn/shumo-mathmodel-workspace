@@ -1,0 +1,242 @@
+===== PAGE 1 =====
+
+http://www.paper.edu.cn  
+基于 MATLAB 的 GM(1,1)灰色预测模型以及在 
+地面沉降中的应用∗
+左书华
+1
+，韩贵生
+2 
+（1 华东师范大学河口海岸国家重点实验室 上海 20062） 
+（2 河北省肥乡县第一中学数学教研室 河北肥乡 057550） 
+摘  要：MATLAB 是集数学、图形处理和程序设计语言于一体的实用性很高的数学软件。本
+文用它编制了一套灰色预测模型程序，弥补了灰色预测模型在矩阵计算中的问题。并将该程
+序运用到了上海市高桥地区地面沉降预测中，从实例看出用MATLAB所编制了程序可读性强，
+容易理解，操作简单灵活，直接面向用户，精度较高。 
+关键词：MATLAB  GM(1,1)灰色预测模型  程序  沉降量 
+1 MATLAB与灰色系统理论 
+    M ATLAB源于MATrix LABoratory一词，原意是为矩阵实验室，是由 John  Little和Cleve 
+Moler共同成立的美国MathWorks公司推出的一种集数学、图形处理和程序设计语言于一体
+的科技应用软件[1]。它把科学计算、结果的可视化和编程都集中在一个使用非常方便的环境
+中。在这个环境中，用户的问题和得到的结果都是通过用户非常熟悉的数学符号来表达的。
+MATLAB系统包括几个组成部分：MATLAB语言、MATLAB工作环境、MATLAB工具箱和
+MATLAB的API。MATLAB以向量和矩阵为基本数据单位，被称为第 4 代计算机语言，有着
+其他一些语言所无法比拟的特点：功能强大；语言简单；扩充能力强、可开发性强；编程容
+易、效率高。它已在国内外高校、科研机构和工程技术上得到了广泛的应用。 
+所谓灰色系统是指既含有已知信息，又含有未知信息的系统，是由邓聚龙教授在 1986
+年提出的[2]。灰色理论自诞生以来，发展很快，由于它所需因素少，模型简单，在我国经济、
+医学、农业、水利等领域都得到了广泛应用。作为一门新兴的科学，一条新的研究途径，灰
+色系统理论及方法在很多研究领域有着广阔的应用前景。特别是对于因素空间难以穷尽，运
+行机制尚不明确，又缺乏建立确定关系的信息系统，灰色系统理论及方法为解决此类问题提
+供了新的思路和有益的尝试。 
+灰色 GM(1,1)预测模型在计算过程中主要是以矩阵为主，它和 MATLAB 的结合可以有
+效的解决了灰色系统理论在矩阵计算中的问题，为灰色系统理论的应用提供了一种新的方
+法。 
+2 GM(1,1)预测模型的基本原理 
+GM(1,1)模型是灰色预测的核心，它是一个单个变量预测的一阶微分方程模型，其离散
+时间响应函数近似呈指数规律。建立GM(1,1)模型的方法[2]是： 
+设 为原始非负时间序列， 为累加生成序
+列，即                                       （1）  
+)}(),.....,2(),1({ )0()0()0()0( nXXXX = )()1( tX
+∑
+=
+==
+i
+m
+ntmXtX
+1
+)0()1( .,......2,1),()(
+GM(1,1)模型的白化微分方程为： 
+uaXdt
+dX =+ )1(
+)1(
+                                 （2）
+                                                        
+作者介绍：左书华（1979-），男，河北邯郸人，在读硕士研究生，主要从事河口海岸研究。 
+E-mail：zsh-0301@sohu.com.  
+-1- 
+
+===== PAGE 2 =====
+
+http://www.paper.edu.cn  
+式（2）中， 为待辨识参数，亦称发展系数； u为待辨识内生变量,亦称灰作用量。设待辨 a
+ 
+识向量 ，按最小二乘法求得 式中 ⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛= u
+aa
+^
+yBBBa TT^
+(= 1)−
+1)()1((2
+1
+............
+1)3()2((2
+1
+1))2()1((2
+1
+)1()1(
+)1()1(
+)1()1(
+nXnX
+XX
+XX
+B
++−−
++−
++−
+=  ；      
+)(
+....
+)3(
+)2(
+)0(
+)0(
+)0(
+nX
+X
+X
+y =  
+于是可得到灰色预测的离散时间响应函数为： 
+                    
+a
+uea
+uXtX at +−=+ −))1(()1( )0()1(                       （3） 
+)1()1( +tX 为所得的累加的预测值，将预测值还原即为： 
+          ，（)()1()1(
+)1(^)1(^)0(^
+tXtXtX −+=+ =t 1、2、3……n）              （4）    
+3 GM(1,1)预测模型的 MATLAB程序 
+根据上述 GM(1,1)模型的数学思想，结合 MATLAB 语言的特点编制了一套可读性强，
+容易理解的预测程序。该程序操作简单灵活，稳定性好，直接面向用户。只要输入原始数据，
+就可得到预测值和预测值与实测值比较图形。所编制的 M 文件 gm.m（预测程序）如下： 
+%程序变量说明，x 为原始数列；ago 为所
+预测的累加数列；yc 为预测的还原数列 
+function gm(x0)   % 定义函数 gm(x0) 
+n=length(x0)； 
+x1=zeros(1,n)； 
+x1(1)=x0(1)； 
+for i=2:n        % 计算累加序列 x1 
+   x1(i)=x1(i-1)+x0(i); 
+end 
+i=2:n;     % 对原始数列平行移位并赋给 y 
+y(i-1)=x0(i); 
+y=y';            % 将 y变成列向量 
+i=1:n-1;   % 计算数据矩阵 B 的第一列数据 
+c(i)=-0.5*(x1(i)+x1(i+1));  
+B=[c' ones(n-1,1)];%构造矩阵 B 
+au=inv(B'*B)*B'*y;%计算参数 a,u 矩阵 
+i=1:n+1;       % 计算预测累加数列的值 
+ago(i)=(x0(1)-au(2)/au(1))*exp(-au(1)*(i-1))+
+au(2)/au(1); 
+yc(1)=ago(1); 
+i=1:n-1;         % 还原数列的值 
+yc(i+1)=ago(i+1)-ago(i); 
+i=2:n; 
+error(i)=yc(i)-x0(i);  % 计算残差值 
+yc(1)=ago(1); 
+i=1:n-1;           % 修正的还原数列的值 
+yc(i+1)=ago(i+1)-ago(i); 
+c=std(error)/std(x0);  % 计算后验差比 
+p=0; 
+for i=2:n 
+ if(abs(error(i)-m ean(error))<0.6745*std(x0)) 
+        p =p+1; 
+  end 
+end 
+p=p/(n-1); 
+w1=min(abs(error)); 
+w2=max(abs(error)); 
+i=1:n;                % 计算关联度 
+w(i)=(w1+0.5*w2)./(abs(error(i))+0.5*w2); 
+w=sum(w)/(n-1); 
+-2- 
+
+===== PAGE 3 =====
+
+http://www.paper.edu.cn  
+au              % 输出参数 a,u 的值 v=[1979,1988,20,160]; 
+ago             %输出累加数列 ago 的值 axis(v); 
+x0              % 输出原始序列值 plot([1979:n+1978],x0,'+',[1979:n+1978],yc,'*'); 
+yc              % 输出预测的值 grid on; 
+error            % 输出残差的值 xlabel('时序'); 
+c               % 输出后验差比的值 ylabel('沉降量(mm)'); 
+p               % 输出小误差概率的值 title('地面沉降灰色模型预测拟和曲线'); 
+w               % 输出关联度 wlegend('实测值','预测值',4); 
+4 实例应用 
+4.1 数据资料 
+根据 1979-1988来上海高桥地面沉降量(表2)作为GM(1,1)预测模型程序的原始输入值。  
+表 1.  1979-1988 年高桥地区累计地面沉降量[3]
+Tab.1 Accumnlated land subsidence in Gaoqiao Area between 1979 and 1988 
+年份       1979   1980   1981  1982  1983  1984   1985  1986   1987  1988 
+沉降量（mm）  20.0    54.7   73.3   84.0  89.3   100   106.7  121.1  133.3  143.3 
+4.2 预测结果 
+在 MATLAB平台下，输入表 1 中的数据即 x=[20.0 54.7 73.3 84.0 89.3 100 106.7 121.1 
+133.3 143.3]，然后调用所编制的 M文件 gm.m，即可得出该预测模型的预测值和有关参数。
+结果如下： 
+表 2.  1979-1988 年高桥地区累计实测地面沉降量与预测值 
+Tab.2 Accumnlated land subsidence in Gaoqiao Area between 1979 and 1988 
+年份 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988
+实测值 20.0 54.7 73.3 84.0 89.3 100 106.7 121.1 133.3 143.3
+预测值 20.0 64.6 71.6 79.3 87.9 97.3 107.8 119.5 132.4 146.7
+e  0 9.9 -1.7 -4.7 -1.4 -2.7 1.1 -1.6 -0.9 3.4 
+c  0.102 
+p  1 
+w  0.78 
+所得预测值与实测值折线比较
+如图 1。从表2 和图1 来看，预测的
+结果较好,精度较高。 
+5 小结 
+（1）MATLAB是专用的矩阵计算软
+件，对矩阵的计算有很好的效果，
+而且用起来比较容易简单，还可以
+允许用户编程对功能进行扩展[4]。 
+（2）灰色 GM(1,1)预测模型在计算
+过程中主要 是以矩阵为 主，它与
+MATLAB 的结合解决了它在计算中
+的问题。 
+（3）由以上的实例可以看出，用
+MATLAB 编制的灰色预测程序简单 
+图 79-1988年地面沉降实测值与预测值折线图 
+o  
+Area between 1979 and 1988 
+1. 19
+Fig 1. Accumnlated and forecasted land subsidence in Gaoqia
+-3- 
+
+===== PAGE 4 =====
+
+http://www.paper.edu.cn  
+实用，容易
+ 
+操作，预测精度较高，而且可以直接绘出直观的二维折线图，为用户提供参考。 
+业出版社. 2003,9.   
+统在地面沉降分析中的应用[J]. 上海地质.,2003(3):16~21. 
+GM(1,1) Forecasted Model Based on MATLAB and Its Application 
+ity , Shanghai 200062) 
+taff Room, No.1 High School of Fei Xiang County  of He Bei Province 057550) 
+Abstract 
+MATLAB is a hi gh-performance la nguage for t echnical c omputing. It i ntegrates com putation, 
+visu are 
+expressed in familiar mathem set of grey for ecasted model 
+program by MATLAB langua  computing. The program was 
+a
+K
+参考文献： 
+[1]王沫然. MATLAB与科学计算(第二版)[M]. 北京:电子工
+[2]傅  立. 灰色系统理论及其应用[M]. 北京:科学技术文献出版社. 1992,10. 
+[3]宫柏霖,董荣鑫. 灰色系
+[4]周  卫. 基于 MATLAB的灰色系统沉降预测. 测绘通报,2002(6):34~36. 
+ 
+ZUO Shu-hua1, HAN Gui-sheng2 
+(1. State Key Laboratory of Estuarine and Coastal Research, East China Normal Univers
+(2. Maths S , Fei Xiang County
+alization, and programming in a n easy-to-use environment where problem s and solutions 
+atical notation. The author designed a 
+ge, making up its shortage in matrix
+pplied on land subsidence and its result was good. 
+eywords: MATLAB; Grey forecasted model; Program; Subsidence 
+-4- 

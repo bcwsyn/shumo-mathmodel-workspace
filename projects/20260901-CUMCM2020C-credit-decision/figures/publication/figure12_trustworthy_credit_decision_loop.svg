@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1040" viewBox="0 0 1800 1040" role="img" aria-labelledby="title desc">
+  <title id="title">从预测到可信授信：中小微企业信贷决策闭环</title>
+  <desc id="desc">发票与流失数据经共同特征构造、违约风险和隐含评级估计、收益风险联合优化后，依次通过数据、可行性和经济性三道闸门，形成可审计授信策略并反馈监控的闭环。</desc>
+  <defs>
+    <marker id="arrow-slate" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#546A84"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#2F6FB0"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#238C82"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#D98A25"/>
+    </marker>
+    <style>
+      .cn { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #21354D; }
+      .title { font-size: 42px; font-weight: 700; letter-spacing: 1px; }
+      .subtitle { font-size: 20px; fill: #62748A; }
+      .panel-title { font-size: 25px; font-weight: 700; fill: #FFFFFF; }
+      .panel-kicker { font-size: 15px; font-weight: 700; letter-spacing: 2px; fill: #FFFFFF; opacity: .9; }
+      .body { font-size: 22px; font-weight: 500; }
+      .small { font-size: 18px; fill: #52657A; }
+      .chip { font-size: 18px; font-weight: 600; }
+      .gate-title { font-size: 24px; font-weight: 700; fill: #FFFFFF; }
+      .gate-q { font-size: 22px; font-weight: 700; }
+      .gate-answer { font-size: 17px; fill: #52657A; }
+      .output-title { font-size: 27px; font-weight: 700; fill: #FFFFFF; }
+      .output-item { font-size: 19px; font-weight: 600; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1040" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1800" height="126" fill="#FFFFFF"/>
+  <rect x="64" y="97" width="1672" height="5" rx="2.5" fill="#2F6FB0"/>
+  <text class="cn title" x="64" y="62">从预测到可信授信：中小微企业信贷决策闭环</text>
+  <text class="cn subtitle" x="66" y="91">以共同特征实现外推，以显式约束控制风险，以压力检验暴露策略边界</text>
+
+  <!-- Main-stage panels -->
+  <g>
+    <rect x="64" y="158" width="365" height="366" rx="22" fill="#FFFFFF" stroke="#2F6FB0" stroke-width="4"/>
+    <path d="M64,180 Q64,158 86,158 H407 Q429,158 429,180 V231 H64 Z" fill="#2F6FB0"/>
+    <text class="cn panel-kicker" x="90" y="187">EVIDENCE FOUNDATION</text>
+    <text class="cn panel-title" x="90" y="216">证据与共同口径</text>
+    <rect x="90" y="254" width="313" height="55" rx="13" fill="#EAF3FB"/>
+    <text class="cn chip" x="246" y="289" text-anchor="middle" fill="#1F5F98">进销项发票：规模、质量、波动、集中度</text>
+    <rect x="90" y="324" width="313" height="55" rx="13" fill="#EAF3FB"/>
+    <text class="cn chip" x="246" y="359" text-anchor="middle" fill="#1F5F98">附件三：利率—客户流失统计</text>
+    <rect x="90" y="394" width="313" height="74" rx="13" fill="#FFF4E8" stroke="#E79B45" stroke-width="2"/>
+    <text class="cn chip" x="246" y="425" text-anchor="middle" fill="#A75B13">只保留两批企业共有字段</text>
+    <text class="cn small" x="246" y="451" text-anchor="middle" fill="#A75B13">人工评级仅用于比较，不作正式输入</text>
+    <text class="cn small" x="246" y="501" text-anchor="middle">统一企业主键 · 统一特征定义 · 统一收益口径</text>
+  </g>
+
+  <path d="M430 341 H482" fill="none" stroke="#546A84" stroke-width="5" marker-end="url(#arrow-slate)"/>
+
+  <g>
+    <rect x="486" y="158" width="405" height="366" rx="22" fill="#FFFFFF" stroke="#238C82" stroke-width="4"/>
+    <path d="M486,180 Q486,158 508,158 H869 Q891,158 891,180 V231 H486 Z" fill="#238C82"/>
+    <text class="cn panel-kicker" x="513" y="187">TRANSFERABLE ESTIMATION</text>
+    <text class="cn panel-title" x="513" y="216">风险与留存的职责分离</text>
+    <rect x="514" y="255" width="348" height="78" rx="14" fill="#E8F6F3"/>
+    <text class="cn body" x="688" y="287" text-anchor="middle" fill="#146D65">弹性网 Logistic</text>
+    <text class="cn small" x="688" y="315" text-anchor="middle">违约概率进入损失与风险上限</text>
+    <rect x="514" y="348" width="348" height="78" rx="14" fill="#E8F6F3"/>
+    <text class="cn body" x="688" y="380" text-anchor="middle" fill="#146D65">隐含评级 + 保序回归</text>
+    <text class="cn small" x="688" y="408" text-anchor="middle">仅连接 A/B/C 等级的流失曲线</text>
+    <path d="M531 458 H845" stroke="#9AD7CC" stroke-width="2"/>
+    <text class="cn small" x="688" y="487" text-anchor="middle">Bootstrap 90% 分位 · PSI · OOD 诊断</text>
+  </g>
+
+  <path d="M892 341 H944" fill="none" stroke="#546A84" stroke-width="5" marker-end="url(#arrow-slate)"/>
+
+  <g>
+    <rect x="948" y="158" width="430" height="366" rx="22" fill="#FFFFFF" stroke="#D98A25" stroke-width="4"/>
+    <path d="M948,180 Q948,158 970,158 H1356 Q1378,158 1378,180 V231 H948 Z" fill="#D98A25"/>
+    <text class="cn panel-kicker" x="975" y="187">JOINT DECISION ENGINE</text>
+    <text class="cn panel-title" x="975" y="216">风险—收益联合配置</text>
+    <text class="cn body" x="1163" y="278" text-anchor="middle">留存 × 利息收入 − 违约损失</text>
+    <rect x="975" y="301" width="376" height="72" rx="14" fill="#FFF3E2"/>
+    <text class="cn chip" x="1163" y="333" text-anchor="middle" fill="#9A5A11">企业 × 额度 × 利率 的混合整数优化</text>
+    <text class="cn small" x="1163" y="359" text-anchor="middle" fill="#9A5A11">预算、单户上下限、单一利率、D 级禁贷、风险帽</text>
+    <rect x="975" y="396" width="118" height="64" rx="12" fill="#FCE4C7"/>
+    <text class="cn chip" x="1034" y="424" text-anchor="middle" fill="#9A5A11">问题一</text>
+    <text class="cn small" x="1034" y="448" text-anchor="middle" fill="#9A5A11">预算前沿</text>
+    <rect x="1104" y="396" width="118" height="64" rx="12" fill="#FCE4C7"/>
+    <text class="cn chip" x="1163" y="424" text-anchor="middle" fill="#9A5A11">问题二</text>
+    <text class="cn small" x="1163" y="448" text-anchor="middle" fill="#9A5A11">冻结外推</text>
+    <rect x="1233" y="396" width="118" height="64" rx="12" fill="#FCE4C7"/>
+    <text class="cn chip" x="1292" y="424" text-anchor="middle" fill="#9A5A11">问题三</text>
+    <text class="cn small" x="1292" y="448" text-anchor="middle" fill="#9A5A11">压力再配置</text>
+    <text class="cn small" x="1163" y="497" text-anchor="middle">先判可行性，再比较最优性</text>
+  </g>
+
+  <path d="M1379 341 H1431" fill="none" stroke="#546A84" stroke-width="5" marker-end="url(#arrow-slate)"/>
+
+  <g>
+    <rect x="1435" y="158" width="301" height="366" rx="22" fill="#315F8F"/>
+    <text class="cn panel-kicker" x="1585" y="199" text-anchor="middle">AUDITABLE OUTPUT</text>
+    <text class="cn output-title" x="1585" y="240" text-anchor="middle">授信策略清单</text>
+    <path d="M1471 268 H1699" stroke="#7FA7CE" stroke-width="2"/>
+    <circle cx="1481" cy="308" r="7" fill="#A9D6E5"/>
+    <text class="cn output-item" x="1501" y="315">入选企业与人工复核队列</text>
+    <circle cx="1481" cy="358" r="7" fill="#A9D6E5"/>
+    <text class="cn output-item" x="1501" y="365">逐户额度与候选利率</text>
+    <circle cx="1481" cy="408" r="7" fill="#A9D6E5"/>
+    <text class="cn output-item" x="1501" y="415">风险、预算与收益回代</text>
+    <rect x="1467" y="448" width="236" height="47" rx="12" fill="#274D74"/>
+    <text class="cn output-item" x="1585" y="479" text-anchor="middle">可追溯 · 可解释 · 可复核</text>
+  </g>
+
+  <!-- Decision gates -->
+  <text class="cn" x="64" y="590" font-size="26" font-weight="700" fill="#435A72">可信决策的三道闸门</text>
+  <path d="M64 609 H1736" stroke="#D7E0E9" stroke-width="2"/>
+
+  <g>
+    <rect x="64" y="642" width="480" height="214" rx="20" fill="#FFFFFF" stroke="#2F6FB0" stroke-width="3"/>
+    <rect x="64" y="642" width="480" height="54" rx="20" fill="#2F6FB0"/>
+    <rect x="64" y="675" width="480" height="21" fill="#2F6FB0"/>
+    <circle cx="99" cy="669" r="17" fill="#FFFFFF"/>
+    <text class="cn" x="99" y="676" text-anchor="middle" font-size="18" font-weight="700" fill="#2F6FB0">1</text>
+    <text class="cn gate-title" x="130" y="677">数据与模型闸门</text>
+    <text class="cn gate-q" x="94" y="738" fill="#214C7B">模型是否仍处于验证覆盖范围？</text>
+    <text class="cn gate-answer" x="94" y="778">检查：特征口径、缺失/作废/重复率、PSI 与 OOD</text>
+    <rect x="94" y="804" width="420" height="30" rx="8" fill="#EAF3FB"/>
+    <text class="cn" x="304" y="826" text-anchor="middle" font-size="16" font-weight="600" fill="#1F5F98">未通过 → 冻结自动授信，转人工尽调或核对数据源</text>
+  </g>
+
+  <path d="M545 749 H611" fill="none" stroke="#2F6FB0" stroke-width="4" marker-end="url(#arrow-blue)"/>
+
+  <g>
+    <rect x="615" y="642" width="540" height="214" rx="20" fill="#FFFFFF" stroke="#D98A25" stroke-width="3"/>
+    <rect x="615" y="642" width="540" height="54" rx="20" fill="#D98A25"/>
+    <rect x="615" y="675" width="540" height="21" fill="#D98A25"/>
+    <circle cx="650" cy="669" r="17" fill="#FFFFFF"/>
+    <text class="cn" x="650" y="676" text-anchor="middle" font-size="18" font-weight="700" fill="#D98A25">2</text>
+    <text class="cn gate-title" x="681" y="677">组合可行性闸门</text>
+    <text class="cn gate-q" x="645" y="738" fill="#8D5410">预算、风险与业务规则能否共同满足？</text>
+    <text class="cn gate-answer" x="645" y="778">回代：预算残差、额度边界、D 级禁贷、风险松弛量</text>
+    <rect x="645" y="804" width="480" height="30" rx="8" fill="#FFF3E2"/>
+    <text class="cn" x="885" y="826" text-anchor="middle" font-size="16" font-weight="600" fill="#9A5A11">未通过 → 减少预算、增加担保，或显式调整风险偏好</text>
+  </g>
+
+  <path d="M1156 749 H1222" fill="none" stroke="#D98A25" stroke-width="4" marker-end="url(#arrow-orange)"/>
+
+  <g>
+    <rect x="1226" y="642" width="510" height="214" rx="20" fill="#FFFFFF" stroke="#238C82" stroke-width="3"/>
+    <rect x="1226" y="642" width="510" height="54" rx="20" fill="#238C82"/>
+    <rect x="1226" y="675" width="510" height="21" fill="#238C82"/>
+    <circle cx="1261" cy="669" r="17" fill="#FFFFFF"/>
+    <text class="cn" x="1261" y="676" text-anchor="middle" font-size="18" font-weight="700" fill="#238C82">3</text>
+    <text class="cn gate-title" x="1292" y="677">经济与稳健性闸门</text>
+    <text class="cn gate-q" x="1256" y="738" fill="#146D65">最坏情景下是否仍值得继续配置？</text>
+    <text class="cn gate-answer" x="1256" y="778">比较：边际收益、压力收益、稳健保险成本与名单稳定性</text>
+    <rect x="1256" y="804" width="450" height="30" rx="8" fill="#E8F6F3"/>
+    <text class="cn" x="1481" y="826" text-anchor="middle" font-size="16" font-weight="600" fill="#146D65">未通过 → 不强制满额投放，启动稳健方案或重新定价</text>
+  </g>
+
+  <!-- Feedback loop -->
+  <path d="M1585 525 V907 H305 V874" fill="none" stroke="#238C82" stroke-width="4" stroke-dasharray="12 10" marker-end="url(#arrow-teal)"/>
+  <rect x="644" y="884" width="510" height="48" rx="16" fill="#E8F6F3" stroke="#238C82" stroke-width="2"/>
+  <text class="cn" x="899" y="915" text-anchor="middle" font-size="18" font-weight="700" fill="#146D65">月度监控数据质量 · 季度校准模型 · 版本化留存策略凭证</text>
+  <text class="cn small" x="1585" y="963" text-anchor="middle">图：论文模型心得与决策治理闭环（基于正文第 9 章）</text>
+</svg>

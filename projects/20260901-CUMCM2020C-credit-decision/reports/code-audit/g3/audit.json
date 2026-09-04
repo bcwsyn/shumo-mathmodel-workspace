@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "stage": "g3",
+  "generated_unix": 1788282862.138342,
+  "project_root": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision",
+  "status": "VERIFIED",
+  "checks": [
+    {
+      "check": "python-runtime",
+      "status": "VERIFIED",
+      "source": "workspace .venv",
+      "requested": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+      "executable": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+      "version": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "check": "python-files",
+      "status": "VERIFIED",
+      "files": [
+        {
+          "path": "code\\audit_inputs.py",
+          "status": "VERIFIED",
+          "sha256": "12ff237fb65800946d5d4573123db0f24fc07dd537416c350d19abb86a4a953b"
+        },
+        {
+          "path": "code\\main.py",
+          "status": "VERIFIED",
+          "sha256": "1e7617916f128bbfc1a5750c55bd5312bc3be2b39e8927881884ce7f05932add"
+        }
+      ]
+    },
+    {
+      "check": "imports",
+      "status": "VERIFIED",
+      "modules": [
+        {
+          "module": "__future__",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "argparse",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "dataclasses",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "hashlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "json",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "logging",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "matplotlib",
+          "status": "VERIFIED",
+          "origin": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\matplotlib\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "numpy",
+          "status": "VERIFIED",
+          "origin": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\numpy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "os",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "pandas",
+          "status": "VERIFIED",
+          "origin": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\pandas\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "pathlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "platform",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "scipy",
+          "status": "VERIFIED",
+          "origin": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\scipy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "shap",
+          "status": "VERIFIED",
+          "origin": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\shap\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "sklearn",
+          "status": "VERIFIED",
+          "origin": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\sklearn\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "sys",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "time",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "typing",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "xgboost",
+          "status": "VERIFIED",
+          "origin": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\xgboost\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        }
+      ]
+    },
+    {
+      "check": "static-risks",
+      "status": "VERIFIED",
+      "findings": []
+    },
+    {
+      "check": "code-quality",
+      "status": "VERIFIED",
+      "tools": [
+        {
+          "tool": "ruff",
+          "status": "VERIFIED",
+          "command": [
+            "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+            "-m",
+            "ruff",
+            "check",
+            "code",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 0.25,
+          "stdout": "All checks passed!\n",
+          "stderr": ""
+        },
+        {
+          "tool": "pytest",
+          "status": "VERIFIED",
+          "command": [
+            "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+            "-m",
+            "pytest",
+            "-q",
+            "tests"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 3.669,
+          "stdout": "......                                                                   [100%]\n6 passed in 2.76s\n",
+          "stderr": ""
+        },
+        {
+          "tool": "boundary-test-evidence",
+          "status": "VERIFIED",
+          "test_files": [
+            "tests\\test_main.py"
+          ],
+          "detected_categories": {
+            "normal": [
+              "normal"
+            ],
+            "boundary": [
+              "zero",
+              "negative",
+              "shape"
+            ],
+            "failure": [
+              "error",
+              "raises",
+              "infeasible"
+            ]
+          },
+          "reason": "keyword scan is supporting evidence; review assertions and independence manually"
+        }
+      ]
+    },
+    {
+      "check": "runtime-entries",
+      "status": "VERIFIED",
+      "runs": [
+        {
+          "name": "main-smoke",
+          "status": "VERIFIED",
+          "command": [
+            "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+            "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\code\\main.py",
+            "--smoke"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 2.5,
+          "artifacts": [
+            {
+              "path": "results/smoke.json",
+              "status": "VERIFIED",
+              "size_bytes": 174,
+              "modified_unix": 1788282870.443158,
+              "sha256": "026b4aec5bb8f3aa889b4f99ed7e373ef10334591ade01c4cde0562b45fdf984"
+            }
+          ]
+        },
+        {
+          "name": "main-full",
+          "status": "VERIFIED",
+          "command": [
+            "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+            "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\code\\main.py",
+            "--run"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 86.387,
+          "artifacts": [
+            {
+              "path": "results/summary.json",
+              "status": "VERIFIED",
+              "size_bytes": 6082,
+              "modified_unix": 1788282956.482081,
+              "sha256": "ea3d9e9d9ddc5354232b042df4299ffac13b88d40317fef1c71e70e4c0f57f2d"
+            },
+            {
+              "path": "results/problem1_strategy.csv",
+              "status": "VERIFIED",
+              "size_bytes": 25666,
+              "modified_unix": 1788282952.8289413,
+              "sha256": "21a309122e40b71d9385144137948552311d3c0fb61222902e679ab574eea352"
+            },
+            {
+              "path": "results/problem2_strategy.csv",
+              "status": "VERIFIED",
+              "size_bytes": 74654,
+              "modified_unix": 1788282952.837939,
+              "sha256": "f49834618951c1f117db84f490ba5601ee2da826599ca559d887a19b9e4fa137"
+            },
+            {
+              "path": "results/problem3_robust_strategy.csv",
+              "status": "VERIFIED",
+              "size_bytes": 85759,
+              "modified_unix": 1788282952.8490498,
+              "sha256": "7f4a4bc2fbdcf134f4c900cbf6c9a808f035533ea188fd8ab0c7b6cccacdca37"
+            },
+            {
+              "path": "results/problem2_lgd_sensitivity.csv",
+              "status": "VERIFIED",
+              "size_bytes": 737,
+              "modified_unix": 1788282952.853059,
+              "sha256": "d374f3b44e28b631e4c2a63170f1ff234031c33d02b83b6eb23c9abfd5fa7de3"
+            },
+            {
+              "path": "results/problem3_stress_sensitivity.csv",
+              "status": "VERIFIED",
+              "size_bytes": 1462,
+              "modified_unix": 1788282952.8550508,
+              "sha256": "f77df15a4b0882d7cd838b4c1682bd48d8310f56bbd9635a8ce246636ba9301d"
+            },
+            {
+              "path": "figures/sensitivity_analysis.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 21551,
+              "modified_unix": 1788282955.7139528,
+              "sha256": "69f00a5c687e9892aafec626ddd7a03c0b87190df2bc177c6455c4346bfdff96"
+            },
+            {
+              "path": "figures/shap_global_importance.pdf",
+              "status": "VERIFIED",
+              "size_bytes": 19268,
+              "modified_unix": 1788282956.2253835,
+              "sha256": "cf51ba42bb5c507c38e924ea18f5409843acd8b5fd23790852286d40d9d5efaa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check": "external-interfaces",
+      "status": "VERIFIED",
+      "interfaces": [
+        {
+          "name": "scipy-milp",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "scipy.optimize.milp is called by deterministic smoke entry"
+        },
+        {
+          "name": "xgboost-classifier",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "installed package is imported and full entry fits it"
+        },
+        {
+          "name": "shap-tree-explainer",
+          "kind": "python-package",
+          "status": "VERIFIED",
+          "evidence": "full entry calls TreeExplainer on the fitted XGBoost component"
+        }
+      ]
+    }
+  ]
+}

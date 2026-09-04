@@ -1,0 +1,9 @@
+{
+  "status": "DETERMINISTIC_REPLAY_PASSED",
+  "q1_points": 61,
+  "q1_final_c": 40.12874428285585,
+  "q2_candidates": 2,
+  "q2_monotone_max_temperature": true,
+  "q3_candidates": 4,
+  "q3_all_finite": true
+}

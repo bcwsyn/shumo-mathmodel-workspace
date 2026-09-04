@@ -1,0 +1,66 @@
+{
+  "entries": [
+    {
+      "name": "g2-smoke",
+      "stages": ["g2"],
+      "script": "code/main.py",
+      "args": ["--smoke"],
+      "timeout_seconds": 180,
+      "expected_artifacts": [
+        "results/g2_baseline.json",
+        "figures/g2_skin_temperature_diagnostic.pdf",
+        "logs/g2_smoke.log"
+      ]
+    },
+    {
+      "name": "g3-replay",
+      "stages": ["g3", "final"],
+      "script": "code/g3.py",
+      "args": ["--replay"],
+      "timeout_seconds": 180,
+      "expected_artifacts": [
+        "results/g3_replay.json",
+        "logs/g3_validation.log"
+      ]
+    },
+    {
+      "name": "g3-artifact-check",
+      "stages": ["g3", "final"],
+      "script": "code/g3.py",
+      "args": ["--verify-artifacts"],
+      "timeout_seconds": 180,
+      "expected_artifacts": [
+        "results/formal_results.json",
+        "results/key_numbers.json",
+        "results/problem1.xlsx",
+        "results/g3_run_manifest.json",
+        "results/g3_artifact_check.json",
+        "figures/q1_model_fit.pdf",
+        "figures/q2_enumeration.pdf",
+        "figures/q3_feasible_region.pdf",
+        "figures/q3_pareto_cross_validation.pdf",
+        "logs/g3_formal.log"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "numpy-scipy-pandas",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "results/g2_baseline.json runtime.packages；g2-smoke 实际读取 XLSX、调用 least_squares 与 NumPy 数值内核"
+    },
+    {
+      "name": "pymoo-nsga2",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "results/formal_results.json nsga2_cross_validation；pymoo 0.6.2 对本题 20 个种子各运行 80 代，和枚举 Pareto 前沿最大距离为 0"
+    },
+    {
+      "name": "artifact-tool-workbook",
+      "kind": "external-runtime",
+      "status": "VERIFIED",
+      "evidence": "results/problem1.xlsx；四张工作表已导出后重导入，关键区域与末行检查通过，公式错误 0，四表均完成渲染预览"
+    }
+  ]
+}

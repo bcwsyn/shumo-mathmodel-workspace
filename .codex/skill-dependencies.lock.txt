@@ -1,0 +1,16 @@
+﻿flatbuffers==25.12.19
+joblib==1.5.3
+narwhals==2.25.0
+networkx==3.6.1
+onnxruntime==1.29.0
+opencv-python==5.0.0.93
+protobuf==7.36.0
+psutil==7.2.2
+pymupdf==1.28.2
+pymupdf-layout==1.28.2
+pymupdf4llm==1.28.2
+PyYAML==6.0.3
+scikit-learn==1.9.0
+seaborn==0.13.2
+tabulate==0.10.0
+threadpoolctl==3.6.0

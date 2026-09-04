@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "stage": "preflight",
+  "generated_unix": 1788276328.8351464,
+  "project_root": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision",
+  "status": "UNVERIFIED",
+  "checks": [
+    {
+      "check": "python-runtime",
+      "status": "VERIFIED",
+      "source": "workspace .venv",
+      "requested": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+      "executable": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+      "version": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "check": "python-files",
+      "status": "VERIFIED",
+      "files": [
+        {
+          "path": "code\\audit_inputs.py",
+          "status": "VERIFIED",
+          "sha256": "35f477c8fbdcab991f75d25491dbdbd3a1f9ce360b8a09d70d3cf2ceaf41d431"
+        }
+      ]
+    },
+    {
+      "check": "imports",
+      "status": "VERIFIED",
+      "modules": [
+        {
+          "module": "__future__",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "hashlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "json",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        },
+        {
+          "module": "numpy",
+          "status": "VERIFIED",
+          "origin": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\numpy\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "pandas",
+          "status": "VERIFIED",
+          "origin": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\pandas\\__init__.py",
+          "probe_exit_code": 0,
+          "probe_stderr": ""
+        },
+        {
+          "module": "pathlib",
+          "status": "VERIFIED",
+          "source": "stdlib/local"
+        }
+      ]
+    },
+    {
+      "check": "static-risks",
+      "status": "UNVERIFIED",
+      "findings": [
+        {
+          "file": "code\\audit_inputs.py",
+          "line": 18,
+          "rule": "maintainability-api-docstring",
+          "detail": "公开函数 sha256 缺少 docstring；核心 API 应使用 Google/NumPy 风格",
+          "status": "UNVERIFIED"
+        },
+        {
+          "file": "code\\audit_inputs.py",
+          "line": 26,
+          "rule": "maintainability-api-docstring",
+          "detail": "公开函数 clean_frame 缺少 docstring；核心 API 应使用 Google/NumPy 风格",
+          "status": "UNVERIFIED"
+        },
+        {
+          "file": "code\\audit_inputs.py",
+          "line": 30,
+          "rule": "maintainability-api-docstring",
+          "detail": "公开函数 invoice_audit 缺少 docstring；核心 API 应使用 Google/NumPy 风格",
+          "status": "UNVERIFIED"
+        },
+        {
+          "file": "code\\audit_inputs.py",
+          "line": 74,
+          "rule": "maintainability-api-docstring",
+          "detail": "公开函数 workbook_audit 缺少 docstring；核心 API 应使用 Google/NumPy 风格",
+          "status": "UNVERIFIED"
+        },
+        {
+          "file": "code\\audit_inputs.py",
+          "line": 119,
+          "rule": "maintainability-api-docstring",
+          "detail": "公开函数 interest_audit 缺少 docstring；核心 API 应使用 Google/NumPy 风格",
+          "status": "UNVERIFIED"
+        },
+        {
+          "file": "code\\audit_inputs.py",
+          "line": 141,
+          "rule": "maintainability-api-docstring",
+          "detail": "公开函数 main 缺少 docstring；核心 API 应使用 Google/NumPy 风格",
+          "status": "UNVERIFIED"
+        },
+        {
+          "file": "code\\audit_inputs.py",
+          "line": 1,
+          "rule": "maintainability-design-comments",
+          "detail": "超过 40 个有效行但未发现解释公式、约束、单位或设计理由的注释",
+          "status": "UNVERIFIED"
+        }
+      ]
+    },
+    {
+      "check": "code-quality",
+      "status": "VERIFIED",
+      "tools": [
+        {
+          "tool": "quality-gate",
+          "status": "VERIFIED",
+          "reason": "preflight does not require project code"
+        }
+      ]
+    },
+    {
+      "check": "runtime-entries",
+      "status": "VERIFIED",
+      "runs": []
+    },
+    {
+      "check": "external-interfaces",
+      "status": "VERIFIED",
+      "interfaces": []
+    }
+  ]
+}

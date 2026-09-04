@@ -1,0 +1,49 @@
+{
+  "entries": [
+    {
+      "name": "main-smoke",
+      "stages": ["g2", "g3", "final"],
+      "script": "code/main.py",
+      "args": ["--smoke"],
+      "timeout_seconds": 120,
+      "expected_artifacts": ["results/smoke.json"]
+    },
+    {
+      "name": "main-full",
+      "stages": ["g3", "final"],
+      "script": "code/main.py",
+      "args": ["--run"],
+      "timeout_seconds": 900,
+      "expected_artifacts": [
+        "results/summary.json",
+        "results/problem1_strategy.csv",
+        "results/problem2_strategy.csv",
+        "results/problem3_robust_strategy.csv",
+        "results/problem2_lgd_sensitivity.csv",
+        "results/problem3_stress_sensitivity.csv",
+        "figures/sensitivity_analysis.pdf",
+        "figures/shap_global_importance.pdf"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "scipy-milp",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "scipy.optimize.milp is called by deterministic smoke entry"
+    },
+    {
+      "name": "xgboost-classifier",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "installed package is imported and full entry fits it"
+    },
+    {
+      "name": "shap-tree-explainer",
+      "kind": "python-package",
+      "status": "VERIFIED",
+      "evidence": "full entry calls TreeExplainer on the fitted XGBoost component"
+    }
+  ]
+}

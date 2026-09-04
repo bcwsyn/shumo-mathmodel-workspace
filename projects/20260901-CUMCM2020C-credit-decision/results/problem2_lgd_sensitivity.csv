@@ -1,0 +1,4 @@
+﻿lgd,risk_cap_fraction,expected_benefit_yuan,risk_loss_principal_yuan,loan_weighted_rate,solver_message,solver_status,budget_error_yuan,max_risk_yuan,min_selected_loan_yuan,max_selected_loan_yuan,selected_count,robust_min_benefit_yuan
+0.4,1.0,2657077.762495114,2765099.82637843,0.07834,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,0.0,2765099.82637843,1000000.0,1000000.0,100,
+0.7,1.0,1940561.838636302,1968418.687087614,0.09642,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,0.0,1968418.687087614,1000000.0,1000000.0,100,
+1.0,1.0,1449116.7628976833,1333688.9717292981,0.11994,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,0.0,1333688.9717292981,1000000.0,1000000.0,100,

@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "source": {
+    "path": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\paper\\reference\\全篇证据约束优化版_V8.1.docx",
+    "sha256": "93A5854030AFF664340487035C60BE2997FE26520EE49A8C201BFA8B69C9FBD0",
+    "hash_matches_frozen_receipt": true
+  },
+  "docx": {
+    "path": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\paper\\全篇证据约束优化版_V8.2_视觉优化.docx",
+    "sha256": "51CDC5EFD5F0D9D682ACF5D11E0C7967C65EDCF947C88797ABD4F2EB44A3558B",
+    "zip_integrity": true,
+    "paragraph_count": 160,
+    "table_count": 12,
+    "inline_figure_count": 11,
+    "paragraph_text_matches_expected_bounded_edits": true,
+    "table_text_unchanged": true,
+    "publication_figure_blobs_match": true,
+    "all_figure_pngs_approximately_300_dpi": true
+  },
+  "pdf": {
+    "path": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\paper\\全篇证据约束优化版_V8.2_视觉优化.pdf",
+    "sha256": "8EE971E47A5443A2C0443E992FD2E883F670961FD480266CF66828061ED57E07",
+    "page_count": 20,
+    "all_pages_a4": true,
+    "word_render_review": "20/20 pages reviewed; final affected pages 3 and 12 rechecked"
+  },
+  "figures": {
+    "png_count": 11,
+    "pdf_count": 11,
+    "svg_count": 11,
+    "dpi": [
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ],
+      [
+        300.0,
+        300.0
+      ]
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "zero_defects_n22": {
+    "bounds": [
+      0.0,
+      0.09937197978872149
+    ],
+    "decision": "accept"
+  },
+  "two_defects_n2": {
+    "bounds": [
+      0.22360679774997896,
+      1.0
+    ],
+    "decision": "reject"
+  },
+  "sprt_config": {
+    "nominal_rate": 0.1,
+    "delta": 0.02,
+    "alpha": 0.05,
+    "beta_error": 0.1
+  },
+  "sprt_examples": {
+    "all_good_100": "accept",
+    "all_bad_20": "reject"
+  }
+}

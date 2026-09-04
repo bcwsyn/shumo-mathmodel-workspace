@@ -1,0 +1,107 @@
+{
+  "status": "UNVERIFIED",
+  "policy": {
+    "paper_engine": "typst",
+    "latex_checked": false
+  },
+  "runtime_config": null,
+  "python": {
+    "status": "VERIFIED",
+    "executable": "D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Scripts\\python.exe",
+    "version": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "pip": {
+    "status": "VERIFIED",
+    "output": "pip 25.0.1 from D:\\shumo\\shumo\\projects\\20260901-CUMCM2020C-credit-decision\\.venv\\Lib\\site-packages\\pip (python 3.12)"
+  },
+  "packages": [
+    {
+      "module": "numpy",
+      "distribution": "numpy",
+      "status": "VERIFIED",
+      "version": "2.5.2"
+    },
+    {
+      "module": "scipy",
+      "distribution": "scipy",
+      "status": "VERIFIED",
+      "version": "1.18.1"
+    },
+    {
+      "module": "pandas",
+      "distribution": "pandas",
+      "status": "VERIFIED",
+      "version": "3.0.5"
+    },
+    {
+      "module": "matplotlib",
+      "distribution": "matplotlib",
+      "status": "VERIFIED",
+      "version": "3.11.1"
+    },
+    {
+      "module": "sklearn",
+      "distribution": "scikit-learn",
+      "status": "VERIFIED",
+      "version": "1.9.0"
+    },
+    {
+      "module": "openpyxl",
+      "distribution": "openpyxl",
+      "status": "VERIFIED",
+      "version": "3.1.5"
+    },
+    {
+      "module": "yaml",
+      "distribution": "PyYAML",
+      "status": "UNVERIFIED",
+      "version": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "typst",
+      "status": "UNVERIFIED",
+      "path": null,
+      "source": "not-found",
+      "probe": "not run"
+    },
+    {
+      "name": "drawio",
+      "status": "UNVERIFIED",
+      "path": null,
+      "source": "not-found",
+      "probe": "not run"
+    },
+    {
+      "name": "pdftoppm",
+      "path": "C:\\Users\\HP\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+      "source": "PATH",
+      "status": "UNVERIFIED",
+      "probe": "version only; Typst unavailable for conversion probe",
+      "exit_code": 0,
+      "detail": "pdftoppm version 26.05.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"
+    },
+    {
+      "name": "mutool",
+      "status": "UNVERIFIED",
+      "path": null,
+      "source": "not-found",
+      "probe": "not run"
+    },
+    {
+      "name": "magick",
+      "status": "UNVERIFIED",
+      "path": null,
+      "source": "not-found",
+      "probe": "not run"
+    }
+  ],
+  "capabilities": {
+    "python_baseline": "UNVERIFIED",
+    "paper_typst": "UNVERIFIED",
+    "drawio_export": "UNVERIFIED",
+    "pdf_raster": "UNVERIFIED"
+  }
+}
