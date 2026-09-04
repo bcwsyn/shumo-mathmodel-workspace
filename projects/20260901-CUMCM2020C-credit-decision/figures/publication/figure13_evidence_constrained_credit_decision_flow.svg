@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060" role="img" aria-labelledby="title desc">
+  <title id="title">证据约束的中小微企业信贷决策流程</title>
+  <desc id="desc">从附件审计和共同特征出发，经信用风险评价与利率响应，依次完成参数化授信、冻结迁移和压力鲁棒优化，并以三道边界约束保证结论可追溯。</desc>
+  <defs>
+    <style>
+      .canvas{fill:#F8FAFC}.title{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:35px;font-weight:700;fill:#12263F}.subtitle{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:16px;fill:#587089}.section{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:18px;font-weight:700;fill:#24415E}.kicker{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.4px;fill:#5D7892}.cardTitle{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:20px;font-weight:700;fill:#12304A}.cardText{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:15px;fill:#456078}.small{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:13px;fill:#5A7389}.stage{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:15px;font-weight:700;fill:white}.gate{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:16px;font-weight:700;fill:#26445B}.gateText{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:13px;fill:#526C80}.out{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:18px;font-weight:700;fill:#fff}
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#17334E" flood-opacity=".10"/></filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#376F96"/></marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#258E8A"/></marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6A57A5"/></marker>
+  </defs>
+  <rect class="canvas" x="0" y="0" width="1600" height="1060"/>
+  <rect x="58" y="44" width="10" height="67" rx="5" fill="#1B6C94"/>
+  <text class="title" x="88" y="77">证据约束的中小微企业信贷决策闭环</text>
+  <text class="subtitle" x="89" y="105">从可审计经营信息到风险迁移、组合配置与压力决策</text>
+  <line x1="58" y1="132" x2="1540" y2="132" stroke="#D8E3EA" stroke-width="2"/>
+
+  <!-- Section shells -->
+  <rect x="58" y="164" width="333" height="526" rx="24" fill="#EAF4FA"/>
+  <rect x="414" y="164" width="516" height="526" rx="24" fill="#EEF8F5"/>
+  <rect x="954" y="164" width="588" height="526" rx="24" fill="#F4F0FB"/>
+  <text class="kicker" x="86" y="199">01 · 统一证据基础</text>
+  <text class="section" x="86" y="228">输入审计与共同特征</text>
+  <text class="kicker" x="442" y="199">02 · 风险与价格分层</text>
+  <text class="section" x="442" y="228">可迁移的受控输入</text>
+  <text class="kicker" x="982" y="199">03 · 递进组合决策</text>
+  <text class="section" x="982" y="228">从名义授信到鲁棒配置</text>
+
+  <!-- left -->
+  <g filter="url(#shadow)">
+    <rect x="86" y="264" width="276" height="86" rx="14" fill="#FFFFFF"/>
+    <rect x="86" y="264" width="8" height="86" rx="4" fill="#3983AE"/>
+    <text class="cardTitle" x="117" y="294">题设与三类附件</text>
+    <text class="cardText" x="117" y="320">企业信息 · 进销项发票 · 利率流失率</text>
+  </g>
+  <path d="M224 350 V381" stroke="#376F96" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <g filter="url(#shadow)">
+    <rect x="86" y="392" width="276" height="111" rx="14" fill="#FFFFFF"/>
+    <rect x="86" y="392" width="8" height="111" rx="4" fill="#3983AE"/>
+    <text class="cardTitle" x="117" y="423">字段语义审计</text>
+    <text class="cardText" x="117" y="448">方向识别 · 精确去重 · 日期截断</text>
+    <text class="small" x="117" y="474">保留负额，区分数据事实与假设</text>
+  </g>
+  <path d="M224 503 V534" stroke="#376F96" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <g filter="url(#shadow)">
+    <rect x="86" y="545" width="276" height="111" rx="14" fill="#D5EBF7"/>
+    <text class="cardTitle" x="117" y="577">32维经营特征</text>
+    <text class="cardText" x="117" y="602">规模 · 持续性 · 波动 · 集中度</text>
+    <text class="small" x="117" y="628">源域与目标域使用同构特征</text>
+  </g>
+
+  <!-- middle input split -->
+  <path d="M362 600 H414" stroke="#376F96" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M414 600 V350 H442" stroke="#376F96" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M414 600 V543 H442" stroke="#258E8A" stroke-width="2.5" fill="none" marker-end="url(#arrowTeal)"/>
+  <g filter="url(#shadow)">
+    <rect x="442" y="264" width="217" height="172" rx="16" fill="#FFFFFF"/>
+    <rect x="442" y="264" width="217" height="9" rx="4" fill="#2F7CA3"/>
+    <text class="cardTitle" x="470" y="306">风险评价</text>
+    <text class="cardText" x="470" y="333">Logistic + 浅层 XGBoost</text>
+    <text class="cardText" x="470" y="359">5折×5次严格折外预测</text>
+    <text class="small" x="470" y="394">融合概率 → 信用风险指数 CRI</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="688" y="264" width="213" height="172" rx="16" fill="#FFFFFF"/>
+    <rect x="688" y="264" width="213" height="9" rx="4" fill="#2F7CA3"/>
+    <text class="cardTitle" x="716" y="306">风险损失尺度</text>
+    <text class="cardText" x="716" y="333">评级概率 × Jeffreys 平滑</text>
+    <text class="cardText" x="716" y="359">得到组合风险损失量 ρ</text>
+    <text class="small" x="716" y="394">不宣称为校准违约概率</text>
+  </g>
+  <path d="M659 350 H679" stroke="#376F96" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <g filter="url(#shadow)">
+    <rect x="442" y="488" width="217" height="141" rx="16" fill="#FFFFFF"/>
+    <rect x="442" y="488" width="217" height="9" rx="4" fill="#259B94"/>
+    <text class="cardTitle" x="470" y="529">利率响应</text>
+    <text class="cardText" x="470" y="556">附件3原始利率—流失率</text>
+    <text class="cardText" x="470" y="582">保序回归</text>
+    <text class="small" x="470" y="610">保证利率升高不使流失率下降</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="688" y="488" width="213" height="141" rx="16" fill="#FFFFFF"/>
+    <rect x="688" y="488" width="213" height="9" rx="4" fill="#259B94"/>
+    <text class="cardTitle" x="716" y="529">单位效益</text>
+    <text class="cardText" x="716" y="556">利息 - 流失损失 - 风险损失</text>
+    <text class="cardText" x="716" y="582">在29个既有利率点选择</text>
+    <text class="small" x="716" y="610">企业的候选价格与效益输入</text>
+  </g>
+  <path d="M659 558 H679" stroke="#258E8A" stroke-width="2.5" fill="none" marker-end="url(#arrowTeal)"/>
+
+  <!-- decision side main line -->
+  <path d="M901 350 H954" stroke="#6A57A5" stroke-width="2.8" fill="none" marker-end="url(#arrowPurple)"/>
+  <path d="M901 558 H933 V350 H954" stroke="#258E8A" stroke-width="2.8" fill="none" marker-end="url(#arrowPurple)"/>
+  <g filter="url(#shadow)">
+    <rect x="982" y="263" width="531" height="110" rx="16" fill="#FFFFFF"/>
+    <rect x="982" y="263" width="10" height="110" rx="5" fill="#7563AD"/>
+    <rect x="1011" y="284" width="68" height="29" rx="14" fill="#7563AD"/>
+    <text class="stage" x="1027" y="305">问题一</text>
+    <text class="cardTitle" x="1100" y="305">参数化预算下的授信组合</text>
+    <text class="cardText" x="1011" y="339">固定额度 MILP：预算、单户额度、风险敞口、D级禁贷</text>
+    <text class="small" x="1011" y="360">输出：冻结的风险评价、损失尺度与利率响应关系</text>
+  </g>
+  <path d="M1247 373 V401" stroke="#6A57A5" stroke-width="2.8" fill="none" marker-end="url(#arrowPurple)"/>
+  <g filter="url(#shadow)">
+    <rect x="982" y="415" width="531" height="112" rx="16" fill="#FFFFFF"/>
+    <rect x="982" y="415" width="10" height="112" rx="5" fill="#7563AD"/>
+    <rect x="1011" y="437" width="68" height="29" rx="14" fill="#7563AD"/>
+    <text class="stage" x="1027" y="458">问题二</text>
+    <text class="cardTitle" x="1100" y="458">冻结迁移与一亿元组合</text>
+    <text class="cardText" x="1011" y="492">目标域仅推理；漂移检查与迁移置信标记</text>
+    <text class="small" x="1011" y="513">输出：名义组合、风险—效益前沿与可行性核对</text>
+  </g>
+  <path d="M1247 527 V555" stroke="#6A57A5" stroke-width="2.8" fill="none" marker-end="url(#arrowPurple)"/>
+  <g filter="url(#shadow)">
+    <rect x="982" y="568" width="531" height="112" rx="16" fill="#FFFFFF"/>
+    <rect x="982" y="568" width="10" height="112" rx="5" fill="#6B4B92"/>
+    <rect x="1011" y="590" width="68" height="29" rx="14" fill="#6B4B92"/>
+    <text class="stage" x="1027" y="611">问题三</text>
+    <text class="cardTitle" x="1100" y="611">压力情景下的鲁棒配置</text>
+    <text class="cardText" x="1011" y="645">经营脆弱度 → 轻/中/重压力 → maximin MILP</text>
+    <text class="small" x="1011" y="666">输出：最坏情景效益、组合风险与压力敏感性</text>
+  </g>
+
+  <!-- gates -->
+  <rect x="58" y="729" width="1484" height="249" rx="24" fill="#FFFFFF" stroke="#D7E3EB" stroke-width="2"/>
+  <text class="kicker" x="88" y="766">贯穿全链条 · 三道结论边界</text>
+  <text class="section" x="88" y="795">让每一个授信输出保持可追溯、可解释、可复现</text>
+  <g filter="url(#shadow)">
+    <rect x="88" y="827" width="422" height="113" rx="16" fill="#EAF4FA"/>
+    <circle cx="126" cy="865" r="18" fill="#2F7CA3"/><text class="stage" x="120" y="871">1</text>
+    <text class="gate" x="159" y="858">数据与模型证据</text>
+    <text class="gateText" x="159" y="884">哈希、清洗、折外预测与特征漂移</text>
+    <text class="gateText" x="159" y="908">历史违约仅验证 CRI 的风险方向</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="589" y="827" width="422" height="113" rx="16" fill="#EEF8F5"/>
+    <circle cx="627" cy="865" r="18" fill="#259B94"/><text class="stage" x="621" y="871">2</text>
+    <text class="gate" x="660" y="858">组合可行性</text>
+    <text class="gateText" x="660" y="884">预算、额度、利率、D级与风险约束</text>
+    <text class="gateText" x="660" y="908">求解状态与逐项回代检查</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1090" y="827" width="422" height="113" rx="16" fill="#F4F0FB"/>
+    <circle cx="1128" cy="865" r="18" fill="#7563AD"/><text class="stage" x="1122" y="871">3</text>
+    <text class="gate" x="1161" y="858">解释与结论边界</text>
+    <text class="gateText" x="1161" y="884">SHAP 解释模型使用方式，而非因果</text>
+    <text class="gateText" x="1161" y="908">风险偏好、LGD 与压力参数单独披露</text>
+  </g>
+  <path d="M300 827 V700 H224 V656" stroke="#6B93AC" stroke-width="2" stroke-dasharray="6 6" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M800 827 V710 H1247 V680" stroke="#53A69F" stroke-width="2" stroke-dasharray="6 6" fill="none" marker-end="url(#arrowTeal)"/>
+  <path d="M1300 827 V710 H1500 V680" stroke="#8C78BD" stroke-width="2" stroke-dasharray="6 6" fill="none" marker-end="url(#arrowPurple)"/>
+  <text class="small" x="93" y="1008">图示依据：论文 V8.1 第1章、第3—7章与附录A；虚线表示反馈与核验，实线表示主数据/决策流。</text>
+</svg>
