@@ -3,7 +3,7 @@ name: 6verity
 description: "高质量数学建模项目的最终验证与完整交付阶段。仅在 G7 批准后检查论文、代码、结果、图表、引用、数值、可复现性与版式，修复硬错误并生成最终完整交付版 PDF、全套源文件清单和验收报告。"
 ---
 
-# 最终完整交付版验证和验收（Typst）
+# 最终完整交付版验证和验收（LaTeX 源码优先）
 
 本 skill 是完整工作流的最后一关。它不重新建模、不生成新结果、不代替写作阶段重写论文；它负责发现硬错误、修复可直接修复的问题，并输出 `reports/VERIFY_REPORT.md`。
 
@@ -23,7 +23,7 @@ description: "高质量数学建模项目的最终验证与完整交付阶段。
 
 ## 阶段边界
 
-- 本阶段负责：代码证据复验、结构验收、文本质量门禁、图表引用检查、结果一致性检查、Typst 编译检查、PDF 视觉检查、提交清单。
+- 本阶段负责：代码证据复验、LaTeX 源码结构验收、文本质量门禁、图表引用检查、结果一致性检查、XeLaTeX 编译检查、PDF 视觉检查、提交清单。
 - 本阶段不负责：重新设计模型、重新跑大规模实验、重新组织整篇论文。
 - 发现硬错误时，优先做小范围修复；如果需要回到前序阶段，写入 `reports/VERIFY_REPORT.md` 并标记为未通过。
 
@@ -31,15 +31,15 @@ description: "高质量数学建模项目的最终验证与完整交付阶段。
 
 由模型先根据当前工作区判断项目布局，再把实际路径传给检查脚本。常见输入包括但不限于：
 
-1. 论文入口文件：`main.typ`。
-2. 正文章节目录或若干正文文件（`.typ`）。
-3. 参考文献文件（`references.typ`）。
+1. 论文入口文件：`main.tex`。
+2. 正文章节目录或若干正文文件（`.tex`）。
+3. 参考文献文件（`references.tex`）或模板指定的 `.bib`。
 4. 前序阶段的分析、建模、结果、图示报告。
 5. 图表目录
 6. 可复现代码目录。
 7. 编译后的 PDF，或可由入口文件编译得到的输出 PDF。
 
-优先把 G7 的 `preview.pdf` 作为视觉基线。最终完整交付版使用清晰文件名且不静默覆盖预览文件。直接参赛模式才使用比赛要求的文件名。
+优先把 G7 的 `paper/build/preview.pdf` 作为视觉基线。最终完整交付版必须从同一 `main.tex` 生成 `paper/build/final.pdf`，不得手工修改 PDF 或仅交付 PDF。直接参赛模式才使用比赛要求的文件名。
 
 不要假设论文目录一定叫 `paper/`，也不要假设结果文件一定在项目根。若项目使用不同命名，按实际结构传参并在 `reports/VERIFY_REPORT.md` 中说明。
 
@@ -62,7 +62,9 @@ final 状态为 `FAILED` 时验收失败；为 `UNVERIFIED` 时不得生成最�
 读取 `.codex/runtime.local.json` 的 `python` 字段，并用该绝对解释器直接运行本 skill 的跨平台 Python 脚本。不要调用 Bash，不要假设存在 `python3`：
 
 ```powershell
-$runtime = Get-Content -Raw -Encoding UTF8 -LiteralPath '.codex/runtime.local.json' | ConvertFrom-Json
+$runtime = if (Test-Path -LiteralPath '.codex/runtime.local.json') {
+  Get-Content -Raw -Encoding UTF8 -LiteralPath '.codex/runtime.local.json' | ConvertFrom-Json
+} else { @{} }
 $python = $runtime.python
 $script = '<按当前 skill 实际位置确定>/scripts/writing_check.py'
 & $python -X utf8 $script `
@@ -84,9 +86,9 @@ if ($LASTEXITCODE -ne 0) { throw 'writing text gate failed' }
 
 ### Step 2: 章节数量和标题顺序
 
-- 入口 `.typ` 文件中 `#include("...")` 的数量是否与实际正文结构匹配。
+- 入口 `main.tex` 中 `\input{...}` / `\include{...}` 的数量是否与实际正文结构匹配。
 - include 顺序是否符合文件名前缀顺序，例如 `1_...`, `2_...`, `3_...`。
-- 每个 section 是否有明确一级标题（`= 标题`，等号后有空格）。
+- 每个 section 是否有明确一级标题（通常为 `\section{标题}`）。
 - 标题顺序是否符合所选论文类型。
 
 - 章节文件是否缺失、重复引用、未被引用。
@@ -95,14 +97,14 @@ if ($LASTEXITCODE -ne 0) { throw 'writing text gate failed' }
 ### Step 3: 图表和章节匹配
 
 - 图表目录中的 PDF 是否在正文中被引用。
-- `#figure(image(...), caption: [...])` 的图片是否真实存在。图片路径必须相对于 `.typ` 文件。
+- `\includegraphics{...}` 的图片是否真实存在。图片路径必须相对于 `.tex` 文件。
 - 数据图是否放在对应结果/分析章节，非数据流程图是否放在方法/总体思路章节。
 
 - 连续图表之间是否有足够解释文字。
 - caption 是否过长、过泛或与图意不一致。
 - 图表编号、正文引用和章节语义是否一致。
 
-不要生成 `*_typst_includes.typ`；图表必须直接嵌在对应 section 中。
+不要生成与正文脱节的图表清单源文件；图表必须直接嵌在对应 section 中。
 
 ### Step 4: 写作质量和泄露检查
 
@@ -110,7 +112,7 @@ if ($LASTEXITCODE -ne 0) { throw 'writing text gate failed' }
 
 - `TODO`、`PLACEHOLDER`、`待补充`、`待续写`、`示例数据` 等占位符。
 - 论文正文出现内部工作流文件名、临时目录名、代码目录名或结果 JSON 路径。
-- 过多列表式写作（Typst 中大量 `#list`、`enum`）。
+- 过多列表式写作（大量 `itemize`、`enumerate`）。
 - 段落反复以"如图""由图""图 X 展示了"开头。
 - 图表后没有解释、公式后没有变量含义、结论只报数不解释。
 - 高频空泛套话、机械连接词和不含题目实体的通用段落。
@@ -147,7 +149,7 @@ if ($LASTEXITCODE -ne 0) { throw 'writing text gate failed' }
 检查：
 
 - 参考文献文件是否存在，或模板是否采用了其他真实参考文献机制。
-- 正文引用标记（Typst 的 `@label`/`#super`）是否能对应到真实参考文献。
+- 正文引用标记（例如 `\cite{key}`）是否能对应到真实参考文献。
 - 中文论文 caption、表题、摘要语言保持中文；英文论文保持英文。
 - 选定的模板入口是否保留所选比赛模板的必要封面、摘要、编号、页眉页脚或提交格式。
 - 不要把模板结构误删成普通空白文档。
@@ -155,11 +157,19 @@ if ($LASTEXITCODE -ne 0) { throw 'writing text gate failed' }
 
 ### Step 7: 编译
 
-```text
-<typst-absolute-path> compile <main-file> <output-pdf>
+```powershell
+$runtime = if (Test-Path -LiteralPath '.codex/runtime.local.json') {
+  Get-Content -Raw -Encoding UTF8 -LiteralPath '.codex/runtime.local.json' | ConvertFrom-Json
+} else { @{} }
+$xelatex = if ($runtime.xelatex) { $runtime.xelatex } else { (Get-Command xelatex -ErrorAction Stop).Source }
+New-Item -ItemType Directory -Force -Path 'paper/build' | Out-Null
+& $xelatex -interaction=nonstopmode -halt-on-error -jobname=final -output-directory='paper/build' 'paper/main.tex'
+if ($LASTEXITCODE -ne 0) { throw 'XeLaTeX first compilation failed' }
+& $xelatex -interaction=nonstopmode -halt-on-error -jobname=final -output-directory='paper/build' 'paper/main.tex'
+if ($LASTEXITCODE -ne 0) { throw 'XeLaTeX second compilation failed' }
 ```
 
-优先读取 `.codex/runtime.local.json` 的 `typst` 字段，未配置时再从 PATH 解析；先执行 `--version`，再实际编译并记录绝对路径、版本、退出码和 PDF 哈希。LaTeX 不属于本项目验收范围。
+优先读取 `.codex/runtime.local.json` 的 `xelatex` 字段，未配置时再从 PATH 解析；先执行 `--version`，再实际编译并记录绝对路径、版本、退出码和 `paper/build/final.pdf` 哈希。只有 doctor 的 `paper_latex=VERIFIED` 才能进入本步骤。
 
 编译失败必须修复语法、路径、图片引用或模板问题后重跑。编译通过后确认输出 PDF 非空。
 
@@ -228,7 +238,7 @@ PASS / FAIL
 ## 完整学习交付清单
 ```
 
-只有当代码证据复验通过、硬错误都修复、文本门禁通过、核心图表都引用、数值一致、Typst 编译通过且视觉检查通过时，才写 `PASS`。通过后把全部必需文件复制到独立的 `deliverables/<项目名>/`，并生成根目录 `README.md`、`MANIFEST.md` 与 `REPRODUCE.md`；不得把缓存、临时渲染页、虚拟环境或中间草稿混入交付包。
+只有当代码证据复验通过、硬错误都修复、文本门禁通过、核心图表都引用、数值一致、XeLaTeX 编译通过且视觉检查通过时，才写 `PASS`。通过后把 `main.tex`、全部章节、参考文献源、已引用图的导出物与图源、`paper/build/final.pdf`、代码、结果和报告复制到独立的 `deliverables/<项目名>/`，并生成根目录 `README.md`、`MANIFEST.md` 与 `REPRODUCE.md`；不得把缓存、临时渲染页、`.aux`、`.log`、`.out`、`.toc`、`.fls`、`.fdb_latexmk`、虚拟环境或中间草稿混入交付包。
 
 验收为 `PASS` 后，交付最终 PDF、论文源文件、完整代码与测试、依赖记录、运行日志、结果数据、图表及源数据、阶段报告和复现清单，并明确区分 `preview.pdf` 与最终文件。若为 `FAIL`，不得把当前 PDF 标记为最终版。
 
@@ -236,10 +246,10 @@ PASS / FAIL
 
 以下问题必须判定 `FAIL`：
 
-- 缺少 `main.typ` 或核心正文。
+- 缺少 `main.tex` 或核心正文。
 - 论文入口引用的章节文件不存在。
-- Typst 入口缺少 `#include`。
-- 正文章节缺少一级标题，或 `= ` 后缺空格。
+- LaTeX 入口缺少对应的 `\input` / `\include`。
+- 正文章节缺少一级标题，或 `\section{...}` 标题结构明显错误。
 - 章节顺序明显错误或重复。
 - 正文仍有占位符。
 - 正文泄露内部工作流文件名。

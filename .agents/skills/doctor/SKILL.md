@@ -1,6 +1,6 @@
 ---
 name: doctor
-description: "检查基于 Typst 的数学建模工作流实际运行环境并提供安装向导。用于验证用户指定、VS Code 选定、项目 .venv 或系统 Python 的绝对路径、包导入，以及 Typst、DrawIO、PDF 栅格工具的真实最小调用；仅在用户明确要求环境检查或安装时执行，安装前必须再次获得批准。"
+description: "检查 LaTeX 源码优先的数学建模工作流实际运行环境并提供安装向导。用于验证 Python、XeLaTeX、DrawIO 与 PDF 栅格工具的真实最小调用；仅在用户明确要求环境检查或安装时执行，安装前必须再次获得批准。"
 ---
 
 # 环境检查与安装向导
@@ -28,20 +28,20 @@ description: "检查基于 Typst 的数学建模工作流实际运行环境并�
 & "<python.exe>" "<skill-dir>/scripts/check_environment.py" --output "reports/environment-check.json"
 ```
 
-脚本检查 Python、pip、numpy、scipy、pandas、matplotlib、scikit-learn、openpyxl、PyYAML，以及 typst、drawio、pdftoppm、mutool、magick。外部工具优先读取 `.codex/runtime.local.json` 中同名字段，再回退到 PATH。LaTeX 不属于本项目的就绪条件，不检查也不安装。
+脚本检查 Python、pip、numpy、scipy、pandas、matplotlib、scikit-learn、openpyxl、PyYAML，以及 xelatex、drawio、pdftoppm、mutool、magick。外部工具优先读取 `.codex/runtime.local.json` 中同名字段，再回退到 PATH。XeLaTeX 对应的运行时字段为 `xelatex`。
 
-路径存在不等于工具可用。脚本必须实际导入 Python 包，并分别执行：最小 Typst 编译、最小 DrawIO PDF 导出、真实 PDF 到 PNG 转换。报告包含绝对路径、发现来源、退出码、版本或最小调用证据；任一工具只有在真实产物及文件签名均通过后才能标记为 `VERIFIED`。
+路径存在不等于工具可用。脚本必须实际导入 Python 包，并分别执行：最小中文/公式 XeLaTeX 编译、最小 DrawIO PDF 导出、真实 PDF 到 PNG 转换。报告包含绝对路径、发现来源、退出码、版本或最小调用证据；任一工具只有在真实产物及文件签名均通过后才能标记为 `VERIFIED`。
 
 固定包清单只覆盖工作流基线。代码阶段仍必须由 `verify-generated-code` 从实际 imports 检查额外依赖；不要声称 doctor 已覆盖“所有模型依赖”。
 
 ## 就绪判断
 
 - 代码阶段最低要求：可运行的 Python，以及当前赛题实际 imports 所需的包。
-- 论文阶段只要求 Typst；LaTeX 明确不进入本项目的环境就绪判断。
+- 论文阶段要求 `paper_latex=VERIFIED`；它来自 XeLaTeX 的最小中文/公式 PDF 编译和签名检查。
 - DrawIO 仅在 G4 需要其导出时要求。
 - PDF 栅格工具至少一个通过真实 PDF 到 PNG 转换；仅找到命令或包装器不得标记为可用。
 - PyYAML 只用于 skill 格式校验等辅助任务，不是数学建模运行的通用必需项。
-- 已安装但未加入 PATH 的 Typst 和 DrawIO 可以通过 `.codex/runtime.local.json` 的绝对路径正常使用；不要重复安装。
+- 已安装但未加入 PATH 的 XeLaTeX 和 DrawIO 可以通过 `.codex/runtime.local.json` 的绝对路径正常使用；不要重复安装。
 
 ## 安装规则
 

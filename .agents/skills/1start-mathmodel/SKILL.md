@@ -51,7 +51,7 @@ description: "高质量数学建模项目总入口。接收赛题及附件后创
 
 优先询问（按重要性排序）：
 
-本项目排版引擎固定为 Typst，不再询问 LaTeX/Typst 选择，并在 `plan.md` 中记录该既定偏好。只询问：
+新项目排版引擎固定为 XeLaTeX，不再询问 LaTeX/Typst 选择，并在 `plan.md` 中记录该既定偏好。现有 DOCX 或 Typst 项目保持其原有主稿，不自动迁移。只询问：
 
 1. **竞赛类型**：国赛/华为杯/华中杯/MCM/...— 决定模板选择，见 5writing 的模板族清单。
 2. **论文语言**：中文/英文 — MCM/ICM/COMAP 强制英文，其他默认中文。
@@ -73,7 +73,7 @@ description: "高质量数学建模项目总入口。接收赛题及附件后创
 
 用户偏好：
 - 项目模式：高质量完整建模（除非用户明确要求直接参赛合规）
-- 排版引擎：Typst（项目固定）
+- 排版引擎：XeLaTeX（新项目固定；PDF 为编译产物）
 - 竞赛类型：<国赛 / 华为杯 / MCM / ...>
 - 论文语言：<中文 / 英文>
 - 子问题数量：<已知 N 个 / 待分析确定>
@@ -121,8 +121,10 @@ G7. 预览 PDF 确认 - `5writing`
 │   ├── *.pdf                    #     数据图 + 非数据图 PDF
 │   ├── *.drawio                 #     非数据图源文件
 ├── paper/                       # 4: 论文（5writing）
-│   ├── main.typ                 #     Typst 论文主文件
-│   └── sections/                #     各节 .typ 文件
+│   ├── main.tex                 #     LaTeX 论文主文件，唯一正文入口
+│   ├── references.tex           #     参考文献源（或模板要求的 .bib）
+│   ├── sections/                #     各节 .tex 文件，摘要独立为 abstract.tex
+│   └── build/                   #     由 main.tex 编译出的 preview.pdf/final.pdf
 ├── README.md                    # 项目说明与结论导航
 ├── MANIFEST.md                  # 完整文件清单与哈希
 └── REPRODUCE.md                 # 环境配置和一键复现步骤
@@ -183,7 +185,7 @@ G7. 预览 PDF 确认 - `5writing`
 - `3coding-visual` 负责生成所有依赖计算结果或实验输出的数据图表。
 - `4drawio` 只负责概念图、算法流程图、架构图、路线图等非数据型图示。
 - 不要让 `4drawio` 重复绘制 `3coding-visual` 已经生成的统计图或数据图。
-- `5writing` 负责决定图表在论文中的位置，并使用 Typst 写入：`#figure(image("../../figures/xxx.pdf", width: 85%), caption: [...])`。
+- `5writing` 负责决定图表在论文中的位置，并在 LaTeX 中写入 `\includegraphics`、`\caption` 与 `\label`；图的 SVG/Draw.io 主源继续保留在 `figures/`，论文引用已验收的 PDF/PNG 导出物。
 - 不要让 `5writing` 编造数值结论。论文中的数值必须来自 `RESULTS_REPORT.md`、结果表或已生成图表的数据。
 - 不要把“VS Code 中可运行”当作当前进程的环境证据。代码阶段必须解析并记录解释器绝对路径；任何未实际验证的工具、API、依赖或运行分支标记为 `UNVERIFIED`。
-- 最终交付不得只给论文 PDF；必须包含论文源文件、`code/main.py`、测试、依赖记录、结果数据、图表源文件、日志、阶段报告和复现说明。
+- 最终交付不得只给论文 PDF；必须包含 `main.tex`、全部章节与参考文献源、图表源文件、`code/main.py`、测试、依赖记录、结果数据、日志、阶段报告和复现说明。PDF 只能从源码构建，不能作为编辑入口。

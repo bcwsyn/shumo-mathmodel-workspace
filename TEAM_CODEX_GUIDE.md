@@ -30,10 +30,28 @@ Codex 应检查变更、先同步远端 `main`、在没有冲突时创建能概�
 
 Codex 应检查本地工作区是否干净；干净时同步远端 `main` 并报告新增提交与改动摘要。若本地存在未提交修改或发生冲突，必须停止报告，不能覆盖本地文件。
 
+## 论文协作：LaTeX 源码优先
+
+新建项目的论文以 `paper/main.tex`、`paper/sections/*.tex` 和参考文献源为唯一可编辑主稿；`paper/build/preview.pdf` 与 `paper/build/final.pdf` 都由源码编译，不能手工修改。不同成员优先分别负责不同章节文件；同一个章节、`main.tex`、Word、Excel、Draw.io 和 PDF 仍需串行编辑。
+
+论文可直接使用以下口令：
+
+> 修改摘要：<你的内容>，并重新编译论文
+
+Codex 只修改 `paper/sections/abstract.tex` 或模板实际指定的摘要源，编译 `paper/build/preview.pdf`，检查编译结果与版式；不会手改 PDF。
+
+> 同步团队最新论文并编译
+
+Codex 在工作区干净时同步 `main`，从 `paper/main.tex` 编译预览 PDF 并报告结果。源码冲突、XeLaTeX 缺失或编译失败时停止，不覆盖文件。
+
+> 上传本次论文修改
+
+Codex 先验证本次 `.tex` 修改能够编译，再同步远端、提交源码、已引用图的正式导出物与可交付 PDF，最后推送。`paper/build/` 下的 `.aux`、`.log`、`.out`、`.toc` 等中间文件不上传。
+
 ## 共同规则
 
 - 禁止使用 `git push --force`、`git reset --hard` 或 `git checkout --` 覆盖他人或本地工作。
-- 同一 Word、PDF、Excel、Draw.io 或同一段文本不能由多人同时编辑；开始前先在团队群说明文件路径。
+- 同一 Word、PDF、Excel、Draw.io、`main.tex` 或同一章节文件不能由多人同时编辑；开始前先在团队群说明文件路径。
 - `.venv/`、缓存和临时渲染目录不进入版本控制；正式代码、论文、图表、结果、报告、工作流与知识资料由总仓库同步。
 - 大型 `q1_temperature_field.svg` 由 Git LFS 管理；不要删除 `.gitattributes`，也不要用普通 Git 文件替代该 LFS 指针。
 - 推送成功后，在团队群发送提交号和 Codex 生成的改动摘要；其他成员再执行“同步团队最新修改”。

@@ -1,11 +1,11 @@
 ---
 name: 5writing
-description: "高质量数学建模项目的 Typst 论文撰写阶段。模拟有多年经验的优秀建模团队，使用对应竞赛的格式与模板完成高水平论文，依次通过 G5 大纲、G6 完整源文件和 G7 预览 PDF 审批。"
+description: "高质量数学建模项目的 LaTeX 源码优先论文撰写阶段。使用对应竞赛模板生成可协作的 .tex 主稿与章节文件，并在 G7 从源码编译预览 PDF。"
 ---
 
-# 高质量数学建模论文撰写（Typst）
+# 高质量数学建模论文撰写（LaTeX 源码优先）
 
-本 skill 承接 `3coding-visual` 和 `4drawio`。前序阶段提供真实结果、图表 PDF 和记录文件；本阶段只使用 Typst 组织论文、嵌入图表并编译预览 PDF。LaTeX 不属于本项目工作流；若外部规则强制提交 `.tex`，报告阻塞并请求用户另行决定，不得静默切换引擎。
+本 skill 承接 `3coding-visual` 和 `4drawio`。前序阶段提供真实结果、图表 PDF 和记录文件；本阶段使用 XeLaTeX 组织论文、嵌入图表并编译预览 PDF。`paper/main.tex` 与 `paper/sections/*.tex` 是唯一可编辑正文源，PDF 只是由源码生成的预览或交付物，不得手工修改或作为唯一论文产物。
 
 开始时读取 `../_references/learning_project_contract.md`。默认模拟有多年竞赛经验的优秀建模团队写作：主动强化论证、组织语言和核对证据，只借用相应竞赛的格式、模板和章节习惯。外部提交合规只在用户明确启用时另行处理。
 
@@ -14,10 +14,10 @@ description: "高质量数学建模项目的 Typst 论文撰写阶段。模拟�
 开始时读取 `../_references/approval_gates.md`。确认 G3 已批准，且 G4 已批准或已明确批准跳过。论文阶段分三轮：
 
 - G5：只提交论文大纲、章节论点、公式清单和图表放置计划。
-- G6：仅在 G5 批准后完成全部 `.typ` 源文件，提交内容草稿和数值核对表；不生成最终完整交付版。
+- G6：仅在 G5 批准后完成全部 `.tex` 源文件，提交内容草稿和数值核对表；不生成最终完整交付版。
 - G7：仅在 G6 批准后编译 `preview.pdf`，逐页视觉检查并提交预览。
 
-每个审批点结束后立即停止。G5、G6、G7 提交前分别更新 `reports/QUALITY_SCORECARD.md` 的结论与论证、图表与排版、引用与数值一致性证据。G7 批准前不得调用 `6verity`，不得把预览文件称为最终论文。需要 Typst 语法、排版或调试帮助时调用 `typst-author`。
+每个审批点结束后立即停止。G5、G6、G7 提交前分别更新 `reports/QUALITY_SCORECARD.md` 的结论与论证、图表与排版、引用与数值一致性证据。G7 批准前不得调用 `6verity`，不得把预览文件称为最终论文。XeLaTeX 不可用、模板不兼容或编译失败时，停止并报告，不得改为直接编辑 PDF。
 
 ## 规范与证据
 
@@ -25,9 +25,9 @@ description: "高质量数学建模项目的 Typst 论文撰写阶段。模拟�
 
 只有项目模式明确为“直接参赛”时，才读取用户指定的当年外部提交规则。默认高质量完整建模模式不启用这些提交条款。
 
-## Typst 模板族
+## LaTeX 模板族
 
-模板位于 `templates/<lang>/<竞赛>/main.typ`。支持：
+模板位于 `templates/<lang>/<竞赛>-latex/main.tex`。支持：
 
 - 中文：`apmcm`、`changsanjiao`、`cumcm`、`default`、`diangongbei`、`dongsansheng`、`huashubei`、`huaweibei`、`huazhongbei`、`mathorcup`、`mcm`、`shuweibei`、`stats`、`wuyibei`。
 - 英文：`apmcm`、`default`、`mcm`。
@@ -36,7 +36,7 @@ description: "高质量数学建模项目的 Typst 论文撰写阶段。模拟�
 
 ## 工作流
 
-### Step 0：确认项目模式、格式模板和 Typst 运行证据
+### Step 0：确认项目模式、格式模板和 XeLaTeX 运行证据
 
 从 `plan.md` 读取项目模式。未记录时写入“高质量完整建模”，不得因选择 CUMCM/MCM 模板自动切换为直接参赛。
 
@@ -52,9 +52,9 @@ description: "高质量数学建模项目的 Typst 论文撰写阶段。模拟�
 - 规则未发布或无法核验时标记 `UNVERIFIED`，不得静默沿用上一年度规则。
 - 外部规则与当前成果冲突时单独报告，不得通过删减模型、实验或论证来把高质量完整稿降格为合规稿。
 
-从 `plan.md` 读取排版引擎。未记录时写入 `Typst`；若记录为其他引擎，向用户说明本项目当前固定使用 Typst并等待确认，不要继续沿用旧值。
+从 `plan.md` 读取排版引擎。未记录时写入 `XeLaTeX`；若记录为 DOCX、Typst 或其他引擎，保留已有项目，不自动迁移。新项目必须使用 XeLaTeX；迁移现有项目须由用户单独授权并逐页比对。
 
-读取 `.codex/runtime.local.json` 的 `typst` 绝对路径，使用 `doctor/scripts/check_environment.py` 验证最小 Typst 编译。只有 `paper_typst` 为 `VERIFIED` 才能进入 G5。仅执行 `--version` 或仅检查路径不足以证明可编译。
+读取 `.codex/runtime.local.json` 的 `xelatex` 绝对路径，缺失时从 PATH 解析 `xelatex`；使用 `doctor/scripts/check_environment.py` 验证最小中文文档和公式的 XeLaTeX 编译。只有 `paper_latex` 为 `VERIFIED` 才能进入 G5。仅执行 `--version` 或仅检查路径不足以证明可编译。
 
 ### Step 1：选择语言和模板
 
@@ -71,19 +71,20 @@ MCM/ICM/COMAP -> en/mcm
 用当前平台的文件 API 检查入口，不使用 `ls` 或 Bash 条件表达式。Windows PowerShell 示例：
 
 ```powershell
-$template = Join-Path $SKILL_DIR 'templates/zh/<竞赛>/main.typ'
-if (-not (Test-Path -LiteralPath $template)) { throw "missing Typst template: $template" }
+$template = Join-Path $SKILL_DIR 'templates/zh/<竞赛>-latex/main.tex'
+if (-not (Test-Path -LiteralPath $template)) { throw "missing LaTeX template: $template" }
 ```
 
 入口存在时整目录复制到 `paper/`，然后用 `apply_patch` 修改论文源文件。存在匹配模板时不得从空白文件重建；入口缺失时标记 `FAILED`，不要假装模板已安装。
 
 ### Step 2：保留模板结构
 
-读取所选模板的 `main.typ` 及其全部 `#include("...")`：
+读取所选模板的 `main.tex` 及其全部 `\input{...}` / `\include{...}`：
 
 - 保留比赛封面、摘要、编号、页眉页脚、目录和附录结构。
 - 章节文件名和顺序以模板真实 include 为准，根据题目实际子问题数量增删问题章节。
-- 每个正文 section 使用明确一级标题 `= 标题`。
+- 摘要必须落在单独的 `sections/abstract.tex`。若模板将摘要正文内联在 `main.tex`，只将摘要正文迁入该文件并以 `\input{sections/abstract}` 接入原有摘要宏，不改变模板的摘要页、标题或关键词格式。
+- 每个正文 section 使用明确一级标题 `\section{标题}`。
 - 正文使用连贯学术段落，避免大量列表。
 - 正文不得出现 `reports/`、内部 JSON 路径、审批门名称或其他工作流术语。
 
@@ -91,13 +92,15 @@ if (-not (Test-Path -LiteralPath $template)) { throw "missing Typst template: $t
 
 根据 `figures/*.pdf`、`reports/RESULTS_REPORT.md` 和存在时的 `reports/DRAWIO_REPORT.md` 建立“图表 → 章节 → 论证作用”映射。数据图放在对应结果或分析章节，非数据图放在方法或总体思路章节。
 
-从 `paper/sections/*.typ` 引用项目图表时通常使用两级相对路径：
+从 `paper/sections/*.tex` 引用项目图表时通常使用两级相对路径：
 
-```typst
-#figure(
-  image("../../figures/fig_q1_error_dist.pdf", width: 85%),
-  caption: [问题一预测误差分布],
-)
+```tex
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.85\linewidth]{../../figures/fig_q1_error_dist.pdf}
+  \caption{问题一预测误差分布}
+  \label{fig:q1-error-dist}
+\end{figure}
 ```
 
 英文论文使用英文 caption。每张图前后必须有解释，不能连续堆图或以图代替结论。
@@ -125,7 +128,7 @@ if (-not (Test-Path -LiteralPath $template)) { throw "missing Typst template: $t
 - 专业术语、变量和结论保持稳定，不为追求语言变化随意替换造成含义漂移。
 - 不使用 AI 检测分数作为质量证据，不承诺所谓“低 AI 率”。
 
-参考文献只写真实可核验来源，使用 `paper/references.typ`。正文引用方式应与模板一致，例如 `#super("[1]")`、`@label` 或 `#cite(...)`，不得虚构 DOI、作者、期刊或年份。
+参考文献只写真实可核验来源，使用 `paper/references.tex` 或模板明确要求的 `.bib`。正文引用方式应与模板一致，例如 `\cite{key}`，不得虚构 DOI、作者、期刊或年份。
 
 ### Step 6：提交 G6 源文件审批
 
@@ -137,7 +140,8 @@ if (-not (Test-Path -LiteralPath $template)) { throw "missing Typst template: $t
 - 图表与章节对应表。
 - 关键数值与 `RESULTS_REPORT.md` 的核对表。
 - 参考文献清单及其可核验信息。
-- 全部 `.typ` 源文件链接。
+- `main.tex`、全部 `sections/*.tex` 与参考文献源文件链接。
+- 源码、图源和 `build/` 目录的职责说明：只修改 `.tex` 与图源，不修改 PDF、`.aux`、`.log`、`.out`、`.toc`、`.fls` 或 `.fdb_latexmk`。
 - 项目模式与模板选择依据；仅直接参赛模式附用户明确要求的当年规则核验状态。
 - 文本门禁发现的套话密度、重复段落开头、过短段落和空泛结论警告及人工处置说明。
 
@@ -148,13 +152,16 @@ if (-not (Test-Path -LiteralPath $template)) { throw "missing Typst template: $t
 仅在 G6 批准后执行：
 
 ```powershell
-$runtime = Get-Content -Raw -Encoding UTF8 -LiteralPath '.codex/runtime.local.json' | ConvertFrom-Json
-$typst = $runtime.typst
-& $typst --version
-if ($LASTEXITCODE -ne 0) { throw 'Typst version probe failed' }
-& $typst compile 'paper/main.typ' 'paper/preview.pdf'
-if ($LASTEXITCODE -ne 0) { throw 'Typst compile failed' }
-$pdf = Get-Item -LiteralPath 'paper/preview.pdf'
+$runtime = if (Test-Path -LiteralPath '.codex/runtime.local.json') {
+  Get-Content -Raw -Encoding UTF8 -LiteralPath '.codex/runtime.local.json' | ConvertFrom-Json
+} else { @{} }
+$xelatex = if ($runtime.xelatex) { $runtime.xelatex } else { (Get-Command xelatex -ErrorAction Stop).Source }
+New-Item -ItemType Directory -Force -Path 'paper/build' | Out-Null
+& $xelatex -interaction=nonstopmode -halt-on-error -jobname=preview -output-directory='paper/build' 'paper/main.tex'
+if ($LASTEXITCODE -ne 0) { throw 'XeLaTeX first compilation failed' }
+& $xelatex -interaction=nonstopmode -halt-on-error -jobname=preview -output-directory='paper/build' 'paper/main.tex'
+if ($LASTEXITCODE -ne 0) { throw 'XeLaTeX second compilation failed' }
+$pdf = Get-Item -LiteralPath 'paper/build/preview.pdf'
 if ($pdf.Length -eq 0) { throw 'preview.pdf is empty' }
 Get-FileHash -Algorithm SHA256 -LiteralPath $pdf.FullName
 ```
@@ -165,7 +172,7 @@ Get-FileHash -Algorithm SHA256 -LiteralPath $pdf.FullName
 
 ## 通过条件
 
-- Typst 最小调用和论文实际编译均成功。
-- `preview.pdf` 非空、哈希已记录并完成逐页视觉检查。
+- XeLaTeX 最小调用和论文实际编译均成功。
+- `paper/build/preview.pdf` 非空、哈希已记录并完成逐页视觉检查。
 - 所有关键数值可追溯，图片路径和引用真实存在。
 - 无占位符、内部工作流泄露、缺字乱码或影响阅读的版式错误。

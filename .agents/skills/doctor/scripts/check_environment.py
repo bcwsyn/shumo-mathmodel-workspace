@@ -24,7 +24,7 @@ PACKAGES = {
     "yaml": "PyYAML",
 }
 TOOLS = {
-    "typst": ["typst"],
+    "xelatex": ["xelatex"],
     "drawio": ["drawio", "draw.io"],
     "pdftoppm": ["pdftoppm"],
     "mutool": ["mutool"],
@@ -78,26 +78,32 @@ def resolve_tool(name: str, commands: list[str], runtime: dict[str, str]) -> tup
     return (resolved, "PATH") if resolved else (None, "not-found")
 
 
-def probe_typst(path: Path) -> dict[str, Any]:
+def probe_xelatex(path: Path) -> dict[str, Any]:
     try:
         version = run([str(path), "--version"], timeout=15)
-        with tempfile.TemporaryDirectory(prefix="mathmodel-typst-") as tmp:
+        with tempfile.TemporaryDirectory(prefix="mathmodel-xelatex-") as tmp:
             root = Path(tmp)
-            source = root / "main.typ"
+            source = root / "probe.tex"
             output = root / "probe.pdf"
-            source.write_text("#set page(width: 80mm, height: 50mm)\n= Typst probe\n$1 + 1 = 2$\n", encoding="utf-8")
-            compiled = run([str(path), "compile", str(source), str(output)], timeout=45)
+            source.write_text(
+                "\\documentclass{ctexart}\n\\begin{document}\nXeLaTeX 中文探针 $1+1=2$\n\\end{document}\n",
+                encoding="utf-8",
+            )
+            compiled = run(
+                [str(path), "-interaction=nonstopmode", "-halt-on-error", f"-output-directory={root}", str(source)],
+                timeout=60,
+            )
             valid_pdf = output.is_file() and output.stat().st_size > 0 and output.read_bytes().startswith(b"%PDF")
         status = "VERIFIED" if version.returncode == 0 and compiled.returncode == 0 and valid_pdf else "FAILED"
         return {
             "status": status,
             "version": (version.stdout or version.stderr).strip(),
-            "probe": "minimal Typst compile and PDF signature",
+            "probe": "minimal XeLaTeX Chinese/math compile and PDF signature",
             "exit_code": compiled.returncode,
             "detail": (compiled.stderr or compiled.stdout).strip()[-500:],
         }
     except (OSError, subprocess.TimeoutExpired) as exc:
-        return {"status": "FAILED", "probe": "minimal Typst compile", "detail": str(exc)}
+        return {"status": "FAILED", "probe": "minimal XeLaTeX compile", "detail": str(exc)}
 
 
 def probe_drawio(path: Path) -> dict[str, Any]:
@@ -127,13 +133,13 @@ def probe_drawio(path: Path) -> dict[str, Any]:
         return {"status": "FAILED", "probe": "minimal DrawIO export", "detail": str(exc)}
 
 
-def probe_pdftoppm(path: Path, typst: Path | None) -> dict[str, Any]:
-    if not typst:
+def probe_pdftoppm(path: Path, xelatex: Path | None) -> dict[str, Any]:
+    if not xelatex:
         try:
             version = run([str(path), "-v"], timeout=15)
             return {
                 "status": "UNVERIFIED" if version.returncode == 0 else "FAILED",
-                "probe": "version only; Typst unavailable for conversion probe",
+                "probe": "version only; XeLaTeX unavailable for conversion probe",
                 "exit_code": version.returncode,
                 "detail": (version.stderr or version.stdout).strip()[-500:],
             }
@@ -143,11 +149,14 @@ def probe_pdftoppm(path: Path, typst: Path | None) -> dict[str, Any]:
     try:
         with tempfile.TemporaryDirectory(prefix="mathmodel-poppler-") as tmp:
             root = Path(tmp)
-            source = root / "main.typ"
+            source = root / "main.tex"
             pdf = root / "input.pdf"
             png_stem = root / "page"
-            source.write_text("PDF raster probe", encoding="utf-8")
-            built = run([str(typst), "compile", str(source), str(pdf)], timeout=45)
+            source.write_text("\\documentclass{ctexart}\n\\begin{document}PDF 栅格探针\\end{document}\n", encoding="utf-8")
+            built = run(
+                [str(xelatex), "-interaction=nonstopmode", "-halt-on-error", f"-output-directory={root}", str(source)],
+                timeout=60,
+            )
             converted = run(
                 [str(path), "-f", "1", "-singlefile", "-png", "-r", "72", str(pdf), str(png_stem)],
                 timeout=45,
@@ -179,7 +188,7 @@ def probe_optional(path: Path, name: str) -> dict[str, Any]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Check the active Typst-based math-modeling environment.")
+    parser = argparse.ArgumentParser(description="Check the active LaTeX-source-first math-modeling environment.")
     parser.add_argument("--output")
     parser.add_argument("--runtime-config", default=".codex/runtime.local.json")
     args = parser.parse_args()
@@ -212,12 +221,12 @@ def main() -> int:
         if not path:
             tools.append({"name": name, "status": "UNVERIFIED", "path": None, "source": sources[name], "probe": "not run"})
             continue
-        if name == "typst":
-            evidence = probe_typst(path)
+        if name == "xelatex":
+            evidence = probe_xelatex(path)
         elif name == "drawio":
             evidence = probe_drawio(path)
         elif name == "pdftoppm":
-            evidence = probe_pdftoppm(path, resolved.get("typst"))
+            evidence = probe_pdftoppm(path, resolved.get("xelatex"))
         else:
             evidence = probe_optional(path, name)
         tools.append({"name": name, "path": str(path), "source": sources[name], **evidence})
@@ -239,14 +248,14 @@ def main() -> int:
     raster_status = "VERIFIED" if any(item["status"] == "VERIFIED" for item in raster_candidates) else worst(raster_candidates)
     capabilities = {
         "python_baseline": worst([python_check, {"status": "VERIFIED" if pip.returncode == 0 else "FAILED"}, *packages]),
-        "paper_typst": tool_by_name["typst"]["status"],
+        "paper_latex": tool_by_name["xelatex"]["status"],
         "drawio_export": tool_by_name["drawio"]["status"],
         "pdf_raster": raster_status,
     }
     report_status = max(capabilities.values(), key=RANK.get)
     report = {
         "status": report_status,
-        "policy": {"paper_engine": "typst", "latex_checked": False},
+        "policy": {"paper_engine": "xelatex", "latex_checked": True},
         "runtime_config": str(runtime_path) if runtime_path.is_file() else None,
         "python": python_check,
         "pip": {"status": "VERIFIED" if pip.returncode == 0 else "FAILED", "output": (pip.stdout or pip.stderr).strip()},

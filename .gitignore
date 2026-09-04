@@ -18,3 +18,14 @@ Thumbs.db
 
 # Ephemeral visual brainstorming sessions
 .superpowers/brainstorm/
+
+# XeLaTeX build intermediates: keep paper/build/*.pdf, not these regenerable files.
+**/paper/build/*.aux
+**/paper/build/*.bbl
+**/paper/build/*.blg
+**/paper/build/*.fls
+**/paper/build/*.fdb_latexmk
+**/paper/build/*.log
+**/paper/build/*.out
+**/paper/build/*.synctex.gz
+**/paper/build/*.toc

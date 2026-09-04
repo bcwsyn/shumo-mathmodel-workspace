@@ -11,7 +11,7 @@ A working-rules guide for writing scientific papers, distilled from John Martini
 
 **Scope note.** This skill is for *real manuscripts* — papers reporting completed (or near-complete) experimental, theoretical, or computational results. It is **not** for the upstream ideas/plan report produced by `brainstorm-ideas` report mode. If the user has not yet finished the work, push back: a paper requires results.
 
-Use `.agents/skills/_shared/writing-workflow.md` for KB loading, citation handling, missing references, output formats, and Typst/diagram mechanics. The manuscript-specific rules below override shared defaults when venue templates or figure-first sequencing require it.
+Use `.agents/skills/_shared/writing-workflow.md` for KB loading, citation handling, missing references, output formats, and diagram mechanics. Mathematical-modeling projects follow `5writing`'s XeLaTeX source-first contract; the manuscript-specific rules below override shared defaults when venue templates or figure-first sequencing require it.
 
 ---
 

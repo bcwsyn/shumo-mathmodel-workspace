@@ -11,18 +11,18 @@ def existing(path: Path) -> str:
 
 def find_paper() -> Path:
     current = Path.cwd()
-    if (current / "main.typ").is_file():
+    if (current / "main.tex").is_file():
         return current
     candidates = [
         path
-        for path in current.rglob("main.typ")
+        for path in current.rglob("main.tex")
         if len(path.relative_to(current).parts) <= 4
     ]
     return candidates[0].parent if candidates else current / "paper"
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run the Typst paper text gate with the selected Python interpreter.")
+    parser = argparse.ArgumentParser(description="Run the LaTeX paper text gate with the selected Python interpreter.")
     parser.add_argument("paper_dir", nargs="?")
     parser.add_argument("--paper-dir", dest="paper_dir_option")
     parser.add_argument("--root-dir")
@@ -39,12 +39,12 @@ def main() -> None:
 
     paper = Path(args.paper_dir_option or args.paper_dir) if (args.paper_dir_option or args.paper_dir) else find_paper()
     root = Path(args.root_dir) if args.root_dir else (Path.cwd() if paper == Path(".") else paper.parent)
-    entry = Path(args.main) if args.main else paper / "main.typ"
-    if entry.suffix.lower() != ".typ":
-        parser.error("this project uses Typst; --main must point to main.typ")
+    entry = Path(args.main) if args.main else paper / "main.tex"
+    if entry.suffix.lower() != ".tex":
+        parser.error("this project uses LaTeX; --main must point to main.tex")
 
     sections = Path(args.sections_dir) if args.sections_dir else paper / "sections"
-    references = Path(args.references) if args.references else paper / "references.typ"
+    references = Path(args.references) if args.references else paper / "references.tex"
     figures = Path(args.figures_dir) if args.figures_dir else root / "figures"
     results = Path(args.results_file) if args.results_file else root / "reports" / "RESULTS_REPORT.md"
     if not results.is_file():
