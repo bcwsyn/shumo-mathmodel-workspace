@@ -1,0 +1,2 @@
+# Preserve the large, editable temperature-field vector source through Git LFS.
+projects/CUMCM2018A_HighTemperatureClothing/figures/q1_temperature_field.svg filter=lfs diff=lfs merge=lfs -text

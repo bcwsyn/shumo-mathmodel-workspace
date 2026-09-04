@@ -1,0 +1,20 @@
+# Python environments and interpreter caches
+.venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.matplotlib/
+
+# Editor and operating-system transient files
+.vscode/.ropeproject/
+~$*
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
+
+# Ephemeral visual brainstorming sessions
+.superpowers/brainstorm/
