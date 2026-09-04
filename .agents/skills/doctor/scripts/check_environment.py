@@ -149,7 +149,7 @@ def probe_pdftoppm(path: Path, xelatex: Path | None) -> dict[str, Any]:
     try:
         with tempfile.TemporaryDirectory(prefix="mathmodel-poppler-") as tmp:
             root = Path(tmp)
-            source = root / "main.tex"
+            source = root / "input.tex"
             pdf = root / "input.pdf"
             png_stem = root / "page"
             source.write_text("\\documentclass{ctexart}\n\\begin{document}PDF 栅格探针\\end{document}\n", encoding="utf-8")
