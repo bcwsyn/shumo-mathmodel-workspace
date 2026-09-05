@@ -1,0 +1,25 @@
+\documentclass[12pt,a4paper]{ctexart}
+\usepackage[margin=2.6cm]{geometry}
+\setCJKmainfont{Microsoft YaHei}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.45em}
+
+\title{中小微企业信贷决策\\LaTeX 摘要可编辑性验收}
+\author{团队工作流试验}
+\date{2026 年 9 月 4 日}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract.tex}
+\end{abstract}
+
+\noindent\textbf{关键词：}中小微企业；共同特征跨样本外推；鲁棒配置；可复现
+
+\vspace{1em}
+\noindent\textbf{验收目的：}摘要正文独立于主文件。日后只需修改
+\texttt{sections/abstract.tex} 并执行一次 XeLaTeX 编译，即可得到更新后的 PDF；
+无需编辑或覆盖既有 DOCX、PDF 成品。
+
+\end{document}

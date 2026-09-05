@@ -1,0 +1,16 @@
+{
+  "id": "mathmodel",
+  "version": 1,
+  "name": "完整数学建模 · XeLaTeX · 人工检查点",
+  "stages": [
+    {"id": "G0", "name": "材料与题意", "skills": ["2analysis-modeling"], "required": ["reports/G0_INPUT_REVIEW.md"]},
+    {"id": "G1", "name": "模型与验证方案", "skills": ["2analysis-modeling"], "required": ["reports/ANALYSIS_MODELING_REPORT.md", "reports/QUALITY_SCORECARD.md"]},
+    {"id": "G2", "name": "最小代码验证", "skills": ["3coding-visual", "verify-generated-code"], "required": ["code/main.py", "code/audit_manifest.json", "tests/test_main.py", "reports/G2_VALIDATION.md"]},
+    {"id": "G3", "name": "正式实验与数据图", "skills": ["3coding-visual", "verify-generated-code"], "required": ["reports/RESULTS_REPORT.md", "results/*", "figures/*"]},
+    {"id": "G4", "name": "流程图", "skills": ["4drawio"], "required": ["reports/DRAWIO_REPORT.md", "figures/*"]},
+    {"id": "G5", "name": "论文大纲", "skills": ["5writing"], "required": ["paper/OUTLINE.md"]},
+    {"id": "G6", "name": "可编辑正文与引用", "skills": ["5writing"], "required": ["paper/main.tex", "paper/sections/abstract.tex", "reports/G6_SOURCE_REVIEW.md"]},
+    {"id": "G7", "name": "预览与逐页核查", "skills": ["5writing"], "required": ["paper/build/preview.pdf", "reports/G7_LAYOUT_REVIEW.md"]},
+    {"id": "Final", "name": "完整交付验收", "skills": ["6verity", "verify-generated-code"], "required": ["paper/build/final.pdf", "reports/VERIFY_REPORT.md", "requirements.txt", "REPRODUCE.md", "README.md"]}
+  ]
+}

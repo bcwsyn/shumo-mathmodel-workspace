@@ -52,6 +52,16 @@
         "价税合计": 0,
         "发票状态": 0
       },
+      "date_min": "2016-10-04 00:00:00",
+      "date_max": "2020-02-21 00:00:00",
+      "invalid_date_rows": 0,
+      "status_counts": {
+        "有效发票": 203339,
+        "作废发票": 7608
+      },
+      "invoice_number_python_types": [
+        "int"
+      ],
       "exact_duplicate_rows": 803,
       "duplicate_key_rows": 1636,
       "duplicate_keys": 818,
@@ -139,13 +149,6 @@
           "发票状态": "有效发票"
         }
       ],
-      "date_min": "2016-10-04 00:00:00",
-      "date_max": "2020-02-21 00:00:00",
-      "invalid_date_rows": 0,
-      "status_counts": {
-        "有效发票": 203339,
-        "作废发票": 7608
-      },
       "negative_amount_rows": 1881,
       "negative_amount_rate": 0.00891693174114825,
       "zero_amount_rows": 0,
@@ -153,10 +156,7 @@
       "positive_amount_sum_yuan": 10355215702.99,
       "negative_amount_sum_yuan": -534896788.29,
       "amount_tax_identity_failures_gt_0_01": 2,
-      "amount_tax_identity_max_abs_error": 1.3799999999999955,
-      "invoice_number_python_types": [
-        "int"
-      ]
+      "amount_tax_identity_max_abs_error": 1.3799999999999955
     },
     "sales_invoices": {
       "rows": 162484,
@@ -181,6 +181,17 @@
         "价税合计": 0,
         "发票状态": 0
       },
+      "date_min": "2016-10-07 00:00:00",
+      "date_max": "2020-02-21 00:00:00",
+      "invalid_date_rows": 0,
+      "status_counts": {
+        "有效发票": 151278,
+        "作废发票": 11159,
+        " 作废发票": 47
+      },
+      "invoice_number_python_types": [
+        "int"
+      ],
       "exact_duplicate_rows": 4436,
       "duplicate_key_rows": 8874,
       "duplicate_keys": 4437,
@@ -208,14 +219,6 @@
           "发票状态": "有效发票"
         }
       ],
-      "date_min": "2016-10-07 00:00:00",
-      "date_max": "2020-02-21 00:00:00",
-      "invalid_date_rows": 0,
-      "status_counts": {
-        "有效发票": 151278,
-        "作废发票": 11159,
-        " 作废发票": 47
-      },
       "negative_amount_rows": 8556,
       "negative_amount_rate": 0.05265749243002388,
       "zero_amount_rows": 1679,
@@ -223,10 +226,7 @@
       "positive_amount_sum_yuan": 14758594079.850002,
       "negative_amount_sum_yuan": -642327606.64,
       "amount_tax_identity_failures_gt_0_01": 1,
-      "amount_tax_identity_max_abs_error": 0.9199999999999999,
-      "invoice_number_python_types": [
-        "int"
-      ]
+      "amount_tax_identity_max_abs_error": 0.9199999999999999
     },
     "rating_counts": {
       "B": 38,
@@ -306,6 +306,16 @@
         "价税合计": 0,
         "发票状态": 0
       },
+      "date_min": "2016-10-08 00:00:00",
+      "date_max": "2020-02-21 00:00:00",
+      "invalid_date_rows": 0,
+      "status_counts": {
+        "有效发票": 377939,
+        "作废发票": 17236
+      },
+      "invoice_number_python_types": [
+        "int"
+      ],
       "exact_duplicate_rows": 4681,
       "duplicate_key_rows": 9436,
       "duplicate_keys": 4718,
@@ -393,13 +403,6 @@
           "发票状态": "有效发票"
         }
       ],
-      "date_min": "2016-10-08 00:00:00",
-      "date_max": "2020-02-21 00:00:00",
-      "invalid_date_rows": 0,
-      "status_counts": {
-        "有效发票": 377939,
-        "作废发票": 17236
-      },
       "negative_amount_rows": 3630,
       "negative_amount_rate": 0.00918580375782881,
       "zero_amount_rows": 0,
@@ -407,10 +410,7 @@
       "positive_amount_sum_yuan": 9371119936.289999,
       "negative_amount_sum_yuan": -129926023.05999999,
       "amount_tax_identity_failures_gt_0_01": 2,
-      "amount_tax_identity_max_abs_error": 0.6400000000000006,
-      "invoice_number_python_types": [
-        "int"
-      ]
+      "amount_tax_identity_max_abs_error": 0.6400000000000006
     },
     "sales_invoices": {
       "rows": 330835,
@@ -435,6 +435,17 @@
         "价税合计": 0,
         "发票状态": 0
       },
+      "date_min": "2016-10-08 00:00:00",
+      "date_max": "2020-02-21 00:00:00",
+      "invalid_date_rows": 0,
+      "status_counts": {
+        "有效发票": 303280,
+        "作废发票": 27507,
+        " 作废发票": 48
+      },
+      "invoice_number_python_types": [
+        "int"
+      ],
       "exact_duplicate_rows": 1745,
       "duplicate_key_rows": 7586,
       "duplicate_keys": 3793,
@@ -522,14 +533,6 @@
           "发票状态": "有效发票"
         }
       ],
-      "date_min": "2016-10-08 00:00:00",
-      "date_max": "2020-02-21 00:00:00",
-      "invalid_date_rows": 0,
-      "status_counts": {
-        "有效发票": 303280,
-        "作废发票": 27507,
-        " 作废发票": 48
-      },
       "negative_amount_rows": 5697,
       "negative_amount_rate": 0.017220064382547192,
       "zero_amount_rows": 2340,
@@ -537,10 +540,7 @@
       "positive_amount_sum_yuan": 17727327476.940002,
       "negative_amount_sum_yuan": -394170716.48,
       "amount_tax_identity_failures_gt_0_01": 0,
-      "amount_tax_identity_max_abs_error": 2.3283064365386963e-10,
-      "invoice_number_python_types": [
-        "int"
-      ]
+      "amount_tax_identity_max_abs_error": 2.3283064365386963e-10
     }
   },
   "attachment3": {
