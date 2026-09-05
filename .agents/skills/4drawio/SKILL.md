@@ -21,6 +21,8 @@ description: "高质量数学建模项目的非数据型图示阶段。仅在 G3
 
 ## 图示论证合同与视觉规范
 
+读取 `../research-evidence/SKILL.md` 与 `references/writing-figures.md`。将现有论证合同里的来源、可编辑图源、PDF/PNG、最终尺寸、内容检查和实际视觉检查登记到项目 `reports/research_evidence.json`；导出物变化必须重新打开复核。G4 提交前运行 `--stage G4`，程序通过只表示登记一致。明确批准跳过图示时登记实际批准记录为 `diagram_waiver`，不虚构一张图来满足检查。
+
 在开始制图前，先建立每张图的“图示论证合同”，并写入 `reports/DRAWIO_REPORT.md` 的计划部分：
 
 1. 这张图要证明或解释的单一论点；

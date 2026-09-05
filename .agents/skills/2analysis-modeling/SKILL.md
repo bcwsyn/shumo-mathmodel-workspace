@@ -43,6 +43,8 @@ G0 尚未批准时，可创建 `reports/ANALYSIS_MODELING_REPORT.md` 的“材�
 
 ## 工作流程
 
+G1 开始时读取 `../research-evidence/SKILL.md` 及其 `references/modeling-experiments.md`，把“基线缺陷→具体改进→推导和边界→可证伪实验”写入本阶段报告，并建立 models 与 experiments 计划台账。G1 提交前运行该技能检查器 `--stage G1`。没有文献核验与区别依据，不把应用整合声明为新方法；未选中的候选和淘汰原因保留在报告中。
+
 
 ### Step 1: 子问题拆解
 
