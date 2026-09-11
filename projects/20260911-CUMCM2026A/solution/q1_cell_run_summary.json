@@ -1,0 +1,16 @@
+{
+  "solver": "cell-centred radial finite-volume Crank-Nicolson with implicit Picard moisture update",
+  "dr_internal_cm": 0.0125,
+  "dt_internal_s": 0.125,
+  "output_shape": [
+    1800,
+    21
+  ],
+  "max_fine_vs_coarse_T_at_requested_points": 0.00010396931258327413,
+  "max_fine_vs_coarse_C_at_requested_points": 0.001350310307140834,
+  "min_T": 27.99999999999996,
+  "max_T": 36.78557475156217,
+  "min_C": 1.5102346890443479,
+  "max_C": 2.5500000000000003,
+  "result_file": "E:\\周军\\数学建模\\炜\\26题目\\CUMCM2026Problems\\A题\\附件\\附件3\\result1_computed.xlsx"
+}

@@ -1,0 +1,15 @@
+{
+  "solver": "axisymmetric radial finite-volume Crank-Nicolson with implicit Picard moisture update",
+  "dr_cm": 0.05,
+  "dt_s": 0.5,
+  "output_seconds": 1800,
+  "radial_nodes_internal": 41,
+  "radial_nodes_output": 21,
+  "max_fine_vs_coarse_temperature": 0.0014697963039829176,
+  "max_fine_vs_coarse_moisture": 0.03293444670568402,
+  "min_temperature": 27.999999999999993,
+  "max_temperature": 36.785492424587744,
+  "min_moisture": 1.510569757855021,
+  "max_moisture": 2.5500000000000016,
+  "result_file": "E:\\周军\\数学建模\\炜\\26题目\\CUMCM2026Problems\\A题\\附件\\附件3\\result1_computed.xlsx"
+}

@@ -1,0 +1,183 @@
+{
+  "method": "conservative cell-centred radial finite-volume method",
+  "time_method": "Crank-Nicolson with Picard iteration for D(C)",
+  "spatial_runs": [
+    {
+      "label": "A",
+      "dr_cm": 0.1,
+      "dt_s": 0.25,
+      "runtime_s": 3.0740835999986302,
+      "checks": {
+        "cells": 20,
+        "temperature_min": 27.99999999999998,
+        "temperature_max": 36.78648298110955,
+        "moisture_min": 1.505401911805493,
+        "moisture_max": 2.5500000000001064,
+        "temperature_radial_violation_count": 0,
+        "moisture_radial_violation_count": 0,
+        "negative_moisture_count": 0,
+        "surface_hotter_than_air_count": 0,
+        "surface_drier_than_air_count": 0,
+        "max_picard_iterations": 13,
+        "heat_global_balance_abs_error": 2.673004928510636e-09,
+        "moisture_global_balance_abs_error": 1.585418672430186e-13,
+        "physical_checks_passed": true
+      }
+    },
+    {
+      "label": "B",
+      "dr_cm": 0.05,
+      "dt_s": 0.25,
+      "runtime_s": 3.0650960999992094,
+      "checks": {
+        "cells": 40,
+        "temperature_min": 27.999999999999986,
+        "temperature_max": 36.78579085878792,
+        "moisture_min": 1.5089689739207226,
+        "moisture_max": 2.550000000000021,
+        "temperature_radial_violation_count": 0,
+        "moisture_radial_violation_count": 0,
+        "negative_moisture_count": 0,
+        "surface_hotter_than_air_count": 0,
+        "surface_drier_than_air_count": 0,
+        "max_picard_iterations": 13,
+        "heat_global_balance_abs_error": 2.6675479602999985e-09,
+        "moisture_global_balance_abs_error": 1.956741653473884e-13,
+        "physical_checks_passed": true
+      }
+    },
+    {
+      "label": "C",
+      "dr_cm": 0.025,
+      "dt_s": 0.25,
+      "runtime_s": 3.099694199998339,
+      "checks": {
+        "cells": 80,
+        "temperature_min": 27.999999999999993,
+        "temperature_max": 36.78561796576343,
+        "moisture_min": 1.5099089993916166,
+        "moisture_max": 2.550000000000008,
+        "temperature_radial_violation_count": 0,
+        "moisture_radial_violation_count": 0,
+        "negative_moisture_count": 0,
+        "surface_hotter_than_air_count": 0,
+        "surface_drier_than_air_count": 0,
+        "max_picard_iterations": 13,
+        "heat_global_balance_abs_error": 6.434675015043467e-10,
+        "moisture_global_balance_abs_error": 4.78510291015543e-13,
+        "physical_checks_passed": true
+      }
+    },
+    {
+      "label": "D",
+      "dr_cm": 0.0125,
+      "dt_s": 0.25,
+      "runtime_s": 3.2769812000005913,
+      "checks": {
+        "cells": 160,
+        "temperature_min": 27.99999999999995,
+        "temperature_max": 36.78557475101727,
+        "moisture_min": 1.5101519220387027,
+        "moisture_max": 2.5500000000000025,
+        "temperature_radial_violation_count": 0,
+        "moisture_radial_violation_count": 0,
+        "negative_moisture_count": 0,
+        "surface_hotter_than_air_count": 0,
+        "surface_drier_than_air_count": 0,
+        "max_picard_iterations": 14,
+        "heat_global_balance_abs_error": 3.6238816392142326e-09,
+        "moisture_global_balance_abs_error": 6.265740489929013e-13,
+        "physical_checks_passed": true
+      }
+    }
+  ],
+  "spatial_error_at_35_key_points": {
+    "temperature": {
+      "A-B": {
+        "max_abs": 0.0016246262290380287,
+        "mean_abs": 0.000937426254018752,
+        "max_rel_percent": 0.0055149111531150935,
+        "worst_time_s": 900,
+        "worst_radius_cm": 0.5
+      },
+      "B-C": {
+        "max_abs": 0.000406355044596296,
+        "mean_abs": 0.00023449549408403365,
+        "max_rel_percent": 0.0013794205956383508,
+        "worst_time_s": 900,
+        "worst_radius_cm": 0.5
+      },
+      "C-D": {
+        "max_abs": 0.00010160114437951506,
+        "mean_abs": 5.863255214728318e-05,
+        "max_rel_percent": 0.0003448983748049454,
+        "worst_time_s": 900,
+        "worst_radius_cm": 0.5
+      }
+    },
+    "moisture": {
+      "A-B": {
+        "max_abs": 0.027765001480200446,
+        "mean_abs": 0.0024844024894001837,
+        "max_rel_percent": 1.2401822738517547,
+        "worst_time_s": 100,
+        "worst_radius_cm": 2.0
+      },
+      "B-C": {
+        "max_abs": 0.0062288303504804965,
+        "mean_abs": 0.0006034670754308381,
+        "max_rel_percent": 0.27745189041531054,
+        "worst_time_s": 100,
+        "worst_radius_cm": 2.0
+      },
+      "C-D": {
+        "max_abs": 0.0015255163683276507,
+        "mean_abs": 0.00015091922232541856,
+        "max_rel_percent": 0.06790520252723291,
+        "worst_time_s": 100,
+        "worst_radius_cm": 2.0
+      }
+    }
+  },
+  "temporal_error_at_35_key_points": {
+    "temperature": {
+      "max_abs": 3.701643436215818e-08,
+      "mean_abs": 1.080287311034616e-08,
+      "max_rel_percent": 1.3135666815698526e-07,
+      "worst_time_s": 100,
+      "worst_radius_cm": 2.0
+    },
+    "moisture": {
+      "max_abs": 4.865550096155857e-08,
+      "mean_abs": 2.3875228270599433e-09,
+      "max_rel_percent": 2.165798836313647e-06,
+      "worst_time_s": 100,
+      "worst_radius_cm": 2.0
+    }
+  },
+  "final_run": {
+    "dr_cm": 0.0125,
+    "dt_s": 0.125,
+    "runtime_s": 6.457925600001545,
+    "checks": {
+      "cells": 160,
+      "temperature_min": 27.999999999999964,
+      "temperature_max": 36.78557475155977,
+      "moisture_min": 1.5101519245417832,
+      "moisture_max": 2.5500000000000025,
+      "temperature_radial_violation_count": 0,
+      "moisture_radial_violation_count": 0,
+      "negative_moisture_count": 0,
+      "surface_hotter_than_air_count": 0,
+      "surface_drier_than_air_count": 0,
+      "max_picard_iterations": 13,
+      "heat_global_balance_abs_error": 1.1959855328314006e-09,
+      "moisture_global_balance_abs_error": 9.019867846875827e-13,
+      "physical_checks_passed": true
+    }
+  },
+  "outputs": {
+    "result1": "E:\\周军\\数学建模\\炜\\26题目\\CUMCM2026Problems\\A题\\附件\\附件3\\result1_FVM_refined.xlsx",
+    "convergence_workbook": "E:\\周军\\数学建模\\炜\\26题目\\CUMCM2026Problems\\A题\\solution\\q1_grid_convergence.xlsx"
+  }
+}
